@@ -41,3 +41,15 @@
     📥 [3/392] Untersuchungsbericht-01112006.pdf (total: 3)
     📥 [4/392] Untersuchungsbericht-15032006.pdf (total: 4)
     📥 [5/392] 20071112 Schlüchtern, Personenunfall.pdf (total: 5)
+============================================================
+🚆 ERAVisor Pipeline Europa v2 — 2026-07-06 15:14
+============================================================
+📡 6 países indexados (1380 informes total)
+
+📥 Fase 1: Descarga de PDFs...
+  📥 [FR] FR 26.06.2013-Rapport_Lyon_VF.pdf ✅
+  📥 [FR] FR 26.11.2013 Rapport_Carbonne_VF-1.pdf   ⏳ 429, retry in 30s... ✅
+  📥 [FR] Rapport_Marseille_VF-160413.pdf ✅
+  📥 [FR] FR 09.012.2014 Rapport_BEATT_2014-014-Saint-Germain-des ✅
+  📥 [FR] FR 09.12.2014 Rapport_BEATT_2014-014.pdf   ⏳ 429, retry in 30s... ✅
+  📥 [FR] FR 09.12.2014 Rapport_Montauban_VF-allégé.pdf   ⏳ 429, retry in 30s... 

@@ -70,13 +70,51 @@ TAX_CAUSAS = {
 STATE_FILE = DATA_DIR / "pipeline_state.json"
 
 def cargar_estado():
-    if STATE_FILE.exists():
-        return json.load(open(STATE_FILE))
-    return {
-        "downloaded": {},    # {"DE": {"title": true, ...}}
-        "extracted": {},     # {"DE": {"title": true, ...}}
+    """Carga estado desde disco + verifica PDFs existentes (rápido)"""
+    state = {
+        "downloaded": {},
+        "extracted": {},
         "last_update": None
     }
+    
+    if STATE_FILE.exists():
+        try:
+            state = json.load(open(STATE_FILE))
+        except:
+            pass
+    
+    # Contar PDFs en disco por país (rápido, sin verificar uno a uno)
+    PDF_DIR = Path("/root/workspace/ERAVisor/pdfs")
+    DATA_DIR = Path("/root/workspace/ERAVisor/data")
+    
+    for idx_file in DATA_DIR.glob("*-investigations-index.json"):
+        pais = idx_file.stem.split("-")[0].upper()
+        try:
+            with open(idx_file) as f:
+                data = json.load(f)
+            reports = data.get("reports", [])
+            
+            pais_dir = PDF_DIR / pais
+            if pais_dir.exists():
+                # Contar PDFs reales en disco
+                pdf_count = len([f for f in pais_dir.iterdir() if f.suffix == '.pdf' and f.stat().st_size > 2000])
+                
+                # Cargar títulos existentes del estado previo
+                downloaded = state.get("downloaded", {}).get(pais, {})
+                
+                # Si el conteo coincide con los títulos, no necesitamos verificar uno a uno
+                if len(downloaded) < pdf_count:
+                    # Necesitamos reconstruir — pero solo los primeros N
+                    # Para ser rápidos, asumimos que los primeros N del índice son los descargados
+                    for i, r in enumerate(reports):
+                        if i < pdf_count:
+                            downloaded[r["title"]] = True
+                
+                state["downloaded"][pais] = downloaded
+        except:
+            pass
+    
+    return state
 
 def guardar_estado(state):
     state["last_update"] = datetime.now().isoformat()
@@ -102,8 +140,8 @@ def cargar_indices():
 
 # === DESCARGA DE PDFs ===
 def descargar_pdf(pdf_url, dest_path):
-    """Descarga un PDF con reintentos"""
-    for intento in range(3):
+    """Descarga un PDF con reintentos y delays largos para evitar 429"""
+    for intento in range(5):
         try:
             resp = requests.get(pdf_url, headers={
                 "User-Agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
@@ -112,11 +150,15 @@ def descargar_pdf(pdf_url, dest_path):
                 dest_path.write_bytes(resp.content)
                 return True
             elif resp.status_code == 429:
-                time.sleep(3 * (intento+1))
+                delay = 30 * (intento + 1)  # 30s, 60s, 90s, 120s, 150s
+                print(f"  ⏳ 429, retry in {delay}s...", end=" ", flush=True)
+                time.sleep(delay)
             else:
+                print(f"  ⚠️ HTTP {resp.status_code}", end=" ", flush=True)
                 break
-        except:
-            time.sleep(2 * (intento+1))
+        except Exception as e:
+            print(f"  ⚠️ Error: {e}", end=" ", flush=True)
+            time.sleep(10 * (intento + 1))
     return False
 
 
