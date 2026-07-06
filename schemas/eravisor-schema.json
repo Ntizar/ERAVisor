@@ -1,0 +1,792 @@
+{
+  "meta": {
+    "nombre": "ERAVisor Schema — Accidentes Ferroviarios Europeos",
+    "descripcion": "Esquema completo de columnas para el Excel/CSV de accidentes ferroviarios europeos. Basado en el Anexo III del RD 929/2020 (clasificación de sucesos y causas), la Directiva Europea 2016/798 (descripción, historial, análisis), y necesidades de análisis cuantitativo por país, provincia, tipo de accidente, causa y año.",
+    "version": "1.0.0",
+    "fuentes": [
+      "Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional ferroviaria — Anexo III (Clasificación de sucesos y causas)",
+      "Directiva (UE) 2016/798 del Parlamento Europeo y del Consejo, de 11 de mayo de 2016, sobre seguridad ferroviaria"
+    ],
+    "uso_esperado": "Los datos alimentarán dashboards de análisis cuantitativo y planes de riesgo. Cada fila representa un accidente/suceso ferroviario.",
+    "campos_analisis_clave": [
+      "pais — agrupar por país para comparativas europeas",
+      "provincia — granularidad subnacional para mapas de riesgo",
+      "fecha — series temporales y tendencias anuales",
+      "codigo_suceso_n1 — tipo principal de accidente",
+      "codigo_causa_n1 — categoría de causa raíz",
+      "fallecidos, heridos_graves, heridos_leves — severidad"
+    ]
+  },
+
+  "secciones": {
+
+    "datos_generales": {
+      "descripcion": "Información básica de identificación, localización y contexto operacional del suceso.",
+      "columnas": [
+        {
+          "columna": "id_accidente",
+          "tipo": "string",
+          "longitud_max": 50,
+          "requerido": true,
+          "unico": true,
+          "descripcion": "Identificador único del accidente. Formato recomendado: ERA-{PAIS_ISO2}-{YYYY}-{NNNNN} (ej. ERA-ES-2024-00001).",
+          "analisis": "Clave primaria para joins con otras tablas (historial, informes, medidas correctivas)."
+        },
+        {
+          "columna": "pais",
+          "tipo": "string",
+          "longitud_max": 2,
+          "requerido": true,
+          "descripcion": "Código ISO 3166-1 alpha-2 del país donde ocurrió el suceso (ES, FR, DE, IT, etc.).",
+          "analisis": "Agrupación principal para comparativas entre estados miembros de la UE/ERA. Clave en análisis de riesgo por país."
+        },
+        {
+          "columna": "provincia",
+          "tipo": "string",
+          "longitud_max": 100,
+          "requerido": false,
+          "descripcion": "Provincia, región, departamento o división administrativa equivalente dentro del país. Preferiblemente estandarizado (ej. códigos NUTS-3 si están disponibles).",
+          "analisis": "Granularidad subnacional para mapas de densidad de accidentes y clústeres regionales de riesgo."
+        },
+        {
+          "columna": "fecha",
+          "tipo": "date",
+          "formato": "YYYY-MM-DD",
+          "requerido": true,
+          "descripcion": "Fecha del suceso (formato ISO 8601).",
+          "analisis": "Análisis de tendencias temporales: estacionalidad, evolución interanual, períodos de mayor siniestralidad."
+        },
+        {
+          "columna": "hora",
+          "tipo": "time",
+          "formato": "HH:MM (24h)",
+          "requerido": false,
+          "descripcion": "Hora aproximada del suceso en hora local (formato 24h). Permite valores aproximados (HH:MM).",
+          "analisis": "Análisis de patrones horarios: franjas nocturnas vs diurnas, horas punta de tráfico ferroviario."
+        },
+        {
+          "columna": "operador",
+          "tipo": "string",
+          "longitud_max": 200,
+          "requerido": true,
+          "descripcion": "Nombre de la empresa operadora ferroviaria responsable del tren/servicio implicado. Puede incluir código VKM (Vehicle Keeper Marking) si está disponible.",
+          "analisis": "Análisis de siniestralidad por operador. Identificación de operadores con mayor tasa de incidentes."
+        },
+        {
+          "columna": "infraestructura_administrador",
+          "tipo": "string",
+          "longitud_max": 200,
+          "requerido": false,
+          "descripcion": "Nombre del administrador de infraestructuras ferroviaria en cuya red ocurrió el suceso (ej. ADIF en España, SNCF Réseau en Francia, DB Netz en Alemania).",
+          "analisis": "Permite atribuir riesgo a la infraestructura vs. al operador. Clave para planes de inversión en seguridad."
+        },
+        {
+          "columna": "linea",
+          "tipo": "string",
+          "longitud_max": 200,
+          "requerido": false,
+          "descripcion": "Nombre o código identificativo de la línea ferroviaria donde ocurrió el suceso.",
+          "analisis": "Identificación de tramos críticos o 'puntos negros' recurrentes en una misma línea."
+        },
+        {
+          "columna": "tramo",
+          "tipo": "string",
+          "longitud_max": 200,
+          "requerido": false,
+          "descripcion": "Tramo específico entre dos estaciones o puntos kilométricos.",
+          "analisis": "Mayor granularidad para localización exacta dentro de una línea larga."
+        },
+        {
+          "columna": "pk",
+          "tipo": "float",
+          "requerido": false,
+          "descripcion": "Punto kilométrico exacto (valor numérico, ej. 142.500). Precisión recomendada: 3 decimales (metros).",
+          "analisis": "Georreferenciación precisa para mapas SIG y análisis de concentración espacial de accidentes."
+        },
+        {
+          "columna": "coordenadas_lat",
+          "tipo": "float",
+          "requerido": false,
+          "descripcion": "Latitud en grados decimales (sistema WGS84).",
+          "analisis": "Visualización geoespacial: mapas de calor (heatmaps), clustering espacial, proximidad a pasos a nivel."
+        },
+        {
+          "columna": "coordenadas_lon",
+          "tipo": "float",
+          "requerido": false,
+          "descripcion": "Longitud en grados decimales (sistema WGS84).",
+          "analisis": "Visualización geoespacial: mapas de calor (heatmaps), clustering espacial, proximidad a pasos a nivel."
+        },
+        {
+          "columna": "tipo_trafico",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "viajeros",
+            "mercancías",
+            "mixto",
+            "servicio",
+            "maniobras",
+            "desconocido"
+          ],
+          "requerido": false,
+          "descripcion": "Tipo de tráfico del tren implicado en el suceso.",
+          "analisis": "Segmentación de riesgo por tipo de servicio. Los accidentes de mercancías pueden diferir en causas y consecuencias."
+        },
+        {
+          "columna": "tipo_linea",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "alta_velocidad",
+            "convencional",
+            "cercanias_commuter",
+            "tramo_unico",
+            "via_doble_o_multiple",
+            "desconocido"
+          ],
+          "requerido": false,
+          "descripcion": "Clasificación técnica de la línea según su velocidad/capacidad.",
+          "analisis": "Comparativa de seguridad entre líneas de alta velocidad y convencionales."
+        },
+        {
+          "columna": "paso_nivel",
+          "tipo": "boolean",
+          "requerido": false,
+          "descripcion": "Indica si el suceso ocurrió en o tiene relación directa con un paso a nivel (true/false).",
+          "analisis": "Los pasos a nivel son puntos críticos. Permite filtrar accidentes específicos de PN para análisis focalizado."
+        },
+        {
+          "columna": "estacion",
+          "tipo": "boolean",
+          "requerido": false,
+          "descripcion": "Indica si el suceso ocurrió dentro del recinto de una estación (true/false).",
+          "analisis": "Diferencia accidentes en estación (andén, vía de estacionamiento) vs. plena vía."
+        }
+      ]
+    },
+
+    "clasificacion_suceso": {
+      "descripcion": "Código de clasificación del tipo de suceso según el Anexo III del RD 929/2020. Estructura jerárquica anidada en 3 niveles (n1, n2, n3).",
+      "columnas": [
+        {
+          "columna": "codigo_suceso_n1",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05",
+            "C06",
+            "C07",
+            "C08",
+            "C09"
+          ],
+          "requerido": true,
+          "descripcion": "Código de nivel 1 (categoría principal del suceso). Basado en Anexo III, Sección A del RD 929/2020.",
+          "codificacion": {
+            "C01": "Colisión entre trenes",
+            "C02": "Colisión de tren con obstáculo",
+            "C03": "Descarrilamiento",
+            "C04": "Suceso en paso a nivel",
+            "C05": "Accidente a personas causado por material rodante en movimiento",
+            "C06": "Incendio en material rodante",
+            "C07": "Otros sucesos (caídas de carga, descarrilamiento de vehículo ferroviario de servicio, obstrucción de vía, incidente de telemando, etc.)",
+            "C08": "Suicidio",
+            "C09": "Cuasiaccidente / incidente grave sin daños personales"
+          },
+          "analisis": "Dimensión principal para segmentar el riesgo por tipo de accidente. Base para toda agregación estadística."
+        },
+        {
+          "columna": "codigo_suceso_n2",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "C01.01",
+            "C01.02",
+            "C02.01",
+            "C02.02",
+            "C02.03",
+            "C03.01",
+            "C03.02",
+            "C04.01",
+            "C04.02",
+            "C04.03",
+            "C04.04",
+            "C05.01",
+            "C05.02",
+            "C05.03",
+            "C06.01",
+            "C06.02",
+            "C07.01",
+            "C07.02",
+            "C07.03",
+            "C07.04",
+            "C07.05",
+            "C07.06",
+            "C07.99",
+            "C08.01",
+            "C09.01",
+            "C09.02",
+            "C09.03",
+            "C09.99"
+          ],
+          "requerido": false,
+          "descripcion": "Código de nivel 2 (subcategoría del suceso). Desglosa el nivel 1 en tipologías más específicas.",
+          "codificacion": {
+            "C01.01": "Colisión frontal",
+            "C01.02": "Colisión por alcance",
+            "C02.01": "Colisión con vehículo en paso a nivel",
+            "C02.02": "Colisión con obstáculo en la vía (caídas, desprendimientos, animales)",
+            "C02.03": "Colisión con persona en la vía (no en paso a nivel)",
+            "C03.01": "Descarrilamiento por causa interna (material rodante/vía)",
+            "C03.02": "Descarrilamiento por causa externa (obstrucción, deslizamiento)",
+            "C04.01": "Paso a nivel activo con barreras — accidente",
+            "C04.02": "Paso a nivel activo sin barreras — accidente",
+            "C04.03": "Paso a nivel pasivo (sin protección) — accidente",
+            "C04.04": "Paso a nivel — usuario cruzando indebidamente",
+            "C05.01": "Atropello de persona por tren en marcha (en vía)",
+            "C05.02": "Caída de persona desde el andén a la vía",
+            "C05.03": "Caída de persona desde el interior del tren (puertas, ventanas)",
+            "C06.01": "Incendio en tren de viajeros",
+            "C06.02": "Incendio en tren de mercancías",
+            "C07.01": "Caída de carga desde tren en marcha",
+            "C07.02": "Descarrilamiento de vehículo ferroviario de servicio",
+            "C07.03": "Obstrucción de la vía",
+            "C07.04": "Incidente de telemando / señalización",
+            "C07.05": "Fallo en infraestructura (vía, catenaria)",
+            "C07.06": "Incidente durante maniobras",
+            "C07.99": "Otros (no clasificados en subcategorías anteriores)",
+            "C08.01": "Suicidio confirmado o presunto",
+            "C09.01": "Cuasiaccidente: casi colisión",
+            "C09.02": "Cuasiaccidente: casi descarrilamiento",
+            "C09.03": "Rebase indebido de señal en rojo (SPAD)",
+            "C09.99": "Otros cuasiaccidentes"
+          },
+          "analisis": "Segundo nivel de desagregación para análisis más fino. Permite distinguir, por ejemplo, colisiones frontales vs. por alcance dentro de C01."
+        },
+        {
+          "columna": "codigo_suceso_n3",
+          "tipo": "string",
+          "longitud_max": 20,
+          "requerido": false,
+          "descripcion": "Código de nivel 3 (detalle adicional opcional). Se reserva para codificaciones nacionales o ERA más específicas que amplíen el Anexo III. Formato libre: ej. C04.01.01, C04.01.02, etc.",
+          "analisis": "Máxima granularidad. Permite adaptar el esquema a clasificaciones nacionales (p.ej. F1, F2 en Francia) sin romper la compatibilidad con el estándar ERA."
+        },
+        {
+          "columna": "suceso_descripcion_corta",
+          "tipo": "string",
+          "longitud_max": 300,
+          "requerido": true,
+          "descripcion": "Resumen descriptivo breve del suceso en texto libre (máx. 300 caracteres). Ej: 'Colisión frontal entre tren de viajeros y locomotora de maniobras en la estación de X.'",
+          "analisis": "Legibilidad humana. Aparece en tooltips, listados y resúmenes de dashboards."
+        }
+      ]
+    },
+
+    "clasificacion_causa": {
+      "descripcion": "Código de clasificación de la causa del suceso según el Anexo III del RD 929/2020. Estructura jerárquica anidada en 3 niveles (n1, n2, n3).",
+      "columnas": [
+        {
+          "columna": "codigo_causa_n1",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "CAU01",
+            "CAU02",
+            "CAU03",
+            "CAU04",
+            "CAU05",
+            "CAU06",
+            "CAU07",
+            "CAU08"
+          ],
+          "requerido": true,
+          "descripcion": "Código de nivel 1 (categoría principal de la causa). Basado en Anexo III, Sección B del RD 929/2020.",
+          "codificacion": {
+            "CAU01": "Factor humano — personal ferroviario",
+            "CAU02": "Factor humano — usuarios / terceras personas",
+            "CAU03": "Factor técnico — material rodante",
+            "CAU04": "Factor técnico — infraestructura",
+            "CAU05": "Factor técnico — sistemas de señalización y control",
+            "CAU06": "Factor normativo / organizativo / de gestión",
+            "CAU07": "Factores externos (clima, desastres naturales, vandalismo, sabotaje)",
+            "CAU08": "Causa no determinada / en investigación"
+          },
+          "analisis": "Dimensión principal para análisis de causas raíz. Permite distribuir el riesgo entre factores humanos, técnicos y organizativos."
+        },
+        {
+          "columna": "codigo_causa_n2",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "CAU01.01",
+            "CAU01.02",
+            "CAU01.03",
+            "CAU01.04",
+            "CAU01.05",
+            "CAU01.06",
+            "CAU02.01",
+            "CAU02.02",
+            "CAU02.03",
+            "CAU02.04",
+            "CAU03.01",
+            "CAU03.02",
+            "CAU03.03",
+            "CAU03.04",
+            "CAU03.05",
+            "CAU04.01",
+            "CAU04.02",
+            "CAU04.03",
+            "CAU04.04",
+            "CAU04.05",
+            "CAU05.01",
+            "CAU05.02",
+            "CAU05.03",
+            "CAU05.04",
+            "CAU06.01",
+            "CAU06.02",
+            "CAU06.03",
+            "CAU06.04",
+            "CAU06.05",
+            "CAU07.01",
+            "CAU07.02",
+            "CAU07.03",
+            "CAU07.04",
+            "CAU07.05",
+            "CAU08.01",
+            "CAU08.02",
+            "CAU08.99"
+          ],
+          "requerido": false,
+          "descripcion": "Código de nivel 2 (subcategoría de la causa). Desglosa la categoría principal en causas específicas.",
+          "codificacion": {
+            "CAU01.01": "Error humano del maquinista (exceso de velocidad, no respetar señal, frenado incorrecto)",
+            "CAU01.02": "Error humano del personal de circulación / regulación",
+            "CAU01.03": "Error humano del personal de mantenimiento",
+            "CAU01.04": "Error humano del personal de estación / andén",
+            "CAU01.05": "Fatiga, distracción o condiciones psicofísicas del personal",
+            "CAU01.06": "Formación o competencia insuficiente del personal",
+
+            "CAU02.01": "Comportamiento imprudente del usuario en paso a nivel",
+            "CAU02.02": "Presencia indebida de persona en la vía (intrusión)",
+            "CAU02.03": "Suicidio",
+            "CAU02.04": "Comportamiento imprudente en andén o interior del tren",
+
+            "CAU03.01": "Fallo en ruedas / ejes",
+            "CAU03.02": "Fallo en sistema de frenos",
+            "CAU03.03": "Fallo en suspensión / bogie",
+            "CAU03.04": "Fallo en enganche / acoplamiento",
+            "CAU03.05": "Otros fallos del material rodante",
+
+            "CAU04.01": "Fallo/rotura de carril",
+            "CAU04.02": "Deformación de vía (desviación geométrica, pandeo)",
+            "CAU04.03": "Fallo en aparatos de vía (cambios, desvíos)",
+            "CAU04.04": "Fallo en catenaria / línea aérea de contacto",
+            "CAU04.05": "Otros fallos de infraestructura",
+
+            "CAU05.01": "Fallo en señalización lateral",
+            "CAU05.02": "Fallo en sistemas de protección del tren (ATP, ERTMS, ASFA)",
+            "CAU05.03": "Fallo en enclavamientos / sistemas de control de tráfico",
+            "CAU05.04": "Fallo en comunicaciones tren-tierra",
+
+            "CAU06.01": "Deficiencias en procedimientos operativos / normativa interna",
+            "CAU06.02": "Deficiencias en la gestión de la seguridad (SGS)",
+            "CAU06.03": "Presión comercial / productiva inadecuada",
+            "CAU06.04": "Falta o insuficiencia de mantenimiento programado",
+            "CAU06.05": "Deficiencias en la investigación previa de incidentes similares",
+
+            "CAU07.01": "Condiciones meteorológicas adversas (lluvia, nieve, hielo, viento)",
+            "CAU07.02": "Deslizamiento de tierra / inundación / desprendimiento",
+            "CAU07.03": "Vandalismo / sabotaje / terrorismo",
+            "CAU07.04": "Colisión con animal en la vía",
+            "CAU07.05": "Otras causas externas",
+
+            "CAU08.01": "Investigación en curso — causa pendiente de determinación",
+            "CAU08.02": "Causa no determinada tras investigación completa",
+            "CAU08.99": "Otra causa no clasificable"
+          },
+          "analisis": "Segundo nivel de profundidad causal. Esencial para diseñar planes de riesgo específicos (ej. si predominan CAU01.01, invertir en sistemas de protección automática como ERTMS)."
+        },
+        {
+          "columna": "codigo_causa_n3",
+          "tipo": "string",
+          "longitud_max": 20,
+          "requerido": false,
+          "descripcion": "Código de nivel 3 (detalle adicional opcional). Se reserva para codificaciones nacionales o ERA más específicas. Formato libre: ej. CAU03.01.01 (fallo específico en rodamiento).",
+          "analisis": "Máxima granularidad causal para análisis forenses detallados. Permite mantener compatibilidad con taxonomías nacionales."
+        },
+        {
+          "columna": "causa_descripcion_corta",
+          "tipo": "string",
+          "longitud_max": 300,
+          "requerido": false,
+          "descripcion": "Descripción breve de la(s) causa(s) determinada(s) en texto libre.",
+          "analisis": "Complemento cualitativo al código estructurado. Ayuda a entender el contexto de la clasificación."
+        }
+      ]
+    },
+
+    "victimas": {
+      "descripcion": "Recuento de víctimas humanas causadas por el suceso, desglosado por gravedad y tipo de afectado.",
+      "columnas": [
+        {
+          "columna": "fallecidos",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": true,
+          "descripcion": "Número total de personas fallecidas como consecuencia directa del suceso (incluye viajeros, personal ferroviario, usuarios de PN, peatones, etc.).",
+          "analisis": "Indicador de severidad principal. Clave para análisis de riesgo (fatalities/year, FWI — Fatalities and Weighted Injuries)."
+        },
+        {
+          "columna": "fallecidos_viajeros",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": false,
+          "descripcion": "Número de fallecidos que eran viajeros del tren.",
+          "analisis": "Segmentación del riesgo para pasajeros. Indicador de seguridad del transporte de viajeros."
+        },
+        {
+          "columna": "fallecidos_personal",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": false,
+          "descripcion": "Número de fallecidos que eran personal ferroviario (maquinistas, interventores, personal de mantenimiento).",
+          "analisis": "Riesgo laboral en el sector ferroviario."
+        },
+        {
+          "columna": "fallecidos_usuarios_pn",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": false,
+          "descripcion": "Número de fallecidos que eran usuarios de paso a nivel (peatones o conductores).",
+          "analisis": "Indicador específico para planes de seguridad en pasos a nivel."
+        },
+        {
+          "columna": "fallecidos_terceros",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": false,
+          "descripcion": "Número de fallecidos que eran terceras personas no incluidas en las categorías anteriores (intrusos, peatones en vía no autorizados).",
+          "analisis": "Segmentación de víctimas no vinculadas directamente al servicio ferroviario."
+        },
+        {
+          "columna": "heridos_graves",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": true,
+          "descripcion": "Número total de personas con heridas graves (hospitalización > 24h, fracturas, amputaciones, quemaduras graves, pérdida de visión/audición).",
+          "analisis": "Segundo indicador de severidad. Se combina con fallecidos para cálculos de weighted severity."
+        },
+        {
+          "columna": "heridos_leves",
+          "tipo": "integer",
+          "minimo": 0,
+          "requerido": true,
+          "descripcion": "Número total de personas con heridas leves (que no requieren hospitalización o requieren ≤ 24h).",
+          "analisis": "Indicador de impacto global del accidente. Ayuda a dimensionar la magnitud del suceso."
+        },
+        {
+          "columna": "danos_materiales_cuantia",
+          "tipo": "float",
+          "requerido": false,
+          "descripcion": "Valor estimado de los daños materiales (material rodante, infraestructura, terceros) en euros (EUR).",
+          "analisis": "Cuantificación del impacto económico. Útil para análisis coste-beneficio de medidas preventivas."
+        },
+        {
+          "columna": "danos_materiales_moneda",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "EUR",
+            "GBP",
+            "CHF",
+            "NOK",
+            "SEK",
+            "DKK",
+            "PLN",
+            "CZK",
+            "HUF",
+            "RON",
+            "otros"
+          ],
+          "requerido": false,
+          "descripcion": "Moneda en la que está expresada la cuantía de daños materiales.",
+          "analisis": "Permite normalizar a EUR para comparativas paneuropeas."
+        },
+        {
+          "columna": "trenes_implicados",
+          "tipo": "integer",
+          "minimo": 1,
+          "requerido": false,
+          "descripcion": "Número de trenes implicados directamente en el suceso.",
+          "analisis": "Dimensión adicional de severidad operacional (colisiones múltiples, reacciones en cadena)."
+        }
+      ]
+    },
+
+    "descripcion": {
+      "descripcion": "Campos de texto libre para descripción narrativa del suceso, conforme a los requisitos de la Directiva (UE) 2016/798 sobre investigación de accidentes (art. 20-22).",
+      "columnas": [
+        {
+          "columna": "resumen",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": true,
+          "descripcion": "Resumen detallado del suceso en 1-2 párrafos. Debe incluir: qué ocurrió, cuándo exactamente, dónde, qué trenes/implicados, y consecuencia inmediata.",
+          "analisis": "Fuente principal para análisis cualitativo y NLP (clasificación automática, extracción de entidades, clustering semántico)."
+        },
+        {
+          "columna": "contexto_operacional",
+          "tipo": "text",
+          "longitud_max": 3000,
+          "requerido": false,
+          "descripcion": "Descripción del contexto operacional en el momento del suceso: condiciones de tráfico, tipo de servicio, número de viajeros a bordo, condiciones meteorológicas, visibilidad, estado de la vía, obras en curso, etc.",
+          "analisis": "Proporciona el marco situacional. Ayuda a identificar factores contextuales que pueden haber contribuido (ej. lluvia intensa + curva cerrada)."
+        },
+        {
+          "columna": "historial_seguridad",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Referencia a sucesos similares previos en la misma línea, tramo, operador o bajo condiciones similares. Incluye referencias a IDs de accidentes previos si están en la base de datos.",
+          "analisis": "Permite identificar recurrencias y patrones históricos. Clave para análisis de tendencias y prevención proactiva."
+        },
+        {
+          "columna": "medidas_inmediatas",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Medidas inmediatas adoptadas tras el suceso: suspensión de circulación, restricciones de velocidad, inspecciones, retirada de material.",
+          "analisis": "Documentación de la respuesta inicial. Permite correlacionar gravedad con rapidez de respuesta."
+        },
+        {
+          "columna": "normativa_aplicable",
+          "tipo": "text",
+          "longitud_max": 1000,
+          "requerido": false,
+          "descripcion": "Referencias a la normativa específica aplicable en el momento del suceso (nacional y europea: Reglamentos ERA, especificaciones técnicas de interoperabilidad ETI, norma EN, etc.).",
+          "analisis": "Facilita el análisis de cumplimiento regulatorio y posibles desviaciones normativas."
+        }
+      ]
+    },
+
+    "analisis": {
+      "descripcion": "Análisis causal detallado tras la investigación del suceso. Se estructura siguiendo el modelo de causas múltiples y factores contribuyentes exigido por la Directiva (UE) 2016/798.",
+      "columnas": [
+        {
+          "columna": "causas_directas",
+          "tipo": "text",
+          "longitud_max": 3000,
+          "requerido": false,
+          "descripcion": "Descripción detallada de la(s) causa(s) directa(s) del suceso, es decir, el evento o acción inmediata que desencadenó el accidente. Debe referenciar los códigos CAU aplicables.",
+          "analisis": "Núcleo del análisis causal. Permite validar la asignación de códigos CAU y proporciona matices cualitativos."
+        },
+        {
+          "columna": "factores_contribuyentes",
+          "tipo": "text",
+          "longitud_max": 3000,
+          "requerido": false,
+          "descripcion": "Factores que, sin ser causa directa, contribuyeron al suceso o agravaron sus consecuencias: condiciones ambientales, fatiga, presión temporal, diseño inadecuado, falta de redundancia, etc.",
+          "analisis": "Identificación de causas latentes. Esencial para planes de riesgo sistémicos (no solo corregir la causa directa, sino eliminar condiciones facilitadoras)."
+        },
+        {
+          "columna": "factores_humanos",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Análisis detallado de factores humanos contribuyentes (códigos CAU01 y CAU02): fatiga, formación, procedimientos, carga de trabajo, comunicación, factores psicosociales, errores cognitivos.",
+          "analisis": "Permite diseñar programas de formación, gestión de fatiga y mejora de procedimientos."
+        },
+        {
+          "columna": "factores_tecnicos",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Análisis detallado de factores técnicos contribuyentes (códigos CAU03, CAU04, CAU05): diseño, fabricación, mantenimiento, envejecimiento de componentes, fallos de software/sistemas.",
+          "analisis": "Permite priorizar inversiones en renovación de activos, mejoras de diseño y planes de mantenimiento."
+        },
+        {
+          "columna": "factores_normativos",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Análisis detallado de factores normativos, organizativos o de gestión contribuyentes (código CAU06): cultura de seguridad, presión productiva, procedimientos inadecuados, supervisión, asignación de recursos.",
+          "analisis": "Identifica debilidades del Sistema de Gestión de Seguridad (SGS). Fundamental para recomendar cambios normativos u organizativos."
+        },
+        {
+          "columna": "factores_externos",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Análisis detallado de factores externos (código CAU07): condiciones meteorológicas extremas, fenómenos naturales, actos de vandalismo/sabotaje, interferencias de terceros.",
+          "analisis": "Ayuda a diseñar planes de contingencia frente a eventos externos (cambio climático, seguridad física)."
+        },
+        {
+          "columna": "recomendaciones_seguridad",
+          "tipo": "text",
+          "longitud_max": 3000,
+          "requerido": false,
+          "descripcion": "Recomendaciones de seguridad emitidas tras la investigación. Deben ser específicas, medibles y asignadas a responsables (operador, administrador de infraestructura, regulador nacional, ERA).",
+          "analisis": "Cierre del ciclo de seguridad: del accidente a la acción preventiva. Permite tracking de implementación de recomendaciones."
+        },
+        {
+          "columna": "estado_investigacion",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "pendiente",
+            "en_curso",
+            "completada",
+            "archivada_sin_conclusiones"
+          ],
+          "requerido": true,
+          "descripcion": "Estado actual de la investigación del suceso por parte del organismo investigador nacional (INSIA, BEI, SUF, etc.).",
+          "analisis": "Facilita la gestión del workflow de investigación. Permite filtrar registros con investigaciones incompletas."
+        },
+        {
+          "columna": "organismo_investigador",
+          "tipo": "string",
+          "longitud_max": 100,
+          "requerido": false,
+          "descripcion": "Nombre u organismo nacional de investigación de accidentes ferroviarios responsable del caso (ej. INSIA — España, BEI — Bélgica, SUF — Suecia, NSA correspondiente).",
+          "analisis": "Traza de responsabilidad institucional. Útil para análisis de eficacia investigadora entre países."
+        },
+        {
+          "columna": "informe_publico_url",
+          "tipo": "string",
+          "longitud_max": 500,
+          "requerido": false,
+          "descripcion": "URL del informe público de investigación (si está disponible y publicado por el organismo nacional o ERA).",
+          "analisis": "Enlace a la fuente primaria para verificación y consulta detallada."
+        },
+        {
+          "columna": "lecciones_aprendidas",
+          "tipo": "text",
+          "longitud_max": 3000,
+          "requerido": false,
+          "descripcion": "Lecciones aprendidas y difundidas al sector tras el suceso. Incluye referencias a boletines de seguridad, alertas ERA, o comunicados del operador/administrador.",
+          "analisis": "Indicador de madurez de la cultura de seguridad. Permite medir si el sector está aprendiendo de los incidentes."
+        },
+        {
+          "columna": "fecha_informe",
+          "tipo": "date",
+          "formato": "YYYY-MM-DD",
+          "requerido": false,
+          "descripcion": "Fecha de publicación del informe final de investigación.",
+          "analisis": "Métrica de duración del proceso investigador. Retrasos en la publicación pueden indicar problemas de capacidad o transparencia."
+        }
+      ]
+    },
+
+    "control_calidad": {
+      "descripcion": "Campos de metadatos para control de calidad, trazabilidad de la fuente y gestión de versiones del registro.",
+      "columnas": [
+        {
+          "columna": "fuente_datos",
+          "tipo": "enum",
+          "valores_permitidos": [
+            "informe_organismo_investigador",
+            "base_datos_era",
+            "prensa_oficial",
+            "datos_abiertos_gobierno",
+            "reporte_operador",
+            "extraccion_automatica_nlp",
+            "manual"
+          ],
+          "requerido": true,
+          "descripcion": "Origen de los datos de este registro. Trazabilidad de la fuente.",
+          "analisis": "Permite auditar la calidad y verificar la fiabilidad de cada registro."
+        },
+        {
+          "columna": "fecha_registro",
+          "tipo": "datetime",
+          "formato": "YYYY-MM-DDTHH:MM:SS",
+          "requerido": true,
+          "descripcion": "Fecha y hora en que el registro fue introducido en el sistema ERAVisor.",
+          "analisis": "Traza de auditoría temporal."
+        },
+        {
+          "columna": "fecha_ultima_modificacion",
+          "tipo": "datetime",
+          "formato": "YYYY-MM-DDTHH:MM:SS",
+          "requerido": false,
+          "descripcion": "Fecha y hora de la última modificación del registro.",
+          "analisis": "Control de versiones y actualización de datos."
+        },
+        {
+          "columna": "usuario_registro",
+          "tipo": "string",
+          "longitud_max": 100,
+          "requerido": false,
+          "descripcion": "Identificador del usuario o sistema que introdujo el registro.",
+          "analisis": "Responsabilidad y trazabilidad de la carga de datos."
+        },
+        {
+          "columna": "validado",
+          "tipo": "boolean",
+          "requerido": true,
+          "descripcion": "Indica si el registro ha sido validado por un experto (true) o está pendiente de validación (false).",
+          "analisis": "Filtro de calidad: permite excluir registros no validados de análisis críticos."
+        },
+        {
+          "columna": "notas_validacion",
+          "tipo": "text",
+          "longitud_max": 2000,
+          "requerido": false,
+          "descripcion": "Notas del validador sobre dudas, correcciones o discrepancias encontradas durante la validación del registro.",
+          "analisis": "Feedback para mejora continua del proceso de captura y clasificación."
+        }
+      ]
+    }
+
+  },
+
+  "notas_tecnicas": {
+    "formato_exportacion_excel": {
+      "hojas_recomendadas": [
+        "Accidentes — datos principales (todas las columnas)",
+        "Lookup_Sucesos — tabla de referencia para codificación de sucesos n1/n2/n3",
+        "Lookup_Causas — tabla de referencia para codificación de causas n1/n2/n3",
+        "Lookup_Paises — códigos ISO y nombres completos"
+      ],
+      "formato_celdas": {
+        "fecha": "AAAA-MM-DD",
+        "hora": "HH:MM",
+        "numeros_sin_decimales": "enteros para víctimas",
+        "decimales_con_punto": "para PK y coordenadas (ej. 142.500)",
+        "booleanos": "TRUE / FALSE",
+        "texto_largo": "ajuste de texto y alto de fila automático"
+      },
+      "validacion_datos": {
+        "fallecidos_heridos": "No pueden ser negativos. Si fallecidos_total != suma de desgloses, se debe aclarar en notas_validacion.",
+        "codigos_suceso": "Deben corresponder a la taxonomía del Anexo III del RD 929/2020.",
+        "codigos_causa": "Deben corresponder a la taxonomía del Anexo III del RD 929/2020.",
+        "fecha_hora": "La fecha no puede ser futura."
+      }
+    },
+    "alineacion_con_ERA": {
+      "nota": "Este esquema es compatible con la taxonomía ERA de notificación de accidentes (ERA Safety Database) y con los requisitos del Common Safety Method (CSM) para evaluación de riesgos. Se recomienda mapear los códigos n1/n2 con las categorías ERA para interoperabilidad paneuropea.",
+      "referencias": [
+        "Directiva (UE) 2016/798, artículos 20-24 (investigación de accidentes)",
+        "Reglamento de Ejecución (UE) 2019/780 (CSM para supervisión)",
+        "Reglamento Delegado (UE) 2018/762 (Sistema de Gestión de Seguridad)",
+        "Anexo III del RD 929/2020 (clasificación de sucesos y causas)"
+      ]
+    },
+    "analisis_cuantitativo_planes_riesgo": {
+      "preguntas_clave_respondibles": [
+        "¿Qué países tienen mayor tasa de accidentes por tipo de suceso?",
+        "¿Qué provincias/regiones concentran el mayor número de víctimas mortales?",
+        "¿Cuál es la evolución anual de descarrilamientos por causa técnica en líneas convencionales?",
+        "¿Qué operador presenta mayor siniestralidad en pasos a nivel?",
+        "¿Qué combinación de factores (humano + técnico) es más recurrente en colisiones frontales?",
+        "¿Los accidentes por factor normativo se correlacionan con falta de inversión en mantenimiento?",
+        "¿Qué recomendaciones de seguridad se han implementado y cuál ha sido su efectividad?",
+        "¿Existen patrones estacionales (ej. más descarrilamientos en verano por pandeo de vía)?"
+      ],
+      "metricas_derivables": [
+        "Tasa de accidentes por millón de tren-km",
+        "FWI (Fatalities and Weighted Injuries) anual",
+        "Severidad media por tipo de suceso",
+        "Ratio de recurrencia de misma causa en un operador/línea",
+        "Tiempo medio de investigación por país",
+        "% de recomendaciones implementadas vs. emitidas"
+      ]
+    }
+  }
+}

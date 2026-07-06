@@ -1,0 +1,607 @@
+﻿causa_codigo,causa_desc,estado_investigacion,fallecidos,fecha,fecha_procesamiento,fuente_datos,heridos_graves,heridos_leves,hora,id_accidente,informe_publico_url,linea,municipio,num_paginas,operador,organismo_investigador,pais,pk,provincia,resumen,suceso_codigo,suceso_desc,titulo_informe
+2.4,Sin identificar,Completado,0,2006-12-01,2026-07-06T13:13:28.239603,ERA,0,0,,ES-2006-42,https://www.era.europa.eu/system/files/2023-07/ID-011206-130407.pdf,Hortaleza Bifurca ción-Pitis,Fuencarr,7,,CIAF,ES,,,nº 54/2006 ocurrido el 01.12.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-011206-130407.pdf
+2.4,Sin identificar,Completado,0,2006-09-05,2026-07-06T13:13:28.343013,ERA,0,0,,ES-2006-26926,https://www.era.europa.eu/system/files/2023-07/ID-050906-020207.pdf,Santander-Pa,,6,Cercanías,CIAF,ES,,,nº 32/2006 ocurrido el 05.09.2006 SECRETARIA DE  ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-050906-020207.pdf
+2.4,Sin identificar,Completado,0,2006-10-05,2026-07-06T13:13:28.451043,ERA,0,0,07:30,ES-2006-54883,https://www.era.europa.eu/system/files/2023-07/ID-051006-020307.pdf,Barcel ona Sants,de E l Vendrell,6,Renfe,CIAF,ES,28+570,Tarragona,nº 35/2006 ocurrido el 05.10.2006 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-051006-020307.pdf
+2.4,Sin identificar,Completado,0,2006-04-07,2026-07-06T13:13:28.605468,ERA,0,0,00:38,ES-2006-15196,https://www.era.europa.eu/system/files/2023-07/ID-070406-020207.pdf,Madrid-Ali,Villena,6,Renfe,CIAF,ES,325+615,Alicante,nº 16/2006 ocurrido el 07.04.2006 SECRETARIA DE  ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-070406-020207.pdf
+2.4,Sin identificar,Completado,0,2006-10-07,2026-07-06T13:13:28.708119,ERA,0,0,05:34,ES-8304-1,https://www.era.europa.eu/system/files/2023-07/ID-071006-130407.pdf,Sant Vicen,,6,ADIF,CIAF,ES,,,nº 0048/2006 ocurrido el 07.10.2006 SECRETARIA DE  ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-071006-130407.pdf
+2.4,Sin identificar,Completado,0,2006-11-07,2026-07-06T13:13:28.816456,ERA,0,0,,ES-2006-101,https://www.era.europa.eu/system/files/2023-07/ID-071106-130407.pdf,Caminreal,de T eruel situada en P,6,Renfe,CIAF,ES,131+007,,nº 0045/2006 ocurrido el 07.11.2006 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-071106-130407.pdf
+2.4,Sin identificar,Completado,0,2006-10-08,2026-07-06T13:13:28.949546,ERA,0,0,10:40,ES-2006-101104,https://www.era.europa.eu/system/files/2023-07/ID-081006-020307.pdf,Madrid-Bar,,6,ferr,CIAF,ES,625+120,,nº 36/2006 ocurrido el 08.10.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-081006-020307.pdf
+2.4,Sin identificar,Completado,0,2006-06-09,2026-07-06T13:13:29.050103,ERA,0,0,17:00,ES-2006-1,https://www.era.europa.eu/system/files/2023-07/ID-090606-020207.pdf,Madri d-Valenci,San,6,ferr,CIAF,ES,,,nº 26/2006 ocurrido el 09.06.2006 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-090606-020207.pdf
+2.4,Sin identificar,Completado,0,2006-11-10,2026-07-06T13:13:29.229910,ERA,0,0,06:38,ES-2006-5,https://www.era.europa.eu/system/files/2023-07/ID-101106-180507-DGF.pdf,Barcelona,,10,ADIF,CIAF,ES,,,nº 46/2006 ocurrido el 10.11.2006 SECRETARIA DE  ESTADO,1.1,Colisión,ID-101106-180507-DGF.pdf
+2.4,Sin identificar,Completado,0,2006-11-11,2026-07-06T13:13:29.329299,ERA,0,0,,ES-2006-458,https://www.era.europa.eu/system/files/2023-07/ID-111106-130407.pdf,Cas tellbisball-Mollet,,6,es,CIAF,ES,,Barcelona,nº 47/2006 ocurrido el 11.11.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-111106-130407.pdf
+2.4,Sin identificar,Completado,0,2006-12-11,2026-07-06T13:13:29.435980,ERA,0,0,22:55,ES-2006-8259,https://www.era.europa.eu/system/files/2023-07/ID-111206-130407.pdf,Madrid,Vila nova i La Geltrú,6,Renfe,CIAF,ES,,,nº 0056/2006 ocurrido el 11.12.2006 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-111206-130407.pdf
+2.4,Sin identificar,Completado,0,2006-05-12,2026-07-06T13:13:29.537242,ERA,0,0,16:10,ES-2006-61,https://www.era.europa.eu/system/files/2023-07/ID-120506-020207.pdf,,Renedo se encuentra en el P,6,Renfe,CIAF,ES,494+004,,nº 20/2006 ocurrido el 12.05.2006 SECRETARIA DE  ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-120506-020207.pdf
+2.4,Sin identificar,Completado,0,2006-10-15,2026-07-06T13:13:29.642062,ERA,0,0,,ES-2006-8098,https://www.era.europa.eu/system/files/2023-07/ID-151006-020307-SALOU_Valencia%20to%20Barcelona.pdf,Valen cia-Tarragon,,6,Renfe,CIAF,ES,262+005,Tarragona,nº 0040/2006 ocurrido el 15.10.2006 SECRETARIA DE  ESTADO,1.4,Accidente en paso a nivel,ID-151006-020307-SALOU_Valencia to Barcelona.pdf
+2.4,Sin identificar,Completado,0,2006-10-15,2026-07-06T13:13:29.759623,ERA,0,0,,ES-2006-15695,https://www.era.europa.eu/system/files/2023-07/ID-151006-020307-STACRUZ.pdf,"Alcázar  de 
+San Juan-Cádiz","Santa Cruz de 
+Mudela",6,Renfe,CIAF,ES,,,nº 38/2006 ocurrido el 15.10.2006 SECRETARIA DE  ESTADO,2,Incidente,ID-151006-020307-STACRUZ.pdf
+2.4,Sin identificar,Completado,0,2006-10-15,2026-07-06T13:13:29.867012,ERA,0,0,06:56,ES-2006-18316,https://www.era.europa.eu/system/files/2023-07/ID-151006-150107-SFELIU_ES-24.pdf,Tarragona,,6,Renfe,CIAF,ES,88+090,,nº 37/2006 ocurrido el 15.10.2006 SECRETARIA DE  ESTADO,1.4.1.2,Accidente PN - Peatón,ID-151006-150107-SFELIU_ES-24.pdf
+2.4,Sin identificar,Completado,0,2006-11-15,2026-07-06T13:13:30.043875,ERA,0,0,06:00,ES-2006-169,https://www.era.europa.eu/system/files/2023-07/ID-151106-130407.pdf,Silla-Gandía,Cullera,7,Renfe,CIAF,ES,,Valencia,nº 0049/2006 ocurrido el 15.11.2006 SECRETARIA DE  ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-151106-130407.pdf
+2.4,Sin identificar,Completado,0,2006-05-16,2026-07-06T13:13:30.143985,ERA,0,0,,ES-2006-1501,https://www.era.europa.eu/system/files/2023-07/ID-160506-020307.pdf,Valencia-Tarragona,Vilarreal,6,Renfe,CIAF,ES,62+363,de Castell ón,nº 21/2006 ocurrido el 16.05.2006 SECRETARIA DE  ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-160506-020307.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2006-09-16,2026-07-06T13:13:30.301099,ERA,0,0,,ES-2006-5358,https://www.era.europa.eu/system/files/2023-07/ID-160906-020207.pdf,Lérida-Bar,,9,COVIS,CIAF,ES,,de Bar celona,nº 33/2006 ocurrido el 16.09.2006 SECRETARIA DE  ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-160906-020207.pdf
+2.4,Sin identificar,Completado,0,2006-05-17,2026-07-06T13:13:30.413720,ERA,0,0,,ES-2006-24925,https://www.era.europa.eu/system/files/2023-07/ID-170506-020207.pdf,Murci a Cargas,Lorca Sutuella,6,ferrovi,CIAF,ES,,de Murc ia,nº 22/2006 ocurrido el 17.05.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-170506-020207.pdf
+2.4,Sin identificar,Completado,0,2006-04-18,2026-07-06T13:13:30.508300,ERA,0,0,18:00,ES-2006-270,https://www.era.europa.eu/system/files/2023-07/ID-180406-020207.pdf,Madrid Atocha,ID,5,,CIAF,ES,,Madrid,nº 17/2006 ocurrido el 18.04.2006 SECRETARIA DE  ESTADO,2.1.4,Señal rebasada,ID-180406-020207.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2006-10-19,2026-07-06T13:13:30.632735,ERA,0,0,16:30,ES-2006-44010,https://www.era.europa.eu/system/files/2023-07/ID-191006-020307.pdf,,Briviesca,7,Renfe,CIAF,ES,420+623,,nº 39/2006 ocurrido el 19.10.2006 SECRETARIA DE  ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-191006-020307.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2006-04-21,2026-07-06T13:13:30.747093,ERA,0,0,14:30,ES-2006-78,https://www.era.europa.eu/system/files/2023-07/ID-210406-020307.pdf,Gijón Cer canías-Venta,,6,ADIF,CIAF,ES,,,nº 18/2006 ocurrido el 21.04.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-210406-020307.pdf
+2.4,Sin identificar,Completado,0,2006-11-13,2026-07-06T13:13:31.089030,ERA,0,0,,ES-2006-210806-131106-PLG (0,https://www.era.europa.eu/system/files/2023-07/ID-210806-131106-PLG%20%28003%29.pdf,,,29,,CIAF,ES,,,nº 30/2006 ocurrido el 21.08.06 SECRETARIA DE ESTADO,1.7.7,Otros,ID-210806-131106-PLG (003).pdf
+2.4,Sin identificar,Completado,0,2006-11-21,2026-07-06T13:13:31.185583,ERA,0,0,15:00,ES-2006-22,https://www.era.europa.eu/system/files/2023-07/ID-211106-020307.pdf,,,6,Renfe,CIAF,ES,77+093,la Selva de Camp del punto kilométr ico,nº 0050/2006 ocurrido el 21.11.2006 SECRETARIA DE  ESTADO,1.4,Accidente en paso a nivel,ID-211106-020307.pdf
+2.4,Sin identificar,Completado,0,2006-09-22,2026-07-06T13:13:31.258680,ERA,0,0,,ES-2006-2436,https://www.era.europa.eu/system/files/2023-07/ID-220906-020207.pdf,Zam ora-La,Meirama,6,ferr,CIAF,ES,,,nº 34/2006 ocurrido el 22.09.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-220906-020207.pdf
+2.4,Sin identificar,Completado,0,2006-06-23,2026-07-06T13:13:31.325390,ERA,0,0,,ES-2006-39262,https://www.era.europa.eu/system/files/2023-07/ID-230606-020207.pdf,Tarr agona-Bar,,5,ferroviaria,CIAF,ES,92+700,Barcelona,nº 27/2006 ocurrido el 23.06.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-230606-020207.pdf
+2.4,Sin identificar,Completado,0,2006-05-26,2026-07-06T13:13:31.404275,ERA,0,0,08:27,ES-2006-44,https://www.era.europa.eu/system/files/2023-07/ID-260506-020307.pdf,Tarrago na-Bar,,6,Renfe,CIAF,ES,88+090,,nº 23/2006 ocurrido el 26.05.2006 SECRETARIA DE  ESTADO,1.4,Accidente en paso a nivel,ID-260506-020307.pdf
+2.4,Sin identificar,Completado,0,2006-11-27,2026-07-06T13:13:31.482052,ERA,0,0,21:50,ES-2006-1194,https://www.era.europa.eu/system/files/2023-07/ID-271106-020307.pdf,Madrid At ocha-Valencia,,6,ferrov,CIAF,ES,,,nº 0051/2006 ocurrido el 27.11.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-271106-020307.pdf
+2.4,Sin identificar,Completado,0,2006-12-27,2026-07-06T13:13:31.566768,ERA,0,0,20:30,ES-2006-470110,https://www.era.europa.eu/system/files/2023-07/ID-271206-130407.pdf,Madrid-Hendaya,Villafría,7,Renfe,CIAF,ES,372+002,,nº 0058/2006 ocurrido el 27.12.2006 SECRETARIA DE  ESTADO,1.4,Accidente en paso a nivel,ID-271206-130407.pdf
+2.4,Sin identificar,Completado,0,2006-11-28,2026-07-06T13:13:31.654540,ERA,0,0,,ES-0017-2,https://www.era.europa.eu/system/files/2023-07/ID-281106-020307.pdf,Madrid At ocha-Valencia,,7,,CIAF,ES,,,nº 0052/2006 ocurrido el 28.11.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-281106-020307.pdf
+2.4,Sin identificar,Completado,0,2006-10-29,2026-07-06T13:13:31.723729,ERA,0,0,,ES-2006-4416,https://www.era.europa.eu/system/files/2023-07/ID-291006-020307.pdf,Xativa-Alcoy,Agres,5,ferr,CIAF,ES,,Alicante,nº 43/2006 ocurrido el 29.10.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-291006-020307.pdf
+2.4,Sin identificar,Completado,0,2006-06-30,2026-07-06T13:13:31.812920,ERA,0,0,,ES-2006-3,https://www.era.europa.eu/system/files/2023-07/ID-300606-020307.pdf,"Madrid-
+Hendaya",Vent a de Baños,7,,CIAF,ES,,Palencia,nº 28/2006 ocurrido el 30.06.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-300606-020307.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2006-11-30,2026-07-06T13:13:31.900786,ERA,0,0,,ES-2006-2,https://www.era.europa.eu/system/files/2023-07/ID-301106-130407.pdf,"Redon dela-
+Santiago",,6,afectado,CIAF,ES,,Pontevedra,nº 0053/2006 ocurrido el 30.11.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-301106-130407.pdf
+2.4,Sin identificar,Completado,0,2006-12-31,2026-07-06T13:13:31.987307,ERA,0,0,,ES-2006-4,https://www.era.europa.eu/system/files/2023-07/ID-311206-130407.pdf,Barcel ona,,6,ferr,CIAF,ES,171+039,,nº 59/2006 ocurrido el 31.12.2006 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-311206-130407.pdf
+2.4,Sin identificar,Completado,0,2007-02-01,2026-07-06T13:13:32.076360,ERA,0,0,,ES-2007-010207-200607-DGF,https://www.era.europa.eu/system/files/2023-07/ID-010207-200607-DGF.pdf,Madrid,de Beasaín,7,Renfe,CIAF,ES,581+060,,nº 06/2007 ocurrido el 01.02.2007 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-010207-200607-DGF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2007-03-01,2026-07-06T13:13:32.117066,ERA,0,0,,ES-2007-3,https://www.era.europa.eu/system/files/2023-07/ID-010307-140907-DGF.pdf,Bifurcación Córdoba El Higuerón a,Va,6,elaboraron,CIAF,ES,,Córdoba,nº 0018/2007 ocurrido el 01.03.2007 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-010307-140907-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-03-03,2026-07-06T13:13:32.194750,ERA,0,0,,ES-2007-13,https://www.era.europa.eu/system/files/2023-07/ID-030307-190707-DGF.pdf,Tudela V eguín-Lug,Viella,6,ADIF,CIAF,ES,7+755,,nº 0019/2007 ocurrido el 03.03.2007 SECRETARIA DE ESTADO,1.7.7,Otros,ID-030307-190707-DGF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2007-02-05,2026-07-06T13:13:32.294172,ERA,0,0,,ES-2007-050207-200607-DGF,https://www.era.europa.eu/system/files/2023-07/ID-050207-200607-DGF.pdf,León-La,,8,ADIF,CIAF,ES,,,nº 007/07 ocurrido el 5.02.2007 SECRETARIA DE  ESTADO,1.4,Accidente en paso a nivel,ID-050207-200607-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-02-06,2026-07-06T13:13:32.370366,ERA,0,0,,ES-2007-1091,https://www.era.europa.eu/system/files/2023-07/ID-060207-200607-DGF.pdf,La Encina,de C atarroja,6,ADIF,CIAF,ES,,,nº 08/2007 ocurrido el 06.02.2007 SECRETARIA DE ESTADO,1.7.7,Otros,ID-060207-200607-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-04-06,2026-07-06T13:13:32.446209,ERA,0,0,,ES-2007-21162,https://www.era.europa.eu/system/files/2023-07/ID-060407-190707-DGF.pdf,Madrid-Hendaya,Villal ba de Guadarrama,6,ferr,CIAF,ES,37+893,,nº 23/2007 ocurrido el 06.04.2007 SECRETARIA DE  ESTADO,1.7.7,Otros,ID-060407-190707-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-05-06,2026-07-06T13:13:32.530437,ERA,0,0,,ES-2007-8,https://www.era.europa.eu/system/files/2023-07/ID-060507-190707-DGF.pdf,Madr id-Barcelona,,7,ADIF,CIAF,ES,,,nº 28/07 ocurrido el 06.05.2007 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-060507-190707-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-02-07,2026-07-06T13:13:32.619577,ERA,0,0,,ES-2007-9,https://www.era.europa.eu/system/files/2023-07/ID-070207-200607-DGF.pdf,"Madrid 
+Atocha-Valencia",,7,,CIAF,ES,,,nº 0009/2007 ocurrido el 07.02.2007 SECRETARIA DE  ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-070207-200607-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-02-13,2026-07-06T13:13:32.696554,ERA,0,0,,ES-2007-1,https://www.era.europa.eu/system/files/2023-07/ID-130207-190707-DGF.pdf,La Encina-Alicante,,6,ADIF,CIAF,ES,394+075,,nº 10/2007 ocurrido el 13.02.2007 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-130207-190707-DGF.pdf
+2.2.1,Condiciones meteorológicas,Completado,0,2007-01-17,2026-07-06T13:13:32.804609,ERA,0,0,,ES-4615-5,https://www.era.europa.eu/system/files/2023-07/ID-170107-200607-DGF.pdf,Madri d-Barcel,"de 
+Sig",7,ADIF,CIAF,ES,,de Guadal ajara,nº 02/2007 ocurrido el 17.01.2007 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-170107-200607-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-01-18,2026-07-06T13:13:32.882797,ERA,0,0,00:00,ES-2007-447051,https://www.era.europa.eu/system/files/2023-07/ID-180107-200607-DGF.pdf,Tarragona,,6,elaboraron,CIAF,ES,88+090,Barcelona,nº 03/2007 ocurrido el 18.01.2007 SECRETARIA DE  ESTADO,1.4.1.2,Accidente PN - Peatón,ID-180107-200607-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-03-18,2026-07-06T13:13:32.955413,ERA,0,0,06:00,ES-2007-4,https://www.era.europa.eu/system/files/2023-07/ID-180307-200607-DGF.pdf,Madrid-Hendaya,Andoain,6,ferroviar,CIAF,ES,,,nº 0021/2007 ocurrido el 18.03.2007 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-180307-200607-DGF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2007-12-18,2026-07-06T13:13:33.008029,ERA,0,0,14:20,ES-2007-181207-230508-CIAF[1,https://www.era.europa.eu/system/files/2023-07/ID-181207-230508-CIAF%5B1%5D.pdf,Monforte de Lemos-Vigo,Louredo,9,pública,CIAF,ES,165+160,,nº 0062/2007 ocurrido el 18.12.2007 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-181207-230508-CIAF[1].pdf
+2.4,Sin identificar,Completado,0,2007-12-21,2026-07-06T13:13:33.062473,ERA,0,0,10:38,ES-2007-211207-290408-CIAF[1,https://www.era.europa.eu/system/files/2023-07/ID-211207-290408-CIAF%5B1%5D.pdf,Valencia-San,Salou,9,Renfe,CIAF,ES,263+600,Tarragona,nº 063/2007 ocurrido el 21.12.2007 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-211207-290408-CIAF[1].pdf
+2.4,Sin identificar,Completado,0,2007-01-01,2026-07-06T13:13:33.147700,ERA,0,0,,ES-2007-17551,https://www.era.europa.eu/system/files/2023-07/ID-230207-200607-DGF.pdf,,,7,elaboraron,CIAF,ES,,,nº 012/2007 ocurrido el 23.02.20 07 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-230207-200607-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-12-24,2026-07-06T13:13:33.201537,ERA,0,0,20:16,ES-2007-21763,https://www.era.europa.eu/system/files/2023-07/ID-241207-230508-CIAF%5B1%5D.pdf,Madrid- San,,9,Renfe,CIAF,ES,5+200,,nº 064/2007 ocurrido el 24.12.2007 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-241207-230508-CIAF[1].pdf
+2.4,Sin identificar,Completado,0,2007-02-27,2026-07-06T13:13:33.281953,ERA,0,0,22:05,ES-5997-1,https://www.era.europa.eu/system/files/2023-07/ID-270207-200607-DGF_14_Sant%20Vicen%C3%A7%20de%20Calders.pdf,Mad rid-Bar,Sant Vicen,7,elaboraron,CIAF,ES,,,nº 14/2007 ocurrido el 27.02.2007 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-270207-200607-DGF_14_Sant Vicenç de Calders.pdf
+2.4,Sin identificar,Completado,0,2007-01-01,2026-07-06T13:13:33.361407,ERA,0,0,,ES-2007-61,https://www.era.europa.eu/system/files/2023-07/ID-270207-200607-DGF_El%20Carri%C3%B3n.pdf,Santander,,6,elaboraron,CIAF,ES,,Palencia,nº 013/2007 ocurrido el 27.02.20 07 SECRETARIA DE ESTADO,1.7.7,Otros,ID-270207-200607-DGF_El Carrión.pdf
+2.4,Sin identificar,Completado,0,2007-02-28,2026-07-06T13:13:33.433567,ERA,0,0,05:12,ES-2007-280207-190707-DGF,https://www.era.europa.eu/system/files/2023-07/ID-280207-190707-DGF.pdf,,de T orredembarr a,6,elaboraron,CIAF,ES,13+550,,nº 20/2007 ocurrido el 28.02.2007 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-280207-190707-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-12-29,2026-07-06T13:13:33.485079,ERA,0,0,23:33,ES-2007-2,https://www.era.europa.eu/system/files/2023-07/ID-291207-290408-CIAF%5B1%5D.pdf,Intermodal Abando Ind,,9,Renfe,CIAF,ES,241+860,Vizcaya,nº 065/2007 ocurrido el 29.12.2007 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,ID-291207-290408-CIAF[1].pdf
+2.3.3,Usuario paso a nivel,Completado,0,2007-03-30,2026-07-06T13:13:33.527089,ERA,0,0,,ES-2007-300307-140907-DGF,https://www.era.europa.eu/system/files/2023-07/ID-300307-140907-DGF.pdf,Aranjuez,El,6,elaboraron,CIAF,ES,,Valencia,nº 0016/2007 ocurrido el 30.03.2007 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-300307-140907-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-04-30,2026-07-06T13:13:33.655399,ERA,0,0,22:06,ES-2007-300407-190707-DGF,https://www.era.europa.eu/system/files/2023-07/ID-300407-190707-DGF.pdf,Madrid,San  Sebastiá n,7,elaboraron,CIAF,ES,622+516,Guipúzcoa,nº 27/2007 ocurrido el 30.04.2007 SECRETARIA DE  ESTADO,1.5.1.2,Arrollamiento en estación,ID-300407-190707-DGF.pdf
+2.4,Sin identificar,Completado,0,2007-04-04,2026-07-06T13:13:33.761873,ERA,0,0,,ES-2007-24,https://www.era.europa.eu/system/files/2023-07/ID_040407_140907.pdf,Venta de Baños a Gijón,El Caleyo,7,pública,CIAF,ES,,Oviedo,nº 17/2007 ocurrido el 04.04.2007,1.5.1.2,Arrollamiento en estación,ID_040407_140907.pdf
+2.4,Sin identificar,Completado,0,2007-04-05,2026-07-06T13:13:33.841733,ERA,0,0,08:54,ES-2007-25373,https://www.era.europa.eu/system/files/2023-07/ID_050407_140907.pdf,Barcelona,de La Garriga  provincia de Barcelona,6,Renfe,CIAF,ES,37+492,Barcelona,nº22/2007 ocurr ido el 05.04.2007,1.4.1.1,Accidente PN - Vehículo,ID_050407_140907.pdf
+2.4,Sin identificar,Completado,0,2007-05-07,2026-07-06T13:13:33.941804,ERA,0,0,19:20,ES-2007-ID_070507_191007,https://www.era.europa.eu/system/files/2023-07/ID_070507_191007.pdf,Madrid Puerta de Atocha,Algemesí,7,pública,CIAF,ES,81+454,Valencia,nº 29/2007 ocurrido el 07.05.2007,1.4.1.1,Accidente PN - Vehículo,ID_070507_191007.pdf
+2.4,Sin identificar,Completado,0,2007-06-07,2026-07-06T13:13:34.024212,ERA,0,0,,ES-2007-ID_070607_191007,https://www.era.europa.eu/system/files/2023-07/ID_070607_191007.pdf,Valencia Nord,Vila,6,pública,CIAF,ES,,Castellón,nº 0036/2007 ocurrido el 07.06.2007,1.5.1.2,Arrollamiento en estación,ID_070607_191007.pdf
+2.4,Sin identificar,Completado,0,2007-07-08,2026-07-06T13:13:34.100278,ERA,0,0,,ES-2007-ID_080707_191007-2_B,https://www.era.europa.eu/system/files/2023-07/ID_080707_191007-2_Barcelona-Sagrera_Ma%C3%A7anet-Massanes.pdf,Barcelona,Arenys de Mar,6,pública,CIAF,ES,,Barcelona,nº 0040/2007 ocurrido el 08.07.2007,1.5.1.2,Arrollamiento en estación,ID_080707_191007-2_Barcelona-Sagrera_Maçanet-Massanes.pdf
+2.4,Sin identificar,Completado,0,2007-07-08,2026-07-06T13:13:34.178344,ERA,0,0,,ES-2007-ID_080707_191007_Bet,https://www.era.europa.eu/system/files/2023-07/ID_080707_191007_Betanzos%E2%80%93Infesta%20a%20Ferrol%2C.pdf,Betanzos,Neda,6,pública,CIAF,ES,,,nº 0039/2007 ocurrido el 08.07.2007,1.5.1.2,Arrollamiento en estación,"ID_080707_191007_Betanzos–Infesta a Ferrol,.pdf"
+2.4,Sin identificar,Completado,0,2007-08-09,2026-07-06T13:13:34.282021,ERA,0,0,,ES-2007-ID_090807_260208,https://www.era.europa.eu/system/files/2023-07/ID_090807_260208.pdf,Soto de Rey a El,Sama,8,pública,CIAF,ES,19,Asturias dentro de,nº 42/2007 ocurrido el 09.08.2007,1.4,Accidente en paso a nivel,ID_090807_260208.pdf
+2.4,Sin identificar,Completado,0,2007-05-12,2026-07-06T13:13:34.363751,ERA,0,0,,ES-2007-77,https://www.era.europa.eu/system/files/2023-07/ID_120507_140907.pdf,Santander,,7,Renfe,CIAF,ES,508+180,,nº 030/2007 ocurrido el 12.05.2007,1.5.1.1,Arrollamiento en plena vía,ID_120507_140907.pdf
+2.4,Sin identificar,Completado,0,2007-04-13,2026-07-06T13:13:34.465056,ERA,0,0,,ES-2007-ID_130407_190707,https://www.era.europa.eu/system/files/2023-07/ID_130407_190707.pdf,Madrid,Pinar,7,pública,CIAF,ES,18+200,Madrid,nº 0024/2007 ocurrido el 1 3.04.2007,1.5.1.2,Arrollamiento en estación,ID_130407_190707.pdf
+2.4,Sin identificar,Completado,0,2007-06-13,2026-07-06T13:13:34.540859,ERA,0,0,03:35,ES-2007-ID_130607_191007,https://www.era.europa.eu/system/files/2023-07/ID_130607_191007.pdf,Madrid,,6,pública,CIAF,ES,,Tarragona,nº 0037/2007 ocurrido el 13.06.2007,1.5.1.1,Arrollamiento en plena vía,ID_130607_191007.pdf
+2.4,Sin identificar,Completado,0,2007-05-16,2026-07-06T13:13:34.616723,ERA,0,0,,ES-2007-ID_160507_300108,https://www.era.europa.eu/system/files/2023-07/ID_160507_300108.pdf,"Madrid 
+Barcelona",,6,pública,CIAF,ES,,,nº 0032/2007 ocurrido el 16.05.2007,1.5.1.1,Arrollamiento en plena vía,ID_160507_300108.pdf
+2.4,Sin identificar,Completado,0,2007-01-01,2026-07-06T13:13:34.624444,ERA,0,0,,ES-2007-ID_230507_140907,https://www.era.europa.eu/system/files/2023-07/ID_230507_140907.pdf,,,7,,CIAF,ES,,,,1.7.7,Otros,ID_230507_140907.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2007-07-23,2026-07-06T13:13:34.703434,ERA,0,0,,ES-2007-ID_230707_300108,https://www.era.europa.eu/system/files/2023-07/ID_230707_300108.pdf,Lleida,Bell,6,pública,CIAF,ES,196+070,,nº 041/2007 ocurrido el 23.07.2007,1.5.1.2,Arrollamiento en estación,ID_230707_300108.pdf
+2.4,Sin identificar,Completado,0,2007-06-24,2026-07-06T13:13:34.778233,ERA,0,0,,ES-2007-ID_240607_300108,https://www.era.europa.eu/system/files/2023-07/ID_240607_300108.pdf,Valencia Nord,Vinaroz PK,6,pública,CIAF,ES,146+805,,nº 38/2007 ocurrido el 24.06 .2007,1.5.1.2,Arrollamiento en estación,ID_240607_300108.pdf
+2.4,Sin identificar,Completado,0,2007-04-25,2026-07-06T13:13:35.109275,ERA,0,0,,ES-2007-2424,https://www.era.europa.eu/system/files/2023-07/ID_250407_171207.pdf,Redondela,,23,Renfe,CIAF,ES,66+722,,nº 025/2007 ocurrido el 25.04.2007,1.4.1.1,Accidente PN - Vehículo,ID_250407_171207.pdf
+2.4,Sin identificar,Completado,0,2007-05-25,2026-07-06T13:13:35.190084,ERA,0,0,,ES-2007-ID_250507_140907,https://www.era.europa.eu/system/files/2023-07/ID_250507_140907.pdf,Valencia,,6,Renfe,CIAF,ES,244+350,Tarragona,nº 34/07 ocurrido el 25.05.2007,1.5.1.1,Arrollamiento en plena vía,ID_250507_140907.pdf
+2.4,Sin identificar,Completado,0,2007-08-27,2026-07-06T13:13:35.286727,ERA,0,0,09:47,ES-2007-ID_270807_300108,https://www.era.europa.eu/system/files/2023-07/ID_270807_300108.pdf,,Murcia,6,pública,CIAF,ES,467,,nº 44/2007 ocurrido  el 27.08 .2007,1.4,Accidente en paso a nivel,ID_270807_300108.pdf
+2.4,Sin identificar,Completado,0,2007-04-30,2026-07-06T13:13:35.379305,ERA,0,0,14:39,ES-2007-ID_300407_190907_Toc,https://www.era.europa.eu/system/files/2023-07/ID_300407_190907_Toc%C3%B3n%20-%20Montefr%C3%ADo.pdf,Granada,Tocón,7,pública,CIAF,ES,,,nº 26/2007 ocurrido el 30.04.2007,1.5.1.2,Arrollamiento en estación,ID_300407_190907_Tocón - Montefrío.pdf
+2.4,Sin identificar,Completado,0,2008-02-05,2026-07-06T13:13:35.429199,ERA,0,0,17:00,ES-2008-224,https://www.era.europa.eu/system/files/2023-07/ID-050208-240608-CIAF.pdf,Madrid-Valencia,San,9,pública,CIAF,ES,13+100,,nº 0023/2008 ocurrido el 05.02.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-050208-240608-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-01-06,2026-07-06T13:13:35.484050,ERA,0,0,16:25,ES-2008-27231,https://www.era.europa.eu/system/files/2023-07/ID-060108-240608-CIAF.pdf,Madrid-Hendaya,Pitis,9,Renfe,CIAF,ES,20+100,,nº 0022/2008 ocurrido el 06.01.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-060108-240608-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-03-14,2026-07-06T13:13:35.545130,ERA,0,0,19:54,ES-2008-2,https://www.era.europa.eu/system/files/2023-07/ID-140308-240608-CIAF.pdf,Barcelona-Cerbere,en el P,10,Renfe,CIAF,ES,148+000,,nº 0004/2008 ocurrido el 14.03.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,ID-140308-240608-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-02-22,2026-07-06T13:13:35.598575,ERA,0,0,20:00,ES-2008-220208-230508-CIAF,https://www.era.europa.eu/system/files/2023-07/ID-220208-230508-CIAF.pdf,Casetas-Interm,Amurrio,9,Renfe,CIAF,ES,218+654,,nº 0003/2008 ocurrido el 22.02.2008 SECRETARIA DE ESTADO,1.1,Colisión,ID-220208-230508-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2008-01-26,2026-07-06T13:13:35.651704,ERA,0,0,18:27,ES-2008-12608,https://www.era.europa.eu/system/files/2023-07/ID-260108-240608-CIAF.pdf,La Coruña-León,"de A 
+Rúa Petín",9,Renfe,CIAF,ES,,,nº 0002/2008 ocurrido el 26.01.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,ID-260108-240608-CIAF.pdf
+2.4,Sin identificar,Completado,3,2008-09-01,2026-07-06T13:13:35.738664,ERA,0,0,17:12,ES-2008-010908-310309-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-010908-310309-CIAF.pdf,,"DUEÑAS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",15,Renfe,CIAF,ES,,,nº 0038/2008 ocurrido el 01.09.2008 SECRETARIA DE ESTADO,1.1,Colisión,IF-010908-310309-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-10-02,2026-07-06T13:13:35.793392,ERA,0,0,18:12,ES-2008-021008-281108-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-021008-281108-CIAF.pdf,León,de Cistierna con destino León,9,FEVE,CIAF,ES,53+725,,nº 0046/2008 ocurrido el 02.10.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-021008-281108-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-11-02,2026-07-06T13:13:35.852344,ERA,0,0,22:10,ES-2008-475,https://www.era.europa.eu/system/files/2023-07/IF-021108-240209-CIAF.pdf,Tarragona-Barcelona,,10,Renfe,CIAF,ES,170+925,,nº 0056/2008 ocurrido el 02.11.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-021108-240209-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2008-06-03,2026-07-06T13:13:35.918942,ERA,0,0,19:57,ES-2008-030608-2-300908-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-030608-2-300908-CIAF_y%20Lora%20del%20R%C3%ADo.pdf,Alcázar de San Juan-Cádiz,El,10,Renfe,CIAF,ES,511+635,,nº 0021/2008 ocurrido el 03.06.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-030608-2-300908-CIAF_y Lora del Río.pdf
+2.4,Sin identificar,Completado,0,2008-06-03,2026-07-06T13:13:35.979642,ERA,0,0,12:39,ES-2008-440138,https://www.era.europa.eu/system/files/2023-07/IF-030608-300908-CIAF_Barcelona-Cerbere.pdf,Barcelona- Cerbere,Fi gueres,10,Renfe,CIAF,ES,247+215,,nº 0020/2008 ocurrido el 03.06.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-030608-300908-CIAF_Barcelona-Cerbere.pdf
+2.1.1,Usuario ferroviario - Viajero,Completado,0,2008-11-03,2026-07-06T13:13:36.033527,ERA,0,0,20:29,ES-2008-15818,https://www.era.europa.eu/system/files/2023-07/IF-031108-240209-CIAF.pdf,Portbou Cerbere-Barcelona,Cardedeu,9,Renfe,CIAF,ES,143+105,,nº 0057/2008 ocurrido el 03.11.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-031108-240209-CIAF.pdf
+2.4,Sin identificar,Completado,3,2008-07-04,2026-07-06T13:13:36.128151,ERA,0,0,21:59,ES-2008-040708-190509-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-040708-190509-CIAF.pdf,,"SANT CELONI 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",14,,CIAF,ES,,,nº 0040/2008 ocurrido el 04.07.2008 SECRETARIA DE ESTADO,2,Incidente,IF-040708-190509-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-07-05,2026-07-06T13:13:36.188505,ERA,0,0,11:56,ES-2008-309,https://www.era.europa.eu/system/files/2023-07/IF-050708-181208-CIAF.pdf,,Medina del Campo donde no tenía prescrita parada,10,pública,CIAF,ES,206+300,,nº 0029/2008 ocurrido el 05.07.2008 SECRETARIA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-050708-181208-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2008-05-06,2026-07-06T13:13:36.278645,ERA,0,0,19:20,ES-2008-060508-181208-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-060508-181208-CIAF.pdf,,Fabara,11,Re,CIAF,ES,,,nº 0012/2008 ocurrido el 06.05.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-060508-181208-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-11-08,2026-07-06T13:13:36.330823,ERA,0,0,14:51,ES-2008-440117,https://www.era.europa.eu/system/files/2023-07/IF-081108-240209-CIAF.pdf,Casetas-Intermodal,Tudela de Navarra,9,Renfe,CIAF,ES,77+050,,nº 0059/2008 ocurrido el 08.11.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-081108-240209-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2008-05-09,2026-07-06T13:13:36.391233,ERA,0,0,22:40,ES-2008-090508-300908-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-090508-300908-CIAF.pdf,Madrid-Barcelona,,10,pública,CIAF,ES,214+220,"del municipio la 
+necesidad de dotar al paso",nº 0013/2008 ocurrido el 09.05.2008 SECRETARIA DE ESTADO,1.1.1,Colisión frontal,IF-090508-300908-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2008-11-09,2026-07-06T13:13:36.448751,ERA,0,0,09:52,ES-2008-470041,https://www.era.europa.eu/system/files/2023-07/IF-091108-240209-CIAF.pdf,Manzanares-Ciudad,,10,Renfe,CIAF,ES,226+669,,nº 0060/2008 ocurrido el 09.11.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-091108-240209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-01-10,2026-07-06T13:13:36.514335,ERA,0,0,15:26,ES-2008-57361,https://www.era.europa.eu/system/files/2023-07/IF-100108-300908-CIAF.pdf,Alcázar de San Juan-Cádiz,"Alcolea 
+de Córdoba",11,Renfe,CIAF,ES,429+825,Alcolea de Córdoba,nº 0001/2008 ocurrido el 10.01.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-100108-300908-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-09-10,2026-07-06T13:13:36.574326,ERA,0,0,15:14,ES-2008-100908-200109-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-100908-200109-CIAF.pdf,Valencia-San,Villarreal,10,Comsa,CIAF,ES,62+095,,nº 0041/2008 ocurrido el 10.09.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-100908-200109-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-11-10,2026-07-06T13:13:36.633454,ERA,0,0,09:30,ES-2008-101108-240209-CIAF_E,https://www.era.europa.eu/system/files/2023-07/IF-101108-240209-CIAF_ES-607.pdf,Vigo,Mon,10,Renfe,CIAF,ES,2+455,,nº 0061/2008 ocurrido el 10.11.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-101108-240209-CIAF_ES-607.pdf
+2.4,Sin identificar,Completado,3,2008-11-10,2026-07-06T13:13:36.721833,ERA,0,0,15:05,ES-2008-4918,https://www.era.europa.eu/system/files/2023-07/IF-101108-310309-CIAF_ES-651.pdf,,Laviana,12,Feve,CIAF,ES,40+996,,nº 0062/2008 ocurrido el 10.11.2008 SECRETARIA DE ESTADO,1.1,Colisión,IF-101108-310309-CIAF_ES-651.pdf
+2.4,Sin identificar,Completado,0,2008-05-11,2026-07-06T13:13:36.772048,ERA,0,0,17:53,ES-2008-110508-281108-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-110508-281108-CIAF.pdf,Madrid-Chamartín,Nord,9,Renfe,CIAF,ES,202+400,,nº 0039/2008 ocurrido el 11.05.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-110508-281108-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-09-12,2026-07-06T13:13:36.832345,ERA,0,0,19:49,ES-2008-25173,https://www.era.europa.eu/system/files/2023-07/IF-120908-200109-CIAF.pdf,,"Martorell 
+en el P",10,Renfe,CIAF,ES,73+130,,nº 0042/2008 ocurrido el 12.09.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-120908-200109-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-01-01,2026-07-06T13:13:36.975678,ERA,0,0,13:15,ES-2008-2,https://www.era.europa.eu/system/files/2023-07/IF-121008-240209-CIAF.pdf,Ferrol-Gijón,Pravia,12,Feve,CIAF,ES,0+287,Pravia,"De acuerdo al R.D. 810/2007 del 22 de junio, en su Título III,",1.5.1.2,Arrollamiento en estación,IF-121008-240209-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2008-05-13,2026-07-06T13:13:37.040711,ERA,0,0,12:07,ES-2008-130508-281008-CIAF_E,https://www.era.europa.eu/system/files/2023-07/IF-130508-281008-CIAF_ES-547.pdf,"Madrid Hendaya 
+situado entre el",de Tolosa,10,Renfe,CIAF,ES,594+380,,nº 0014/2008 ocurrido el 13.05.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-130508-281008-CIAF_ES-547.pdf
+2.4,Sin identificar,Completado,0,2008-05-13,2026-07-06T13:13:37.098321,ERA,0,0,16:35,ES-2008-401,https://www.era.europa.eu/system/files/2023-07/IF-130508-300908-CIAF_ES-548.pdf,Madrid,,10,Renfe,CIAF,ES,615+100,,nº 0015/2008 ocurrido el 13.05.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-130508-300908-CIAF_ES-548.pdf
+2.4,Sin identificar,Completado,0,2008-10-13,2026-07-06T13:13:37.151501,ERA,0,0,12:19,ES-2008-3,https://www.era.europa.eu/system/files/2023-07/IF-131008-240209-CIAF.pdf,Madrid,La Encina,9,Renfe,CIAF,ES,375+740,,nº 0049/2008 ocurrido el 13.10.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-131008-240209-CIAF.pdf
+2.4,Sin identificar,Completado,3,2008-12-13,2026-07-06T13:13:37.218356,ERA,0,0,09:45,ES-2008-93161,https://www.era.europa.eu/system/files/2023-07/IF-131208-210409-CIAF_ES-672.pdf,,Vitoria,11,Renfe,CIAF,ES,494+315,,nº 0072/2008 ocurrido el 13.12.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-131208-210409-CIAF_ES-672.pdf
+2.4,Sin identificar,Completado,3,2008-12-13,2026-07-06T13:13:37.319175,ERA,0,0,07:41,ES-2008-131208-310309-CIAF_E,https://www.era.europa.eu/system/files/2023-07/IF-131208-310309-CIAF_ES-671.pdf,,"CALELLA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",12,Renfe,CIAF,ES,48+524,,nº 0071/2008 ocurrido el 13.12.2008 SECRETARIA DE ESTADO,1.4,Accidente en paso a nivel,IF-131208-310309-CIAF_ES-671.pdf
+2.4,Sin identificar,Completado,0,2008-05-14,2026-07-06T13:13:37.379458,ERA,0,0,10:44,ES-2008-140508-220708-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-140508-220708-CIAF.pdf,La Coruña-León,Dehesas,10,Iberovías,CIAF,ES,263+500,,nº 016/2008 ocurrido el 14.05.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-140508-220708-CIAF.pdf
+2.4,Sin identificar,Completado,3,2008-10-14,2026-07-06T13:13:37.449835,ERA,0,0,14:46,ES-2008-141008-210409-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-141008-210409-CIAF.pdf,,"LEGANÉS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",13,Renfe,CIAF,ES,13+171,,nº 0070/2008 ocurrido el 14.10.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-141008-210409-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-10-15,2026-07-06T13:13:37.507703,ERA,0,0,07:31,ES-2008-151008-240209-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-151008-240209-CIAF.pdf,Venta de Baños,,10,Renfe,CIAF,ES,134+396,,nº 0050/2008 ocurrido el 15.10.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-151008-240209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-04-16,2026-07-06T13:13:37.574441,ERA,0,0,14:48,ES-2008-28934,https://www.era.europa.eu/system/files/2023-07/IF-160408-300908-CIAF.pdf,Barcelona,en el P,11,Renfe,CIAF,ES,88+906,,nº 0009/2008 ocurrido el 16.04.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-160408-300908-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-07-16,2026-07-06T13:13:37.627567,ERA,0,0,12:17,ES-2008-160708-281108-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-160708-281108-CIAF.pdf,"Madrid 
+Chamartín",Nord,9,Renfe,CIAF,ES,108+898,,nº 0030/2008 ocurrido el 16.07.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-160708-281108-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-10-18,2026-07-06T13:13:37.689050,ERA,0,0,08:06,ES-2008-181008-240209-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-181008-240209-CIAF.pdf,Barcelona-Portbou,Figueres,10,Renfe,CIAF,ES,247+215,,nº 0051/2008 ocurrido el 18.10.2008 SECRETARIA DE ESTADO,1.4,Accidente en paso a nivel,IF-181008-240209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-10-20,2026-07-06T13:13:37.743163,ERA,0,0,12:36,ES-2008-201008-240209-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-201008-240209-CIAF.pdf,"Madrid Chamartín-
+Barcelona",Santa María de Huerta,9,Renfe,CIAF,ES,191+876,,nº 0052/2008 ocurrido el 20.10.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-201008-240209-CIAF.pdf
+2.4,Sin identificar,Completado,3,2008-12-20,2026-07-06T13:13:37.826594,ERA,0,0,05:21,ES-2008-80454,https://www.era.europa.eu/system/files/2023-07/IF-201208-210409-CIAF.pdf,,"SALOU 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",14,Renfe,CIAF,ES,,,nº 0074/2008 ocurrido el 20.12.2008 SECRETARIA DE ESTADO,1.4,Accidente en paso a nivel,IF-201208-210409-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-03-21,2026-07-06T13:13:37.894622,ERA,0,0,14:53,ES-2008-25683,https://www.era.europa.eu/system/files/2023-07/IF-210308-220708-CIAF.pdf,Barcelona-Massanes,"Badalona 
+inspecciona el frontal del automotor sin observar ninguna anomalía",10,Renfe,CIAF,ES,3+286,,nº 0006/2008 ocurrido el 21.03.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-210308-220708-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-04-22,2026-07-06T13:13:37.944726,ERA,0,0,14:03,ES-2008-58665,https://www.era.europa.eu/system/files/2023-07/IF-220408-220708-CIAF.pdf,Intermodal Abando Indalecio Prie to-Santurtzi,Zorrotza,9,Renfe,CIAF,ES,5+348,,nº 0010/2008 ocurrido el 22.04.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-220408-220708-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-06-22,2026-07-06T13:13:37.998109,ERA,0,0,05:25,ES-2008-11930,https://www.era.europa.eu/system/files/2023-07/IF-220608-240209-CIAF.pdf,Madrid-Barcelona,,9,pública,CIAF,ES,149+950,,nº 0024/2008 ocurrido el 22.06.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-220608-240209-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2008-11-22,2026-07-06T13:13:38.055728,ERA,0,0,20:34,ES-2008-17011,https://www.era.europa.eu/system/files/2023-07/IF-221108-2-240209-CIAF-%20Alcal%C3%A1%20de%20Henares.pdf,Madrid- Barcelona,Alcalá de Henares,10,Renfe,CIAF,ES,,,nº 0064/2008 ocurrido el 22.11.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-221108-2-240209-CIAF- Alcalá de Henares.pdf
+2.4,Sin identificar,Completado,0,2008-11-22,2026-07-06T13:13:38.109762,ERA,0,0,15:00,ES-2008-221108-240209-CIAF_S,https://www.era.europa.eu/system/files/2023-07/IF-221108-240209-CIAF_Salamanca%20%E2%80%93%20%C3%81vila.pdf,Salamanca,Babilafuente,9,Renfe,CIAF,ES,104+857,,nº 0063/2008 ocurrido el 22.11.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-221108-240209-CIAF_Salamanca – Ávila.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,3,2008-10-23,2026-07-06T13:13:38.181662,ERA,0,0,12:29,ES-2008-87018,https://www.era.europa.eu/system/files/2023-07/IF-231008-140709-CIAF.pdf,,"VILLALBA DE GUADARRAMA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",11,COMSA,CIAF,ES,,,nº 0053/2008 ocurrido el 23.10.2008 SUBSECRETARÍA  A MINISTERIO DE,2.1.4,Señal rebasada,IF-231008-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-05-24,2026-07-06T13:13:38.236943,ERA,0,0,19:52,ES-2008-13049,https://www.era.europa.eu/system/files/2023-07/IF-240508-2-300908-CIAF_Majarabique%20Estaci%C3%B3n-Huelva%20T%C3%A9rmino.pdf,Majarabique Estación-Huelva,Aznalcázar Pilas,9,Renfe,CIAF,ES,24+900,,nº 0019/2008 ocurrido el 24.05.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-240508-2-300908-CIAF_Majarabique Estación-Huelva Término.pdf
+2.4,Sin identificar,Completado,0,2008-05-24,2026-07-06T13:13:38.293889,ERA,0,0,16:48,ES-2008-1183,https://www.era.europa.eu/system/files/2023-07/IF-240508-300908-CIAF_La%20Encina-Alicante.pdf,La Encina-Alicante,de Villena,9,Renfe,CIAF,ES,396+675,,nº 0017/2008 ocurrido el 24.05.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-240508-300908-CIAF_La Encina-Alicante.pdf
+2.4,Sin identificar,Completado,0,2008-06-24,2026-07-06T13:13:38.352930,ERA,0,0,13:36,ES-2008-240608-281108-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-240608-281108-CIAF.pdf,Barcelona Sagrer a a Ma,,10,pública,CIAF,ES,26+100,,nº 0026/2008 ocurrido el 24.06.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-240608-281108-CIAF.pdf
+1.2.1.1,Fallo técnico - Rodadura,Completado,3,2008-10-24,2026-07-06T13:13:38.470513,ERA,0,0,06:28,ES-2008-241008-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-241008-140709-CIAF.pdf,,"MONCÓFAR 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",16,Renfe,CIAF,ES,,,nº 0054/2008 ocurrido el 24.10.2008 SUBSECRETARÍA  A MINISTERIO DE,1.3.2,Descarrilamiento en estación,IF-241008-140709-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,3,2008-09-25,2026-07-06T13:13:38.555015,ERA,0,0,16:40,ES-2008-250908-190509-CIAF_B,https://www.era.europa.eu/system/files/2023-07/IF-250908-190509-CIAF_Balmaseda%20Mercanc%C3%ADas.pdf,,"BALMASEDA MERCANCÍAS 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",14,,CIAF,ES,,,nº 0044/2008 ocurrido el 25.09.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-250908-190509-CIAF_Balmaseda Mercancías.pdf
+2.4,Sin identificar,Completado,0,2008-09-25,2026-07-06T13:13:38.611377,ERA,0,0,13:21,ES-2008-250908-200109-CIAF_G,https://www.era.europa.eu/system/files/2023-07/IF-250908-200109-CIAF_Granada-%20Fuente%20de%20Piedra.pdf,,,9,Renfe,CIAF,ES,14+250,,nº 0043/2008 ocurrido el 25.09.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-250908-200109-CIAF_Granada- Fuente de Piedra.pdf
+2.4,Sin identificar,Completado,3,2008-11-26,2026-07-06T13:13:38.716620,ERA,0,0,15:21,ES-2008-18073,https://www.era.europa.eu/system/files/2023-07/IF-261108-310309-CIAF.pdf,,Ribaforada,11,Renfe,CIAF,ES,70+200,,nº 0065/2008 ocurrido el 26.11.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-261108-310309-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-05-27,2026-07-06T13:13:38.785360,ERA,0,0,18:00,ES-2008-270508-300908-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-270508-300908-CIAF.pdf,"Madrid-
+Valencia",Santa,10,Renfe,CIAF,ES,36+950,,nº 0018/2008 ocurrido el 27.05.2008 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-270508-300908-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-09-28,2026-07-06T13:13:38.838877,ERA,0,0,13:28,ES-2008-280908-181208-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-280908-181208-CIAF.pdf,"Alcázar 
+de San Juan- Cádiz",,9,Renfe,CIAF,ES,140+750,,nº 0045/2008 ocurrido el 28.09.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-280908-181208-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-08-29,2026-07-06T13:13:38.904081,ERA,0,0,12:51,ES-2008-290808-181208-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-290808-181208-CIAF.pdf,"Madrid-
+Chamartín",,11,Renfe,CIAF,ES,624+800,,nº 0037/2008 ocurrido el 29.08.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-290808-181208-CIAF.pdf
+2.4,Sin identificar,Completado,3,2008-11-29,2026-07-06T13:13:39.013131,ERA,0,0,03:00,ES-2008-291108-310309-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-291108-310309-CIAF.pdf,,"TEMBLEQUE 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",16,Continental,CIAF,ES,101+270,,nº 0066/2008 ocurrido el 29.11.2008 SECRETARIA DE ESTADO,1.7.7,Otros,IF-291108-310309-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-06-30,2026-07-06T13:13:39.065870,ERA,0,0,21:07,ES-2008-300608-281008-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-300608-281008-CIAF.pdf,"Casetas-
+Intermodal",Miranda de Ebro,9,Renfe,CIAF,ES,146+950,,nº 0028/2008 ocurrido el 30.06.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-300608-281008-CIAF.pdf
+2.4,Sin identificar,Completado,0,2008-07-30,2026-07-06T13:13:39.117324,ERA,0,0,18:05,ES-2008-23351,https://www.era.europa.eu/system/files/2023-07/IF-300708-2-281108-CIAF_Fuengirola-M%C3%A1laga.pdf,Fuengirola-Málaga,,9,Renfe,CIAF,ES,8+870,,nº 0032/2008 ocurrido el 30.07.2008 SECRETARIA DE ESTADO,1.5.1.1,Arrollamiento en plena vía,IF-300708-2-281108-CIAF_Fuengirola-Málaga.pdf
+2.4,Sin identificar,Completado,0,2008-07-30,2026-07-06T13:13:39.177112,ERA,0,0,07:15,ES-2008-996,https://www.era.europa.eu/system/files/2023-07/IF-300708-281108-CIAF_Andoa%C3%ADn%2C%20Guip%C3%BAzcoa.pdf,Madrid,,10,pública,CIAF,ES,608+155,,nº 0031/2008 ocurrido el 30.07.2008 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,"IF-300708-281108-CIAF_Andoaín, Guipúzcoa.pdf"
+1.1.6,Factor humano - Mantenimiento,Completado,0,2008-10-23,2026-07-06T13:13:39.193278,ERA,0,0,,ES-2008-53,https://www.era.europa.eu/system/files/2023-07/RS-231008-140709-CIAF.pdf,Madrid,"VILLALBA DE GUADARRAMA 
+
+ 
+ 
+ Investigación del incidente 
+n",2,,CIAF,ES,,,nº 0053/2008 ocurrido el 23.10.2008 SUBSECRETARÍA  A MINISTERIO DE,2,Incidente,RS-231008-140709-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2008-10-24,2026-07-06T13:13:39.212183,ERA,0,0,,ES-2008-241008-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-241008-140709-CIAF.pdf,Valencia Estaci ón del Nord,"MONCÓFAR 
+
+ 
+ 
+ Investigación del incidente 
+n",3,,CIAF,ES,,,nº 0054/2008 ocurrido el 24.10.2008 SUBSECRETARÍA  A MINISTERIO DE,2,Incidente,RS-241008-140709-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-01-01,2026-07-06T13:13:39.307306,ERA,0,0,08:13,ES-2009-010109-190509-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-010109-190509-CIAF.pdf,,"SITGES 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",13,Renfe,CIAF,ES,643+230,,nº 0001/2009 ocurrido el 01.01.2009 SECRETARIA DE ESTADO,1.7.7,Otros,IF-010109-190509-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-12-01,2026-07-06T13:13:39.373575,ERA,0,0,19:34,ES-2009-283,https://www.era.europa.eu/system/files/2023-07/IF-011209-230310-CIAF.pdf,Monforte de Lemos- Vigo,DE O PORRIÑO,11,Renfe,CIAF,ES,151+433,,nº 0060/2009 ocurrido el 01.12.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.2,Accidente PN - Peatón,IF-011209-230310-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2009-02-02,2026-07-06T13:13:39.454535,ERA,0,0,19:49,ES-2009-020209-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-020209-221209-CIAF.pdf,,,12,,CIAF,ES,551+790,,nº 0010/2009 ocurrido el 02.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.1,Colisión,IF-020209-221209-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-03-04,2026-07-06T13:13:39.517584,ERA,0,0,21:49,ES-2009-28387,https://www.era.europa.eu/system/files/2023-07/IF-040309-140709-CIAF.pdf,,,11,Renfe,CIAF,ES,,,nº 0015/2009 ocurrido el 04.03.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,IF-040309-140709-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-06-05,2026-07-06T13:13:39.579026,ERA,0,0,22:42,ES-2009-93559,https://www.era.europa.eu/system/files/2023-07/IF-050609-221209-CIAF.pdf,,MA,12,Renfe,CIAF,ES,176+126,,nº 0025/2009 ocurrido el 05.06.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.1,Accidente PN - Vehículo,IF-050609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-07-06,2026-07-06T13:13:39.659682,ERA,0,0,16:54,ES-2009-149,https://www.era.europa.eu/system/files/2023-07/IF-060709-221209-CIAF.pdf,,Ronda,11,Renfe,CIAF,ES,67+916,,nº 0031/2009 ocurrido el 06.07.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.1,Accidente PN - Vehículo,IF-060709-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-12-06,2026-07-06T13:13:39.827991,ERA,0,0,08:40,ES-2009-10371,https://www.era.europa.eu/system/files/2023-07/IF-061209-290610-CIAF.pdf,Cerb,GRANOLLERS CENTRE,26,Renfe,CIAF,ES,,,nº 0064/2009 ocurrido el 06.12.2009 SECRETARIA DE ESTADO,1.1,Colisión,IF-061209-290610-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-04-07,2026-07-06T13:13:39.900165,ERA,0,0,20:04,ES-2009-407,https://www.era.europa.eu/system/files/2023-07/IF-070409-271009-CIAF.pdf,,LAS NAVAS DEL MARQUÉS,10,Renfe,CIAF,ES,83+700,,nº 0019/2009 ocurrido el 07.04.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,IF-070409-271009-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2009-01-01,2026-07-06T13:13:39.962729,ERA,0,0,18:21,ES-2009-9687,https://www.era.europa.eu/system/files/2023-07/IF-080709-260110-CIAF.pdf,Santander,,12,FEVE,CIAF,ES,551+254,,nº 0033/2009 ocurrido el 08.07.09 SUBSECRETARIA A MINISTERIO DE,1.4.1.1,Accidente PN - Vehículo,IF-080709-260110-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2009-10-08,2026-07-06T13:13:40.021530,ERA,0,0,18:30,ES-2009-50284,https://www.era.europa.eu/system/files/2023-07/IF-081009-230210-CIAF.pdf,Vigo,Canabal,12,Renfe,CIAF,ES,0+851,,nº 0055/2009 ocurrido el 08.10.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.2,Accidente PN - Peatón,IF-081009-230210-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-12-11,2026-07-06T13:13:40.082574,ERA,0,0,21:32,ES-2009-111209-270410-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-111209-270410-CIAF.pdf,,RENEDO,10,Renfe,CIAF,ES,495+043,,nº 0063/2009 ocurrido el 11.12.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-111209-270410-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-02-12,2026-07-06T13:13:40.161687,ERA,0,0,22:07,ES-2009-120209-260110-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-120209-260110-CIAF.pdf,,,15,,CIAF,ES,,,nº 0011/2009 ocurrido el 12.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.1,Colisión,IF-120209-260110-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2009-07-13,2026-07-06T13:13:40.224514,ERA,0,0,18:44,ES-2009-15653,https://www.era.europa.eu/system/files/2023-07/IF-130709-260110-CIAF.pdf,,,12,Renfe,CIAF,ES,99+367,,nº 0036/2009 ocurrido el 13.07.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-130709-260110-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2009-12-13,2026-07-06T13:13:40.294184,ERA,0,0,18:27,ES-2009-17212,https://www.era.europa.eu/system/files/2023-07/IF-131209-270410-CIAF.pdf,Madrid,,11,Renfe,CIAF,ES,164+429,Orbita,nº 0062/2009 ocurrido el 13.12.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.1,Accidente PN - Vehículo,IF-131209-270410-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-01-14,2026-07-06T13:13:40.374531,ERA,0,0,10:57,ES-2009-22321,https://www.era.europa.eu/system/files/2023-07/IF-140109-190509-CIAF.pdf,San Juan de Nieva,"AVILÉS 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",14,Renfe,CIAF,ES,,,nº 0002/2009 ocurrido el 14.01.2009 SECRETARIA DE ESTADO,1.4,Accidente en paso a nivel,IF-140109-190509-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-02-14,2026-07-06T13:13:40.492677,ERA,0,0,14:10,ES-2009-5714,https://www.era.europa.eu/system/files/2023-07/IF-140209-290909-CIAF.pdf,,"LIERES 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",18,,CIAF,ES,,,nº 0009/2009 ocurrido el 14.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.1,Colisión,IF-140209-290909-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-12-15,2026-07-06T13:13:40.563747,ERA,0,0,17:27,ES-2009-151209-270410-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-151209-270410-CIAF.pdf,"Ferrol-
+Oviedo",Navia y el apeadero de Piñera Villaoril,10,FEVE,CIAF,ES,191+222,Asturias,nº 0065/2009 ocurrido el 15.12.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-151209-270410-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2009-10-16,2026-07-06T13:13:40.629607,ERA,0,0,11:19,ES-2009-24228,https://www.era.europa.eu/system/files/2023-07/IF-161009-270410-CIAF.pdf,Madrid,ALFAFAR,11,Renfe,CIAF,ES,107+996,,nº 0056/2009 ocurrido el 16.10.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.2,Accidente PN - Peatón,IF-161009-270410-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-11-16,2026-07-06T13:13:40.712358,ERA,0,0,12:41,ES-2009-22211,https://www.era.europa.eu/system/files/2023-07/IF-161109-310510-CIAF.pdf,,Sama de  Langreo,13,Renfe,CIAF,ES,18+055,Asturias,nº 0059/2009 ocurrido el 16.11.2009 SECRETARIA DE ESTADO,1.4.1.2,Accidente PN - Peatón,IF-161109-310510-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-04-17,2026-07-06T13:13:40.790334,ERA,0,0,,ES-2009-22126,https://www.era.europa.eu/system/files/2023-07/IF-170409-221209-CIAF.pdf,,EL CALEYO,11,,CIAF,ES,134+961,,nº 0022/2009 ocurrido el 17.04.2009 SUBSECRETARIA A MINISTERIO DE,1.1.1,Colisión frontal,IF-170409-221209-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2009-09-17,2026-07-06T13:13:40.864585,ERA,0,0,16:00,ES-2009-170909-270410-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-170909-270410-CIAF.pdf,"Madrid 
+Chamartín","ZUMÁRRAGA 
+ 
+ 
+ 
+ 
+   
+De acuerdo con el R",12,Renfe,CIAF,ES,566+856,Guipúzcoa,nº 0054/2009 ocurrido el 17.09.2009 SUBSECRETARÍA A MINISTERIO DE,1.3.2,Descarrilamiento en estación,IF-170909-270410-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-06-18,2026-07-06T13:13:40.922426,ERA,0,0,08:20,ES-2009-752,https://www.era.europa.eu/system/files/2023-07/IF-180609-221209-CIAF.pdf,,"MADRID CHAMARTÍN 
+   
+ 
+    
+ 
+     
+ 
+     
+De acuerdo con el R",11,,CIAF,ES,,,nº 0027/2009 ocurrido el 18.06.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-180609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-01-20,2026-07-06T13:13:41.017789,ERA,0,0,12:08,ES-2009-5412,https://www.era.europa.eu/system/files/2023-07/IF-200109-190509-CIAF-LA%20FLORIDA.pdf,,"LA FLORIDA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",12,,CIAF,ES,,,nº 0003/2009 ocurrido el 20.01.2009 SECRETARIA DE ESTADO,2.1.4,Señal rebasada,IF-200109-190509-CIAF-LA FLORIDA.pdf
+2.4,Sin identificar,Completado,3,2009-01-20,2026-07-06T13:13:41.088909,ERA,0,0,13:46,ES-2009-25630,https://www.era.europa.eu/system/files/2023-07/IF-200109-2-190509-CIAF_TORDERA%20Y%20BLANES.pdf,,,12,Renfe,CIAF,ES,64+810,,nº 0004/2009 ocurrido el 20.01.2009 SECRETARIA DE ESTADO,1.4,Accidente en paso a nivel,IF-200109-2-190509-CIAF_TORDERA Y BLANES.pdf
+2.4,Sin identificar,Completado,0,2009-12-20,2026-07-06T13:13:41.160729,ERA,0,0,17:07,ES-2009-15624,https://www.era.europa.eu/system/files/2023-07/IF-201209-310510-CIAF.pdf,Lérida Pi rineos,,11,Renfe,CIAF,ES,253+775,,nº 0066/2009 ocurrido el 20.12.2009 SECRETARIA DE ESTADO,1.4,Accidente en paso a nivel,IF-201209-310510-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-01-22,2026-07-06T13:13:41.240880,ERA,0,0,07:03,ES-2009-30744,https://www.era.europa.eu/system/files/2023-07/IF-220109-190509-CIAF.pdf,,"GAVÁ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",13,Renfe,CIAF,ES,,,nº 0005/2009 ocurrido el 22.01.2009 SECRETARIA DE ESTADO,1.7.7,Otros,IF-220109-190509-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-02-22,2026-07-06T13:13:41.301224,ERA,0,0,17:29,ES-2009-12703,https://www.era.europa.eu/system/files/2023-07/IF-220209-140709-CIAF.pdf,,Chapela,10,Renfe,CIAF,ES,175+050,,nº 0012/2009 ocurrido el 22.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,IF-220209-140709-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-06-22,2026-07-06T13:13:41.355826,ERA,0,0,09:20,ES-2009-220609-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-220609-221209-CIAF.pdf,,Infiesto,11,,CIAF,ES,361+975,,nº 0028/2009 ocurrido el 22.06.2009 SUBSECRETARÍA A MINISTERIO DE,1.4,Accidente en paso a nivel,IF-220609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-02-23,2026-07-06T13:13:41.420008,ERA,0,0,12:30,ES-2009-6500,https://www.era.europa.eu/system/files/2023-07/IF-230209-140709-CIAF.pdf,,SOTO DUEÑAS,11,,CIAF,ES,378+130,,nº 0013/2009 ocurrido el 23.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.3.2,Descarrilamiento en estación,IF-230209-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-10-23,2026-07-06T13:13:41.484903,ERA,0,0,12:30,ES-2009-231009-270410-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-231009-270410-CIAF.pdf,Sant Vicent de Calders,,10,Renfe,CIAF,ES,94+316,Barcelona,nº 0057/2009 ocurrido el 23.10.2009 SUBSECRETARÍA A MINISTERIO DE,1.7.7,Otros,IF-231009-270410-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-03-24,2026-07-06T13:13:41.556552,ERA,0,0,14:10,ES-2009-24048,https://www.era.europa.eu/system/files/2023-07/IF-240309-140709-CIAF_ALGEMES%C3%8D.pdf,,"ALGEMESÍ 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",12,Renfe,CIAF,ES,,,nº 0017/2009 ocurrido el 24.03.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4.1.2,Accidente PN - Peatón,IF-240309-140709-CIAF_ALGEMESÍ.pdf
+2.3.3,Usuario paso a nivel,Completado,3,2009-03-24,2026-07-06T13:13:41.621384,ERA,0,0,22:25,ES-2009-18032,https://www.era.europa.eu/system/files/2023-07/IF-240309-290909-CIAF_VILLARGORDO%20Y%20GRA%C3%91ENA.pdf,,,10,Renfe,CIAF,ES,137+803,Jaén,nº 0018/2009 ocurrido el 24.03.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4.1.1,Accidente PN - Vehículo,IF-240309-290909-CIAF_VILLARGORDO Y GRAÑENA.pdf
+2.4,Sin identificar,Completado,0,2009-08-24,2026-07-06T13:13:41.687099,ERA,0,0,16:57,ES-2009-240809-260110-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-240809-260110-CIAF.pdf,,SANT FELIÚ DE LLOBREGAT,11,,CIAF,ES,,,nº 0045/2009 ocurrido el 24.08.2009 SUBSECRETARÍA A MINISTERIO DE,1.4,Accidente en paso a nivel,IF-240809-260110-CIAF.pdf
+1.2.1.1,Fallo técnico - Rodadura,Completado,0,2009-09-24,2026-07-06T13:13:41.775247,ERA,0,0,13:50,ES-2009-240909-310510-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-240909-310510-CIAF.pdf,,,13,FEVE,CIAF,ES,527+485,,nº 0050/2009 ocurrido el 24.09.2009 SECRETARIA DE ESTADO,2,Incidente,IF-240909-310510-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-06-26,2026-07-06T13:13:41.856921,ERA,0,0,07:36,ES-2009-61,https://www.era.europa.eu/system/files/2023-07/IF-260609-221209-CIAF_ALUCHE.pdf,,ALUCHE,16,Renfe,CIAF,ES,7+612,,nº 0030/2009 ocurrido el 26.06.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-260609-221209-CIAF_ALUCHE.pdf
+2.4,Sin identificar,Completado,0,2009-06-26,2026-07-06T13:13:41.926632,ERA,0,0,10:29,ES-2009-260609-260110-CIAF_H,https://www.era.europa.eu/system/files/2023-07/IF-260609-260110-CIAF_HUMANES.pdf,,HUMANES,12,,CIAF,ES,22+800,,nº 0032/2009 ocurrido el 26.06.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-260609-260110-CIAF_HUMANES.pdf
+2.4,Sin identificar,Completado,0,2009-07-27,2026-07-06T13:13:41.978057,ERA,0,0,20:16,ES-2009-15052,https://www.era.europa.eu/system/files/2023-07/IF-270709-260110-CIAF.pdf,,Fran,10,Renfe,CIAF,ES,102+700,,nº 0038/2009 ocurrido el 27.07.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-270709-260110-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-08-28,2026-07-06T13:13:42.036833,ERA,0,0,13:33,ES-2009-18160,https://www.era.europa.eu/system/files/2023-07/IF-280809-230210-CIAF.pdf,,EL REBOLLAR,12,,CIAF,ES,22+600,,nº 0046/2009 ocurrido el 28.08.2009 SUBSECRETARÍA A MINISTERIO DE,1.3.2,Descarrilamiento en estación,IF-280809-230210-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-09-28,2026-07-06T13:13:42.093435,ERA,0,0,13:35,ES-2009-91724,https://www.era.europa.eu/system/files/2023-07/IF-280909-230210-CIAF.pdf,Cartagena,,10,FEVE,CIAF,ES,16+708,,nº 0052/2009 ocurrido el 28.09.2009 SUBSECRETARÍA A MINISTERIO DE,1.4.1.1,Accidente PN - Vehículo,IF-280909-230210-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-12-28,2026-07-06T13:13:42.203960,ERA,0,0,20:10,ES-2009-281209-290610-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-281209-290610-CIAF.pdf,,PEDRERA,13,Renfe,CIAF,ES,94+716,Sevilla,nº 0068/2009 ocurrido el 28.12.2009 SECRETARIA DE ESTADO,1.7.7,Otros,IF-281209-290610-CIAF.pdf
+2.4,Sin identificar,Completado,3,2009-01-30,2026-07-06T13:13:42.267145,ERA,0,0,19:58,ES-2009-8604,https://www.era.europa.eu/system/files/2023-07/IF-300109-140709-CIAF.pdf,,"SODUPE 
+ 
+ 
+ 
+ 
+ 
+ 
+ De acuerdo con el R",11,Feve,CIAF,ES,631+562,,nº 0007/2009 ocurrido el 30.01.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,IF-300109-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-12-30,2026-07-06T13:13:42.390791,ERA,0,0,03:08,ES-2009-930,https://www.era.europa.eu/system/files/2023-07/IF-301209-290610-CIAF.pdf,Intermodal A bando Indalecio Prieto,FUENMAYOR,11,Renfe,CIAF,ES,,,nº 0069/2009 ocurrido el 30.12.2009 SECRETARIA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-301209-290610-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-08-31,2026-07-06T13:13:42.459532,ERA,0,0,18:14,ES-2009-20072,https://www.era.europa.eu/system/files/2023-07/IF-310809-060410-CIAF.pdf,,SAN CRISTOBAL INDUSTRIAL,13,,CIAF,ES,,,nº 0047/2009 ocurrido el 31.08.2009 SUBSECRETARÍA A MINISTERIO DE,1.1,Colisión,IF-310809-060410-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2009-02-02,2026-07-06T13:13:42.473892,ERA,0,0,,ES-2009-020209-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-020209-221209-CIAF.pdf,Madrid,,2,,CIAF,ES,,,nº 0010/2009 ocurrido el 02.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-020209-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-03-04,2026-07-06T13:13:42.489027,ERA,0,0,,ES-2009-040309-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-040309-140709-CIAF.pdf,Madrid Chamartín,,2,,CIAF,ES,,,nº 0015/2009 ocurrido el 04.03.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-040309-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-06-05,2026-07-06T13:13:42.499592,ERA,0,0,,ES-2009-050609-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-050609-221209-CIAF.pdf,"Barcelona San Andrés 
+Condal a",MA,2,,CIAF,ES,,,nº 0025/2009 ocurrido el 05.06.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,RS-050609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-07-06,2026-07-06T13:13:42.509205,ERA,0,0,,ES-2009-060709-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-060709-221209-CIAF.pdf,,,2,,CIAF,ES,,,nº 0031/2009 ocurrido el 06.07.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,RS-060709-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-04-07,2026-07-06T13:13:42.521197,ERA,0,0,,ES-2009-070409-271009-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-070409-271009-CIAF.pdf,Madrid,LAS NAVAS DEL MARQUÉS,2,,CIAF,ES,83+700,,nº 0019/2009 ocurrido el 07.04.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-070409-271009-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2009-02-14,2026-07-06T13:13:42.534512,ERA,0,0,,ES-2009-140209-290909-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-140209-290909-CIAF.pdf,Oviedo,"LIERES 
+
+ 
+ 
+ Investigación del incidente 
+n",2,,CIAF,ES,,,nº 0009/2009 ocurrido el 14.02.2009 SUBSECRETARÍA  A MINISTERIO DE,2,Incidente,RS-140209-290909-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-04-17,2026-07-06T13:13:42.547037,ERA,0,0,,ES-2009-170409-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-170409-221209-CIAF.pdf,Gijón Cercan ías,EL CALEYO,2,,CIAF,ES,,,nº 0022/2009 ocurrido el 17.04.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-170409-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-06-18,2026-07-06T13:13:42.557391,ERA,0,0,,ES-2009-180609-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-180609-221209-CIAF.pdf,Madrid,"MADRID CHAMARTÍN 
+
+ 
+ 
+ Investigación del incidente 
+n",2,,CIAF,ES,,,nº 0027/2009 ocurrido el 18.06.2009 SUBSECRETARÍA  A MINISTERIO DE,2,Incidente,RS-180609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-02-22,2026-07-06T13:13:42.568985,ERA,0,0,,ES-2009-220209-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-220209-140709-CIAF.pdf,Vigo,Chapela,2,,CIAF,ES,,,nº 0012/2009 ocurrido el 22.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-220209-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-06-22,2026-07-06T13:13:42.578627,ERA,0,0,,ES-2009-220609-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-220609-221209-CIAF.pdf,Oviedo,Infiesto,2,,CIAF,ES,,,nº 0028/2009 ocurrido el 22.06.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,RS-220609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-02-23,2026-07-06T13:13:42.590608,ERA,0,0,,ES-2009-230209-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-230209-140709-CIAF.pdf,Oviedo Santander,"SOTO DUEÑAS 
+
+ 
+ 
+ Investigación del accidente 
+n",2,,CIAF,ES,,,nº 0013/2009 ocurrido el 23.02.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-230209-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-03-24,2026-07-06T13:13:42.602650,ERA,0,0,,ES-2009-240309-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-240309-140709-CIAF.pdf,Madrid Chamar tín,"ALGEMESÍ 
+
+ 
+ 
+ Investigación del accidente 
+n",2,,CIAF,ES,,,nº 0017/2009 ocurrido el 24.03.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,RS-240309-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-03-24,2026-07-06T13:13:42.617176,ERA,0,0,,ES-2009-240309-290909-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-240309-290909-CIAF.pdf,"Espeluy 
+Aguja Km",,2,,CIAF,ES,137+803,Jaén,nº 0018/2009 ocurrido el 24.03.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,RS-240309-290909-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-06-26,2026-07-06T13:13:42.627246,ERA,0,0,,ES-2009-260609-221209-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-260609-221209-CIAF.pdf,,ALUCHE,2,,CIAF,ES,,,nº 0030/2009 ocurrido el 26.06.2009 SUBSECRETARÍA  A MINISTERIO DE,1.7.7,Otros,RS-260609-221209-CIAF.pdf
+2.4,Sin identificar,Completado,0,2009-01-30,2026-07-06T13:13:42.639529,ERA,0,0,,ES-2009-300109-140709-CIAF,https://www.era.europa.eu/system/files/2023-07/RS-300109-140709-CIAF.pdf,Santander,"SODUPE 
+
+ 
+ 
+ Investigación del accidente 
+n",2,,CIAF,ES,,,nº 0007/2009 ocurrido el 30.01.2009 SUBSECRETARÍA  A MINISTERIO DE,1.4,Accidente en paso a nivel,RS-300109-140709-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-12-03,2026-07-06T13:13:42.729130,ERA,0,0,10:31,ES-2010-58727,https://www.era.europa.eu/system/files/2023-07/IF-031210-270411-CIAF.pdf,Vilar Fo rmoso,Espeja,12,Renfe,CIAF,ES,122+116,Fuentes de Oñoro,nº 0064/2010 ocurrido el 03.12.2010 SECRETARÍA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-031210-270411-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-03-05,2026-07-06T13:13:42.876756,ERA,0,0,01:37,ES-2010-751,https://www.era.europa.eu/system/files/2023-07/IF-050310-310111-CIAF.pdf,Madrid,Dueñas,21,subcontratista,CIAF,ES,,,nº 0014/2010 ocurrido el 05.03.2010 SECRETARÍA DE ESTADO,1.7.7,Otros,IF-050310-310111-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-07-05,2026-07-06T13:13:42.971730,ERA,0,0,10:01,ES-2010-050710-310111-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-050710-310111-CIAF.pdf,Móstoles-El,MÓSTOLES,11,Renfe,CIAF,ES,,,nº 0033/2010 ocurrido el 05.07.2010 SECRETARÍA DE ESTADO,1.1,Colisión,IF-050710-310111-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-09-06,2026-07-06T13:13:43.166538,ERA,0,0,12:35,ES-2010-17015,https://www.era.europa.eu/system/files/2023-07/IF-060910-290711-CIAF.pdf,Aljucén,Aldea,28,Renfe,CIAF,ES,24+420,CARMONITA,nº 0049/2010 ocurrido el 06.09.2010 SECRETARÍA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-060910-290711-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-09-07,2026-07-06T13:13:43.287647,ERA,0,0,17:02,ES-2010-8939,https://www.era.europa.eu/system/files/2023-07/IF-070910-290311-CIAF.pdf,León,Arangure,12,,CIAF,ES,0+388,Zalla,nº 0050/2010 ocurrido el 07.09.2010 SECRETARÍA DE ESTADO,1.4,Accidente en paso a nivel,IF-070910-290311-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-04-08,2026-07-06T13:13:43.398209,ERA,0,0,11:25,ES-2010-080410-281210-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-080410-281210-CIAF.pdf,,,14,,CIAF,ES,,,nº 0020/2010 ocurrido el 08.04.2010 SECRETARÍA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-080410-281210-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2010-08-09,2026-07-06T13:13:43.474145,ERA,0,0,17:00,ES-2010-6502,https://www.era.europa.eu/system/files/2023-07/IF-090810-250211-CIAF.pdf,Oviedo,,11,,CIAF,ES,489+795,Cabezón de la Sal,nº 0044/2010 ocurrido el 09.08.2010 SECRETARÍA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-090810-250211-CIAF.pdf
+1.2.2.2,Fallo instalaciones - Vía,Completado,0,2010-01-10,2026-07-06T13:13:43.582977,ERA,0,0,19:49,ES-2010-100110-280910-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-100110-280910-CIAF.pdf,Alcázar de San Juan,Sevilla  Santa Justa,15,Renfe,CIAF,ES,568+250,,nº 0006/2010 ocurrido el 10.01.2010 SECRETARIA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-100110-280910-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-03-10,2026-07-06T13:13:43.661462,ERA,0,0,,ES-2010-933,https://www.era.europa.eu/system/files/2023-07/IF-100310-261010-CIAF.pdf,Casetas,LOGROÑO,12,ferroviar,CIAF,ES,76+396,,nº 0016/2010 ocurrido el 10.03.2010 SECRETARIA DE ESTADO,1.1,Colisión,IF-100310-261010-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-07-10,2026-07-06T13:13:43.809020,ERA,0,0,15:51,ES-2010-436,https://www.era.europa.eu/system/files/2023-07/IF-100710-290311-CIAF.pdf,"Intermodal Abando 
+Inadalecio Prieto a",Ugao,15,Renfe,CIAF,ES,230+862,,nº 0036/2010 ocurrido el 10.07.2010 SECRETARÍA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-100710-290311-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2010-11-10,2026-07-06T13:13:43.890356,ERA,0,0,18:20,ES-2010-101110-270411-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-101110-270411-CIAF.pdf,,BETANZOS,12,ferrovia,CIAF,ES,524+416,,nº 0062/2010 ocurrido el 10.11.2010 SECRETARÍA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-101110-270411-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2010-02-11,2026-07-06T13:13:43.964799,ERA,0,0,19:10,ES-2010-110210-280910-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-110210-280910-CIAF.pdf,Madrid,Pinar de Las Rozas,11,Renfe,CIAF,ES,20+658,,nº 0008/2010 ocurrido el 11.02.2010 SECRETARIA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-110210-280910-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-03-11,2026-07-06T13:13:44.161515,ERA,0,0,09:15,ES-2010-7403,https://www.era.europa.eu/system/files/2023-07/IF-110310-261010-CIAF.pdf,León,,13,ferrov,CIAF,ES,5+037,Villaquilambre,DE FOMENTO  SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-110310-261010-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-11-11,2026-07-06T13:13:44.270935,ERA,0,0,01:35,ES-2010-111110-280611-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-111110-280611-CIAF.pdf,Madrid Chamartín,,17,Renfe,CIAF,ES,89+850,,DE FOMENTO SECRETARÍA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-111110-280611-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-06-14,2026-07-06T13:13:44.365522,ERA,0,0,08:32,ES-2010-140610-310111-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-140610-310111-CIAF.pdf,Ferrol,Ponte,11,,CIAF,ES,43+559,,nº 0028/2010 ocurrido el 14.06.2010 SECRETARÍA DE ESTADO,1.7.7,Otros,IF-140610-310111-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-07-14,2026-07-06T13:13:44.446168,ERA,0,0,12:41,ES-2010-9121,https://www.era.europa.eu/system/files/2023-07/IF-140710-250211-CIAF.pdf,Ferrol–Gijón,Ribadeo,12,,CIAF,ES,148+845,,nº 0038/2010 ocurrido el 14.07.2010 SECRETARÍA DE ESTADO,1.7.7,Otros,IF-140710-250211-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-01-15,2026-07-06T13:13:44.517914,ERA,0,0,21:06,ES-2010-17000,https://www.era.europa.eu/system/files/2023-07/IF-150110-310510-CIAF-GETAFE.pdf,Madrid,GETAFE INDUSTRIAL,11,Renfe,CIAF,ES,13+860,,nº 0003/2010 ocurrido el 15.01.2010 SECRETARIA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-150110-310510-CIAF-GETAFE.pdf
+2.4,Sin identificar,Completado,0,2010-01-15,2026-07-06T13:13:44.592273,ERA,0,0,18:26,ES-2010-264,https://www.era.europa.eu/system/files/2023-07/IF-150110-310510-CIAF_VILA-REAL.pdf,Va lencia,VILA,12,Renfe,CIAF,ES,62+902,,nº 0002/2010 ocurrido el 15.01.2010 SECRETARIA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-150110-310510-CIAF_VILA-REAL.pdf
+2.4,Sin identificar,Completado,0,2010-07-16,2026-07-06T13:13:44.681475,ERA,0,0,15:41,ES-2010-4141,https://www.era.europa.eu/system/files/2023-07/IF-160710-290311-CIAF.pdf,de,,12,Renfe,CIAF,ES,167+867,,nº 0039/2010 ocurrido el 16.07.2010 SECRETARÍA DE ESTADO,1.1,Colisión,IF-160710-290311-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-08-17,2026-07-06T13:13:44.764270,ERA,0,0,20:04,ES-2010-170810-270411-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-170810-270411-CIAF.pdf,,PONFERRADA,12,fe,CIAF,ES,250+950,,nº 0046/2010 ocurrido el 17.08.2010 SECRETARÍA DE ESTADO,1.1,Colisión,IF-170810-270411-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-08-18,2026-07-06T13:13:44.845401,ERA,0,0,12:16,ES-2010-13926,https://www.era.europa.eu/system/files/2023-07/IF-180810-290311-CIAF.pdf,,Utrera,12,Renfe,CIAF,ES,8+579,Sevilla,nº 0047/2010 ocurrido el 18.08.2010 SECRETARÍA DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-180810-290311-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-10-19,2026-07-06T13:13:44.962826,ERA,0,0,15:25,ES-2010-5418,https://www.era.europa.eu/system/files/2023-07/IF-191010-280611-CIAF.pdf,Gijón,Gijón,14,Feve,CIAF,ES,,,nº 0056/2010 ocurrido el 19.10.2010 SECRETARÍA DE ESTADO,1.1,Colisión,IF-191010-280611-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-05-23,2026-07-06T13:13:45.060729,ERA,0,0,22:54,ES-2010-230510-310511-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-230510-310511-CIAF.pdf,Madrid,Pozuelo,13,,CIAF,ES,5+114,,nº 0026/2010 ocurrido el 23.05.2010 SECRETARÍA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-230510-310511-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-06-23,2026-07-06T13:13:45.236470,ERA,0,0,23:23,ES-2010-230610-310111-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-230610-310111-CIAF.pdf,Madrid Chamartín,,28,Re,CIAF,ES,656+598,,nº 0030/2010 ocurrido el 23.06.2010 SECRETARÍA DE ESTADO,1.7.7,Otros,IF-230610-310111-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-03-26,2026-07-06T13:13:45.538584,ERA,0,0,00:33,ES-2010-260310-281210-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-260310-281210-CIAF.pdf,,ARÉVALO,39,,CIAF,ES,172+050,,nº 0018/2010 ocurrido el 26.03.2010 SECRETARÍA DE ESTADO,1.7.7,Otros,IF-260310-281210-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-06-26,2026-07-06T13:13:45.656991,ERA,0,0,00:28,ES-2010-260610-310111-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-260610-310111-CIAF.pdf,Madrid Chamartín,VITORIA,17,Renfe,CIAF,ES,492+400,,nº 0031/2010 ocurrido el 26.06.2010 SECRETARÍA DE ESTADO,1.5.1.2,Arrollamiento en estación,IF-260610-310111-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-06-29,2026-07-06T13:13:45.752383,ERA,0,0,09:07,ES-2010-290610-250211-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-290610-250211-CIAF.pdf,Lleida-Pirineus,SANT ANDREU ARENAL,13,Renfe,CIAF,ES,,,nº 0032/2010 ocurrido el 29.06.2010 SECRETARÍA DE ESTADO,1.1,Colisión,IF-290610-250211-CIAF.pdf
+2.4,Sin identificar,Completado,0,2010-09-30,2026-07-06T13:13:45.889758,ERA,0,0,08:09,ES-2010-300910-280611-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-300910-280611-CIAF.pdf,Vigo,REDONDELA,15,Renfe,CIAF,ES,166+800,,nº 0053/2010 ocurrido el 30.09.2010 SECRETARÍA DE ESTADO,1.1,Colisión,IF-300910-280611-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-06-01,2026-07-06T13:13:46.019540,ERA,0,0,16:00,ES-2011-9203,https://www.era.europa.eu/system/files/2023-07/IF-010611-310112-CIAF.pdf,Ferrol,TRASONA,14,,CIAF,ES,,,DE FOMENTO SECRETARÍA DE ESTADO,2,Incidente,IF-010611-310112-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-01-04,2026-07-06T13:13:46.398577,ERA,0,0,19:20,ES-2011-040111-200911-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-040111-200911-CIAF.pdf,,,15,Renfe,CIAF,ES,,,DE FOMENTO  SECRETARIA DE ESTADO,1.3.1,Descarrilamiento en plena vía,IF-040111-200911-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-04-05,2026-07-06T13:13:46.572506,ERA,0,0,15:30,ES-2011-91103,https://www.era.europa.eu/system/files/2023-07/IF-050411-280212-CIAF.pdf,"Mollet 
+Sant Fost",RUBÍ,17,Renfe,CIAF,ES,,,DE FOMENTO SECRETARÍA DE ESTADO,1.3.2,Descarrilamiento en estación,IF-050411-280212-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-11-05,2026-07-06T13:13:46.669589,ERA,0,0,10:43,ES-2011-874,https://www.era.europa.eu/system/files/2023-07/IF-051111-290512-CIAF.pdf,,,13,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,1.1,Colisión,IF-051111-290512-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-03-07,2026-07-06T13:13:46.800848,ERA,0,0,21:22,ES-2011-070311-290512-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-070311-290512-CIAF.pdf,Barcel ona San Andrés Condal,,14,Renfe,CIAF,ES,224+794,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,1.1,Colisión,IF-070311-290512-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-06-10,2026-07-06T13:13:46.916423,ERA,0,0,09:50,ES-2011-100611-290512-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-100611-290512-CIAF.pdf,MADRID,,14,,CIAF,ES,11+100,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF-100611-290512-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-07-11,2026-07-06T13:13:47.029617,ERA,0,0,11:53,ES-2011-110711-270312-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-110711-270312-CIAF.pdf,,,15,Renfe,CIAF,ES,11+800,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-110711-270312-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-10-12,2026-07-06T13:13:47.171799,ERA,0,0,17:40,ES-2011-15837,https://www.era.europa.eu/system/files/2023-07/IF-121011-260612-CIAF.pdf,"Bifurcación 
+Sagrera a Cerbere",VILAMALLA,18,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-121011-260612-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-07-13,2026-07-06T13:13:47.304677,ERA,0,0,21:45,ES-2011-130711-250912-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-130711-250912-CIAF.pdf,Sagunto,Teruel,17,Logi,CIAF,ES,137+810,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-130711-250912-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-12-15,2026-07-06T13:13:47.439913,ERA,0,0,07:52,ES-2011-24403,https://www.era.europa.eu/system/files/2023-07/IF-151211-260612-CIAF.pdf,Aranjuez a Valencia Estació del,Valencia Sant Isidre,16,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-151211-260612-CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2011-01-16,2026-07-06T13:13:47.738131,ERA,0,0,13:18,ES-2011-13943,https://www.era.europa.eu/system/files/2023-07/IF-160111-200911-CIAF.pdf,,Osuna,13,ferr,CIAF,ES,87,AGUADULCE,DE FOMENTO  SECRETARÍ A DE ESTADO,1.4.1.1,Accidente PN - Vehículo,IF-160111-200911-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-03-16,2026-07-06T13:13:47.816670,ERA,0,0,20:19,ES-2011-160311-251011-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-160311-251011-CIAF.pdf,Lleida Pirineus,,12,Renfe,CIAF,ES,323+320,,DE FOMENTO SECRETARIA DE ESTADO,1.1,Colisión,IF-160311-251011-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-05-16,2026-07-06T13:13:47.926010,ERA,0,0,19:03,ES-2011-160511-280212-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-160511-280212-CIAF.pdf,Madrid-Puerta,LOS GAVILANES,14,Renfe,CIAF,ES,12+379,,DE FOMENTO SECRETARÍA DE ESTADO,1.1,Colisión,IF-160511-280212-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-12-19,2026-07-06T13:13:48.092434,ERA,0,0,05:29,ES-2011-20204,https://www.era.europa.eu/system/files/2023-07/IF-191211-240712-CIAF.pdf,Madrid-Chamartín,MADRID CHAMARTÍN,21,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF-191211-240712-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-07-20,2026-07-06T13:13:48.240245,ERA,0,0,16:25,ES-2011-17016,https://www.era.europa.eu/system/files/2023-07/IF-200711-260612-CIAF.pdf,,,26,fe,CIAF,ES,66+480,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.5.1.2,Arrollamiento en estación,IF-200711-260612-CIAF.pdf
+1.2.1.1,Fallo técnico - Rodadura,Completado,0,2011-04-23,2026-07-06T13:13:48.346294,ERA,0,0,09:28,ES-2011-230411-271211-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-230411-271211-CIAF.pdf,Barcelona Sants,Bellvitge,15,Renfe,CIAF,ES,675+220,,DE FOMENTO SECRETARIA DE ESTADO,1.7.7,Otros,IF-230411-271211-CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2011-05-24,2026-07-06T13:13:48.430081,ERA,0,0,16:19,ES-2011-4,https://www.era.europa.eu/system/files/2023-07/IF-240511-270312-CIAF.pdf,"Gijón-
+Cercanías",Santa,14,Renfe,CIAF,ES,45+104,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-240511-270312-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-10-26,2026-07-06T13:13:48.522110,ERA,0,0,16:24,ES-2011-261011-290512-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-261011-290512-CIAF.pdf,Bifurcación Sagr era a Ma,SANT POL DE MAR,15,Renfe,CIAF,ES,44+979,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.1,Colisión,IF-261011-290512-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-08-27,2026-07-06T13:13:48.622501,ERA,0,0,21:27,ES-2011-270811-240712-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-270811-240712-CIAF.pdf,Bifurcación Sagrera,GRANOLLERS,15,ferroviari,CIAF,ES,134+932,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2.1.4,Señal rebasada,IF-270811-240712-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-10-27,2026-07-06T13:13:48.704338,ERA,0,0,14:25,ES-2011-271011-240712-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-271011-240712-CIAF.pdf,Santander,ASTILLERO,14,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2.1.4,Señal rebasada,IF-271011-240712-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-12-27,2026-07-06T13:13:48.804422,ERA,0,0,11:38,ES-2011-271211-250912-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-271211-250912-CIAF.pdf,Bifurcación Cambiador de Zaragoza Delicias,,15,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.1,Descarrilamiento en plena vía,IF-271211-250912-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-04-28,2026-07-06T13:13:48.897989,ERA,0,0,09:49,ES-2011-37507,https://www.era.europa.eu/system/files/2023-07/IF-280411-271211-CIAF.pdf,Barcelona Sagrera,,14,Renfe,CIAF,ES,110+000,,DE FOMENTO SECRETARIA DE ESTADO,1.1.2,Colisión por alcance,IF-280411-271211-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-05-30,2026-07-06T13:13:48.989428,ERA,0,0,07:20,ES-2011-300511-270312-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-300511-270312-CIAF.pdf,de,CALATAYUD,16,Renfe,CIAF,ES,224+556,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-300511-270312-CIAF.pdf
+2.4,Sin identificar,Completado,0,2011-06-30,2026-07-06T13:13:49.062042,ERA,0,0,11:58,ES-2011-300611-240412-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-300611-240412-CIAF.pdf,Los Cotos a Cercedilla,Siete,12,Renfe,CIAF,ES,7+165,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-300611-240412-CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-02-09,2026-07-06T13:13:49.144857,ERA,0,0,09:43,ES-2012-28867,https://www.era.europa.eu/system/files/2023-07/IF-090212-271112-CIAF.pdf,,MATARÓ,15,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF-090212-271112-CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-01-12,2026-07-06T13:13:49.221071,ERA,0,0,14:19,ES-2012-3720,https://www.era.europa.eu/system/files/2023-07/IF-120112-250912-CIAF.pdf,Oviedo,SAN CLAUDIO,15,,CIAF,ES,5+265,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.1,Colisión,IF-120112-250912-CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-01-15,2026-07-06T13:13:49.296277,ERA,0,0,08:12,ES-2012-150112-221012-CIAF,https://www.era.europa.eu/system/files/2023-07/IF-150112-221012-CIAF.pdf,San Esteban de Pravia,TRUBIA,15,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-150112-221012-CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-01-19,2026-07-06T13:13:49.397948,ERA,0,0,18:30,ES-2012-37506,https://www.era.europa.eu/system/files/2023-07/IF-190112-271112-CIAF-El%20Clot-Arag%C3%B3.pdf,"Barcelona Sagrera a 
+Bifurcación Clot",,16,Renfe,CIAF,ES,109+810,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.1,Colisión,IF-190112-271112-CIAF-El Clot-Aragó.pdf
+2.4,Sin identificar,Completado,0,2012-01-19,2026-07-06T13:13:49.481372,ERA,0,0,07:03,ES-2012-190112-271112-CIAF_A,https://www.era.europa.eu/system/files/2023-07/IF-190112-271112-CIAF_ASTURIAS.pdf,Oviedo,,16,,CIAF,ES,378+049,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.3.2,Descarrilamiento en estación,IF-190112-271112-CIAF_ASTURIAS.pdf
+2.4,Sin identificar,Completado,0,2012-06-01,2026-07-06T13:13:49.605752,ERA,0,0,14:32,ES-2012-IF_010612_280513_CIA,https://www.era.europa.eu/system/files/2023-07/IF_010612_280513_CIAF.pdf,,,19,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_010612_280513_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-07-01,2026-07-06T13:13:49.708792,ERA,0,0,09:42,ES-2012-IF_010712_280513_CIA,https://www.era.europa.eu/system/files/2023-07/IF_010712_280513_CIAF.pdf,Bifurcación Cambiador de Zaragoza Delicias,,16,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.1,Descarrilamiento en plena vía,IF_010712_280513_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-09-06,2026-07-06T13:13:49.886036,ERA,0,0,03:07,ES-2012-82658,https://www.era.europa.eu/system/files/2023-07/IF_060912__300713_CIAF.pdf,Madrid Chamartín,Tardienta,27,Semat,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.7.7,Otros,IF_060912__300713_CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2012-12-06,2026-07-06T13:13:49.985158,ERA,0,0,02:35,ES-2012-IF_061212_170913_CIA,https://www.era.europa.eu/system/files/2023-07/IF_061212_170913_CIAF.pdf,Gijón,LAVIANA,16,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA Investigación del incidente,2,Incidente,IF_061212_170913_CIAF.pdf
+1.2.2.3,Fallo instalaciones - Carril,Completado,0,2012-10-08,2026-07-06T13:13:50.078330,ERA,0,0,07:48,ES-2012-15640,https://www.era.europa.eu/system/files/2023-07/IF_081012_250613_CIAF.pdf,"Madrid 
+Chamartín a Barcelona Estación",Villanueva,16,,CIAF,ES,25+100,,DE FOMENTO SUBSECRETARÍA Investigación del incidente,2,Incidente,IF_081012_250613_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-05-09,2026-07-06T13:13:50.155264,ERA,0,0,14:22,ES-2012-IF_090512_261212_CIA,https://www.era.europa.eu/system/files/2023-07/IF_090512_261212_CIAF.pdf,Santander,ASTILLERO,14,,CIAF,ES,540+075,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2.1.4,Señal rebasada,IF_090512_261212_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-05-11,2026-07-06T13:13:50.235130,ERA,0,0,20:34,ES-2012-1903,https://www.era.europa.eu/system/files/2023-07/IF_110512_290113_CIAF.pdf,Ferro l,"Xubia y el apeadero 
+de Ferrerías de la línea",14,,CIAF,ES,8+645,,DE FOMENTO SUBSECRETARÍA Investigación del accidente,1.1,Colisión,IF_110512_290113_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-03-12,2026-07-06T13:13:50.343180,ERA,0,0,11:30,ES-2012-222,https://www.era.europa.eu/system/files/2023-07/IF_120312_260213_CIAF.pdf,Madrid Chamartín,"SOCUÉLLAMOS 
+ 
+ 
+    
+ 
+     
+ 
+     
+ 
+   
+De acuerdo con el R",18,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.1,Colisión,IF_120312_260213_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-06-15,2026-07-06T13:13:50.442657,ERA,0,0,07:17,ES-2012-90602,https://www.era.europa.eu/system/files/2023-07/IF_150612_290413_CIAF.pdf,Madrid,ARÉVALO,16,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,1.1.2,Colisión por alcance,IF_150612_290413_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-04-18,2026-07-06T13:13:50.526112,ERA,0,0,10:54,ES-2012-IF_180412_261212_CIA,https://www.era.europa.eu/system/files/2023-07/IF_180412_261212_CIAF.pdf,Santander,HERAS,14,,CIAF,ES,545+009,,DE FOMENTO SUBSECRETARÍA Investigación del incidente,1.1,Colisión,IF_180412_261212_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-07-19,2026-07-06T13:13:50.654772,ERA,0,0,00:07,ES-2012-IF_190712_280513_CIA,https://www.era.europa.eu/system/files/2023-07/IF_190712_280513_CIAF.pdf,Alcázar de San Juan,Villa,23,ferr,CIAF,ES,393+525,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_190712_280513_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-06-21,2026-07-06T13:13:50.748725,ERA,0,0,08:51,ES-2012-IF_210612_260313_CIA,https://www.era.europa.eu/system/files/2023-07/IF_210612_260313_CIAF.pdf,Cambiador de Plasencia de Jalón,,16,ferr,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.1,Descarrilamiento en plena vía,IF_210612_260313_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-12-21,2026-07-06T13:13:50.833090,ERA,0,0,11:15,ES-2012-10596,https://www.era.europa.eu/system/files/2023-07/IF_211212_250613_CIAF.pdf,Valencia,VALENCIA,14,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,1.1,Colisión,IF_211212_250613_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-05-23,2026-07-06T13:13:50.956330,ERA,0,0,21:20,ES-2012-13946,https://www.era.europa.eu/system/files/2023-07/IF_230512_260213_CIAF.pdf,"Granada a Fuente 
+de Piedra",TOCÓN,17,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2.1.4,Señal rebasada,IF_230512_260213_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-12-24,2026-07-06T13:13:51.043644,ERA,0,0,01:00,ES-2012-IF_241212_300713_CIA,https://www.era.europa.eu/system/files/2023-07/IF_241212_300713_CIAF.pdf,,LEZAMA,15,Activa,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_241212_300713_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-04-26,2026-07-06T13:13:51.120750,ERA,0,0,23:58,ES-2012-91182,https://www.era.europa.eu/system/files/2023-07/IF_260412_290113_CIAF.pdf,La Cartuja a Zaragoza  CIM,RÍO HUERVA,13,Logitren,CIAF,ES,16+973,,DE FOMENTO SUBSECRETARÍA Investigación del incidente,1.1,Colisión,IF_260412_290113_CIAF.pdf
+2.4,Sin identificar,Completado,0,2012-07-26,2026-07-06T13:13:51.222647,ERA,0,0,14:15,ES-2012-4141,https://www.era.europa.eu/system/files/2023-07/IF_260712__300713_CIAF.pdf,Madrid,ATOCHA,16,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA Investigación del incidente,1.1,Colisión,IF_260712__300713_CIAF.pdf
+2.3.3,Usuario paso a nivel,Completado,0,2012-10-29,2026-07-06T13:13:51.305967,ERA,0,0,09:52,ES-2012-18081,https://www.era.europa.eu/system/files/2023-07/IF_291012_290113_CIAF.pdf,Manzanares,Miguelturra,14,Renfe,CIAF,ES,257+758,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.4.1.1,Accidente PN - Vehículo,IF_291012_290113_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-09-05,2026-07-06T13:13:51.436633,ERA,0,0,,ES-2013-ES 05.09.2013 IF_050,https://www.era.europa.eu/system/files/2023-07/ES%2005.09.2013%20IF_050913_270115_CIAF.pdf,,,20,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 05.09.2013 IF_050913_270115_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-04-07,2026-07-06T13:13:51.587824,ERA,0,0,,ES-2013-ES 07 04 2013 070413,https://www.era.europa.eu/system/files/2023-07/ES%2007%2004%202013%20IF-070413-240315-CIAF.pdf,,,28,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES 07 04 2013 IF-070413-240315-CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-08-12,2026-07-06T13:13:51.675014,ERA,0,0,,ES-2013-ES 12.08.2013 IF_120,https://www.era.europa.eu/system/files/2023-07/ES%2012.08.2013%20IF_120813_100215_CIAF.pdf,,,16,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES 12.08.2013 IF_120813_100215_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-06-06,2026-07-06T13:13:51.810340,ERA,0,0,,ES-2013-ES IF_060613_281014_,https://www.era.europa.eu/system/files/2023-07/ES%20IF_060613_281014_CIAF.pdf,,,22,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES IF_060613_281014_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-09-26,2026-07-06T13:13:51.934425,ERA,0,0,,ES-2013-ES IF_260913_281014_,https://www.era.europa.eu/system/files/2023-07/ES%20IF_260913_281014_CIAF.pdf,,,21,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES IF_260913_281014_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-06-04,2026-07-06T13:13:52.071109,ERA,0,0,,ES-2013-IF_040613_230914_CIA,https://www.era.europa.eu/system/files/2023-07/IF_040613_230914_CIAF.pdf,,,20,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF_040613_230914_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-03-07,2026-07-06T13:13:52.180863,ERA,0,0,,ES-2013-IF_070313_140714_CIA,https://www.era.europa.eu/system/files/2023-07/IF_070313_140714_CIAF.pdf,,VIANA DE CEGA,22,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF_070313_140714_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-01-09,2026-07-06T13:13:52.278749,ERA,0,0,11:22,ES-2013-IF_090113_240614_CIA,https://www.era.europa.eu/system/files/2023-07/IF_090113_240614_CIAF.pdf,"Alcázar de 
+San Juan",VILLAFRANCA DE CÓRDOBA,19,Renfe,CIAF,ES,415+648,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_090113_240614_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-02-10,2026-07-06T13:13:52.378159,ERA,0,0,05:43,ES-2013-IF_100213_240614_CIA,https://www.era.europa.eu/system/files/2023-07/IF_100213_240614_CIAF.pdf,Bilbao Concordia,MALIAÑO,19,Renfe,CIAF,ES,537+005,Cantabria,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_100213_240614_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-07-11,2026-07-06T13:13:52.661614,ERA,0,0,,ES-2013-IF_110713_251114_CIA,https://www.era.europa.eu/system/files/2023-07/IF_110713_251114_CIAF.pdf,,,19,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF_110713_251114_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-08-14,2026-07-06T13:13:52.937555,ERA,0,0,,ES-2013-IF_140813_251114_CIA,https://www.era.europa.eu/system/files/2023-07/IF_140813_251114_CIAF.pdf,,,21,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF_140813_251114_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-04-20,2026-07-06T13:13:53.032005,ERA,0,0,12:39,ES-2013-26888,https://www.era.europa.eu/system/files/2023-07/IF_200413_250214_CIAF.pdf,Hendaya,,15,Renfe,CIAF,ES,600+200,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_200413_250214_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-05-20,2026-07-06T13:13:53.117988,ERA,0,0,,ES-2013-IF_200513_140714_CIA,https://www.era.europa.eu/system/files/2023-07/IF_200513_140714_CIAF.pdf,,,16,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_200513_140714_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-09-20,2026-07-06T13:13:53.245468,ERA,0,0,,ES-2013-IF_200913_230914_CIA,https://www.era.europa.eu/system/files/2023-07/IF_200913_230914_CIAF.pdf,,BARCELONA SANTS,20,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_200913_230914_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-07-24,2026-07-06T13:13:55.288788,ERA,0,0,,ES-2013-IF_240713_ERA-2014-0,https://www.era.europa.eu/system/files/2023-07/IF_240713_ERA-2014-0070-EN.pdf,,,110,,CIAF,ES,,,DEVELOPMENT  SUBSECRETARIAT  Investigation of Serious Accident,1.7.7,Otros,IF_240713_ERA-2014-0070-EN.pdf
+2.4,Sin identificar,Completado,0,2013-02-26,2026-07-06T13:13:55.372952,ERA,0,0,09:05,ES-2013-IF_260213_291013_CIA,https://www.era.europa.eu/system/files/2023-07/IF_260213_291013_CIAF.pdf,Madrid-Atocha,San,15,Renfe,CIAF,ES,16+100,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_260213_291013_CIAF.pdf
+1.2.1.1,Fallo técnico - Rodadura,Completado,0,2013-03-26,2026-07-06T13:13:55.467091,ERA,0,0,01:00,ES-2013-IF_260313_240614_CIA,https://www.era.europa.eu/system/files/2023-07/IF_260313_240614_CIAF.pdf,de,,15,,CIAF,ES,122+450,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_260313_240614_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-05-26,2026-07-06T13:13:55.573377,ERA,0,0,,ES-2013-IF_260513_140714_CIA,https://www.era.europa.eu/system/files/2023-07/IF_260513_140714_CIAF.pdf,,SEVILLA,21,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_260513_140714_CIAF.pdf
+1.1.6,Factor humano - Mantenimiento,Completado,0,2013-02-27,2026-07-06T13:13:55.666591,ERA,0,0,04:10,ES-2013-IF_270213_291013_CIA,https://www.era.europa.eu/system/files/2023-07/IF_270213_291013_CIAF.pdf,Hendaya,Pitis,17,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_270213_291013_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-10-27,2026-07-06T13:13:55.813924,ERA,0,0,,ES-2013-IF_271013_231214_CIA,https://www.era.europa.eu/system/files/2023-07/IF_271013_231214_CIAF_ES-2902.pdf,,BARCELONA SANT ANDREU ARENAL,26,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_271013_231214_CIAF_ES-2902.pdf
+2.4,Sin identificar,Completado,0,2013-10-27,2026-07-06T13:13:56.074998,ERA,0,0,,ES-2013-IF_271013_251114_CIA,https://www.era.europa.eu/system/files/2023-07/IF_271013_251114_CIAF.pdf,,,19,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Inves tigación del incidente,2,Incidente,IF_271013_251114_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-10-27,2026-07-06T13:13:56.353749,ERA,0,0,,ES-2013-IF_271013_251114_CIA,https://www.era.europa.eu/system/files/2023-07/IF_271013_251114_CIAF_ES-2901.pdf,,,19,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Inves tigación del incidente,2,Incidente,IF_271013_251114_CIAF_ES-2901.pdf
+2.4,Sin identificar,Completado,0,2013-04-28,2026-07-06T13:13:56.449538,ERA,0,0,09:58,ES-2013-7601,https://www.era.europa.eu/system/files/2023-07/IF_280413_200514_CIAF.pdf,La Asunc ión Universidad,,17,,CIAF,ES,26+700,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.1.2,Colisión por alcance,IF_280413_200514_CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-01-31,2026-07-06T13:13:56.547680,ERA,0,0,15:36,ES-2013-IF_310113_291013_CIA,https://www.era.europa.eu/system/files/2023-07/IF_310113_291013_CIAF.pdf,Valdecilla,Unquera,19,Renfe,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.3.2,Descarrilamiento en estación,IF_310113_291013_CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-07-02,2026-07-06T13:13:56.724119,ERA,0,0,,ES-2014-ES 02.07.204 150324-,https://www.era.europa.eu/system/files/2023-07/ES%2002.07.204%20150324-140702-IF-CIAF.pdf,,,29,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 02.07.204 150324-140702-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-09-02,2026-07-06T13:13:56.836759,ERA,0,0,,ES-2014-ES 02.09.2014 -14090,https://www.era.europa.eu/system/files/2023-07/ES%2002.09.2014%20-140902-IF-CIAF.pdf,,UNQUERA,19,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 02.09.2014 -140902-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-08-06,2026-07-06T13:13:56.972143,ERA,0,0,,ES-2014-ES 06.08.2014 150922,https://www.era.europa.eu/system/files/2023-07/ES%2006.08.2014%20150922-140806-IF-CIAF.pdf,,,25,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 06.08.2014 150922-140806-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-11-09,2026-07-06T13:13:57.096351,ERA,0,0,,ES-2014-ES 09.11.2014 151124,https://www.era.europa.eu/system/files/2023-07/ES%2009.11.2014%20151124-141109-IF-CIAF.pdf,,CALAÑAS,21,,CIAF,ES,130+742,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.4,Accidente en paso a nivel,ES 09.11.2014 151124-141109-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-07-10,2026-07-06T13:13:57.234075,ERA,0,0,,ES-2014-ES 10 07 2014 150428,https://www.era.europa.eu/system/files/2023-07/ES%2010%2007%202014%20150428-140710-IF-CIAF.pdf,,SANT V ICEN,23,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 10 07 2014 150428-140710-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-07-11,2026-07-06T13:13:57.333343,ERA,0,0,,ES-2014-ES 11 07 2014 150525,https://www.era.europa.eu/system/files/2023-07/ES%2011%2007%202014%20150525-140711-IF-CIAF-1.pdf,,MATAESPESA DE ALPEDRETE,19,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES 11 07 2014 150525-140711-IF-CIAF-1.pdf
+2.4,Sin identificar,Completado,0,2014-07-11,2026-07-06T13:13:57.453555,ERA,0,0,,ES-2014-ES 11 07 2014 150525,https://www.era.europa.eu/system/files/2023-07/ES%2011%2007%202014%20150525-140711-IF-CIAF.pdf,,MATAESPESA DE ALPEDRETE,19,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES 11 07 2014 150525-140711-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-08-11,2026-07-06T13:13:57.592473,ERA,0,0,,ES-2014-ES 11.08.2014 151022,https://www.era.europa.eu/system/files/2023-07/ES%2011.08.2014%20151022-140811-IF-CIAF.pdf,,,23,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 11.08.2014 151022-140811-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-10-11,2026-07-06T13:13:57.970804,ERA,0,0,,ES-2014-ES 11.10.2014 160628,https://www.era.europa.eu/system/files/2023-07/ES%2011.10.2014%20160628-141011-IF-CIAF.pdf,,,31,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 11.10.2014 160628-141011-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-04-15,2026-07-06T13:13:58.102195,ERA,0,0,,ES-2014-ES 15 04 2014 -14041,https://www.era.europa.eu/system/files/2023-07/ES%2015%2004%202014%20-140415-IF-CIAF.pdf,,,21,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES 15 04 2014 -140415-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-11-18,2026-07-06T13:13:58.247439,ERA,0,0,,ES-2014-ES 18.11.2014 151124,https://www.era.europa.eu/system/files/2023-07/ES%2018.11.2014%20151124-141118-IF-CIAF.pdf,,,27,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 18.11.2014 151124-141118-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-01-23,2026-07-06T13:13:58.384324,ERA,0,0,,ES-2014-ES 23.01.2014 IF_230,https://www.era.europa.eu/system/files/2023-07/ES%2023.01.2014%20IF_230114_270115_CIAF.pdf,,,23,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,ES 23.01.2014 IF_230114_270115_CIAF.pdf
+2.4,Sin identificar,Completado,0,2014-09-26,2026-07-06T13:13:58.803292,ERA,0,0,,ES-2014-ES 26.09.2014 150922,https://www.era.europa.eu/system/files/2023-07/ES%2026.09.2014%20150922-140926-IF-CIAF_SANTA%20MAR%C3%8DA%20DE%20LA%20ALAMEDA.pdf,,,25,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 26.09.2014 150922-140926-IF-CIAF_SANTA MARÍA DE LA ALAMEDA.pdf
+2.4,Sin identificar,Completado,0,2014-09-26,2026-07-06T13:13:58.983449,ERA,0,0,,ES-2014-ES 26.09.2014 151022,https://www.era.europa.eu/system/files/2023-07/ES%2026.09.2014%20151022-140926-IF-CIAF_BARCELONA%20ESTACI%C3%93%20DE%20FRAN%C3%87A.pdf,,,25,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 26.09.2014 151022-140926-IF-CIAF_BARCELONA ESTACIÓ DE FRANÇA.pdf
+2.4,Sin identificar,Completado,0,2014-08-31,2026-07-06T13:13:59.176005,ERA,0,0,,ES-2014-ES 31.08.2014 150803,https://www.era.europa.eu/system/files/2023-07/ES%2031.08.2014%20150803-140831-IF-CIAF.pdf,,,31,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 31.08.2014 150803-140831-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2013-07-11,2026-07-06T13:13:59.435129,ERA,0,0,,ES-2014-IF_110713_251114_CIA,https://www.era.europa.eu/system/files/2023-07/IF_110713_251114_CIAF_0.pdf,,,19,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF_110713_251114_CIAF_0.pdf
+2.4,Sin identificar,Completado,0,2013-08-14,2026-07-06T13:13:59.738394,ERA,0,0,,ES-2014-IF_140813_251114_CIA,https://www.era.europa.eu/system/files/2023-07/IF_140813_251114_CIAF_0.pdf,,,21,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,IF_140813_251114_CIAF_0.pdf
+2.4,Sin identificar,Completado,0,2014-01-23,2026-07-06T13:13:59.882144,ERA,0,0,,ES-2014-IF_230114_270115_CIA,https://www.era.europa.eu/system/files/2023-07/IF_230114_270115_CIAF.pdf,,,23,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,1.7.7,Otros,IF_230114_270115_CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-09-02,2026-07-06T13:14:00.408355,ERA,0,0,,ES-2015-ES 02.09.2015 170530,https://www.era.europa.eu/system/files/2023-07/ES%2002.09.2015%20170530-150902-IF-CIAF.pdf,,,29,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 02.09.2015 170530-150902-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-03-04,2026-07-06T13:14:00.669391,ERA,0,0,,ES-2015-ES 04.03.2015 160531,https://www.era.europa.eu/system/files/2023-07/ES%2004.03.2015%20160531150304IFCIAF.pdf,,PUERTO DE NAVACERRADA Y EL APEADERO DE COLLADO ALBO,28,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 04.03.2015 160531150304IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-10-05,2026-07-06T13:14:01.559447,ERA,0,0,,ES-2015-ES 05.10.2015 170627,https://www.era.europa.eu/system/files/2023-07/ES%2005.10.2015%20170627-151005-IF-CIAF.pdf,,TARDIENTA,47,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 05.10.2015 170627-151005-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-02-09,2026-07-06T13:14:02.055408,ERA,0,0,,ES-2015-ES 09.02.2015 160927,https://www.era.europa.eu/system/files/2023-07/ES%2009.02.2015%20160927150209IFCIAF.pdf,,DE A SUSANA,26,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 09.02.2015 160927150209IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-05-10,2026-07-06T13:14:02.403476,ERA,0,0,,ES-2015-ES 10.05.2015 161129,https://www.era.europa.eu/system/files/2023-07/ES%2010.05.2015%20161129150510IFCIAF.pdf,,BARCELONA SANTS,26,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 10.05.2015 161129150510IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-01-12,2026-07-06T13:14:02.592770,ERA,0,0,,ES-2015-ES 12.01.2015 160223,https://www.era.europa.eu/system/files/2023-07/ES%2012.01.2015%20160223-150112-IF-CIAF.pdf,,BARCELONA MARINA,30,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 12.01.2015 160223-150112-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-02-13,2026-07-06T13:14:02.768911,ERA,0,0,,ES-2015-ES 13.02.2015 160531,https://www.era.europa.eu/system/files/2023-07/ES%2013.02.2015%20160531150213IFCIAF.pdf,,BARCELONA ESTACIÓ DE FRAN,31,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 13.02.2015 160531150213IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-10-14,2026-07-06T13:14:03.271684,ERA,0,0,,ES-2015-ES 14.10.2015 170503,https://www.era.europa.eu/system/files/2023-07/ES%2014.10.2015%20170503-151014-IF-CIAF.pdf,,DE MONTE LA REINA,32,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 14.10.2015 170503-151014-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-02-17,2026-07-06T13:14:03.406477,ERA,0,0,,ES-2015-ES 17.02.2015 151222,https://www.era.europa.eu/system/files/2023-07/ES%2017.02.2015%20151222-150217-IF-CIAF.pdf,,MADRID CHAMARTÍN,23,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 17.02.2015 151222-150217-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-03-18,2026-07-06T13:14:03.614566,ERA,0,0,,ES-2015-ES 18.03.2015 160531,https://www.era.europa.eu/system/files/2023-07/ES%2018.03.2015%20160531150318IFCIAF.pdf,,ABOÑO,34,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 18.03.2015 160531150318IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-11-20,2026-07-06T13:14:04.138442,ERA,0,0,,ES-2015-ES 20.11.2015 170131,https://www.era.europa.eu/system/files/2023-07/ES%2020.11.2015%20170131-151120-IF-CIAF.pdf,,,34,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 20.11.2015 170131-151120-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-05-22,2026-07-06T13:14:04.590046,ERA,0,0,,ES-2015-ES 22.05.2015 160628,https://www.era.europa.eu/system/files/2023-07/ES%2022.05.2015%20160628-150522-IF-CIAF.pdf,,VICÁLVARO,30,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 22.05.2015 160628-150522-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2015-10-22,2026-07-06T13:14:05.157935,ERA,0,0,,ES-2015-ES 22.10.2015 160927,https://www.era.europa.eu/system/files/2023-07/ES%2022.10.2015%20160927151022IFCIAF.pdf,,DE RÍO HUERVA,38,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 22.10.2015 160927151022IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-08-27,2026-07-06T13:14:05.757997,ERA,0,0,,ES-2015-ES 27.08.2015 161129,https://www.era.europa.eu/system/files/2023-07/ES%2027.08.2015%20161129150827IFCIAF.pdf,,,44,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 27.08.2015 161129150827IFCIAF.pdf
+2.4,Sin identificar,Completado,0,2015-03-31,2026-07-06T13:14:05.907609,ERA,0,0,,ES-2015-ES 31.03.2015 160223,https://www.era.europa.eu/system/files/2023-07/ES%2031.03.2015%20160223-150331-IF-CIAF.pdf,,MEDINA DEL CAMPO,27,,CIAF,ES,,,DE FOMENTO SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 31.03.2015 160223-150331-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-11-04,2026-07-06T13:14:06.453764,ERA,0,0,,ES-2016-ES 04.11.2016 180322,https://www.era.europa.eu/system/files/2023-07/ES%2004.11.2016%20180322161104IFSN_CIAF_CHESTE.pdf,,CHESTE,29,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accident e,2,Incidente,ES 04.11.2016 180322161104IFSN_CIAF_CHESTE.pdf
+2.4,Sin identificar,Completado,0,2016-11-04,2026-07-06T13:14:07.267620,ERA,0,0,,ES-2016-ES 04.11.2016 180718,https://www.era.europa.eu/system/files/2023-07/ES%2004.11.2016%20180718-161104-IF-SN_CIAF_HOSPITALET%20DE%20LLOBREGAT%20.pdf,,DE L,66,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 04.11.2016 180718-161104-IF-SN_CIAF_HOSPITALET DE LLOBREGAT .pdf
+2.4,Sin identificar,Completado,3,2016-09-09,2026-07-06T13:14:11.379411,ERA,0,0,,ES-2016-ES 09.09.2016 190329,https://www.era.europa.eu/system/files/2023-07/ES%2009.09.2016%20190329-160909-IF-CIAF.pdf,,DE O PORRIÑO,423,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 09.09.2016 190329-160909-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-03-15,2026-07-06T13:14:11.733119,ERA,0,0,,ES-2016-ES 15.03.2016 170720,https://www.era.europa.eu/system/files/2023-07/ES%2015.03.2016%20170720-160315-IF-CIAF.pdf,,,24,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,1.5.1.1,Arrollamiento en plena vía,ES 15.03.2016 170720-160315-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-03-16,2026-07-06T13:14:12.269319,ERA,0,0,,ES-2016-ES 16.03.2016 170720,https://www.era.europa.eu/system/files/2023-07/ES%2016.03.2016%20170720-160316-IF-CIAF.pdf,,TORREJÓN DE ARDOZ,37,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 16.03.2016 170720-160316-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-04-17,2026-07-06T13:14:12.876544,ERA,0,0,,ES-2016-ES 17.04.2016 171017,https://www.era.europa.eu/system/files/2023-07/ES%2017.04.2016%20171017-160417-IF-CIAF.pdf,,HERNANI,46,,CIAF,ES,,,DE FOMENTOSUBSECRETARÍAInvestigación del accidente,2,Incidente,ES 17.04.2016 171017-160417-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-07-18,2026-07-06T13:14:13.392422,ERA,0,0,,ES-2016-ES 18.07.2016 171017,https://www.era.europa.eu/system/files/2023-07/ES%2018.07.2016%20171017-160718-IF-CIAF.pdf,,BOÑAR,40,,CIAF,ES,,,DE FOMENTOSUBSECRETARÍAInvestigación del incidente,2,Incidente,ES 18.07.2016 171017-160718-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-01-23,2026-07-06T13:14:14.041396,ERA,0,0,,ES-2016-ES 23.01.2016 170919,https://www.era.europa.eu/system/files/2023-07/ES%2023.01.2016%20170919-160123-IF-CIAF.pdf,,ASCÓ,49,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 23.01.2016 170919-160123-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-01-25,2026-07-06T13:14:14.562833,ERA,0,0,,ES-2016-ES 25.01.2016 170331,https://www.era.europa.eu/system/files/2023-07/ES%2025.01.2016%20170331-160125-IF-CIAF.pdf,,ELX PARC,30,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 25.01.2016 170331-160125-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-05-28,2026-07-06T13:14:15.055787,ERA,0,0,,ES-2016-ES 28.05.2016 180223,https://www.era.europa.eu/system/files/2023-07/ES%2028.05.2016%20180223-160528-IF-SN_CIAF.pdf,,VILANOVA I LA GELTRÚ,43,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 28.05.2016 180223-160528-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2016-09-30,2026-07-06T13:14:15.702308,ERA,0,0,,ES-2016-ES 30.09.2016 180525,https://www.era.europa.eu/system/files/2023-07/ES%2030.09.2016%20180525-160930-IF-CIAF.pdf,,,41,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,1.3.1,Descarrilamiento en plena vía,ES 30.09.2016 180525-160930-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2017-03-23,2026-07-06T13:14:16.338479,ERA,0,0,,ES-2017-191217-230317-SN_CIA,https://www.era.europa.eu/system/files/2023-07/191217-230317-IF-SN_CIAF.pdf,,MADRID CHAMARTÍN,48,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del Incidente,2,Incidente,191217-230317-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,3,2017-07-28,2026-07-06T13:14:17.850504,ERA,0,0,,ES-2017-191217-280717-if-sn_,https://www.era.europa.eu/system/files/2023-07/191217-280717-if-sn_ciaf.pdf,,FRAN,71,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,191217-280717-if-sn_ciaf.pdf
+2.4,Sin identificar,Completado,0,2017-11-29,2026-07-06T13:14:19.281034,ERA,0,0,,ES-2017-200124-291117-SN_CIA,https://www.era.europa.eu/system/files/2023-07/200124-291117-IF-SN_CIAF.pdf,,,54,,CIAF,ES,20+350,,URBANA  SUBSECRETARÍA  Investigación del accidente,1.3.1,Descarrilamiento en plena vía,200124-291117-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2017-01-01,2026-07-06T13:14:20.124763,ERA,0,0,,ES-2017-ES 13.02.2017 180424,https://www.era.europa.eu/system/files/2023-07/ES%2013.02.2017%20180424-170213-IF-SN-CIAF%20.pdf,,,34,,CIAF,ES,90+594,SANTO DOMINGO,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,1.4,Accidente en paso a nivel,ES 13.02.2017 180424-170213-IF-SN-CIAF .pdf
+2.4,Sin identificar,Completado,0,2017-07-13,2026-07-06T13:14:21.409874,ERA,0,0,,ES-2017-ES 13.07.2017 191022,https://www.era.europa.eu/system/files/2023-07/ES%2013.07.2017%20191022-170713-IF-SN_CIAF.pdf,,,43,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,ES 13.07.2017 191022-170713-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2017-01-15,2026-07-06T13:14:22.473705,ERA,0,0,,ES-2017-ES 15.01.2017 N18121,https://www.era.europa.eu/system/files/2023-07/ES%2015.01.2017%20N181219-170115-IF-SN_CIAF.pdf,,ARAHAL,54,,CIAF,ES,,,DE FOMENTOSUBSECRETARÍAInvestigación del incidente,2,Incidente,ES 15.01.2017 N181219-170115-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2017-08-21,2026-07-06T13:14:23.216432,ERA,0,0,,ES-2017-ES 21.08.2017 190726,https://www.era.europa.eu/system/files/2023-07/ES%2021.08.2017%20190726-170821-IF-SN_CIAF%20.pdf,,LLEIDA,41,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 21.08.2017 190726-170821-IF-SN_CIAF .pdf
+2.4,Sin identificar,Completado,0,2017-05-23,2026-07-06T13:14:23.841753,ERA,0,0,,ES-2017-ES 23.05.2017 181219,https://www.era.europa.eu/system/files/2023-07/ES%2023.05.2017%20181219-170523-IF-SN_CIAF.pdf,,INOSO,42,,CIAF,ES,,,DE FOMENTOSUBSECRETARÍAInvestigación del accidente,2,Incidente,ES 23.05.2017 181219-170523-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2017-07-25,2026-07-06T13:14:25.079981,ERA,0,0,,ES-2017-ES 25.07.2017 190426,https://www.era.europa.eu/system/files/2023-07/ES%2025.07.2017%20190426-170725-IF-SN-CIAF_.pdf,,TORRAL BA,37,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del incidente,2,Incidente,ES 25.07.2017 190426-170725-IF-SN-CIAF_.pdf
+2.4,Sin identificar,Completado,0,2017-05-12,2026-07-06T13:14:26.038031,ERA,0,0,,ES-2017-ZS 12.05.2017 190125,https://www.era.europa.eu/system/files/2023-07/ZS%2012.05.2017%20190125-170512-IF-SN_CIAF.pdf,,,56,,CIAF,ES,225+965,,DE FOMENTOSUBSECRETARÍAInvestigación del accidente,1.3.2,Descarrilamiento en estación,ZS 12.05.2017 190125-170512-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2018-07-01,2026-07-06T13:14:27.019510,ERA,0,0,,ES-2018-200421-010718-SN_CIA,https://www.era.europa.eu/system/files/2023-07/200421-010718-IF-SN_CIAF_.pdf,,PEDRALBA,62,,CIAF,ES,,,AGENDA URBANA  SUBSECRETARÍA  Investigación del incidente,2,Incidente,200421-010718-IF-SN_CIAF_.pdf
+2.4,Sin identificar,Completado,0,2018-11-20,2026-07-06T13:14:29.595164,ERA,0,0,,ES-2018-200723-201118-SN_CIA,https://www.era.europa.eu/system/files/2023-07/200723-201118-IF-SN_CIAF.pdf,,,97,,CIAF,ES,,,DE FOMENTO  SUBSECRETARÍA  Investigación del accidente,2,Incidente,200723-201118-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,3,2019-12-09,2026-07-06T13:14:30.480231,ERA,0,0,,ES-2019-25045,https://www.era.europa.eu/system/files/2023-07/201117-091219-IF-SN_CIAF.pdf,,CORNELLÁ,32,,CIAF,ES,,,AGENDA URBANA SUBSECRETARÍA  Investigación del incidente,2,Incidente,201117-091219-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,3,2019-01-01,2026-07-06T13:14:33.834789,ERA,0,0,,ES-2019-ES-5925 - 210624-190,https://www.era.europa.eu/system/files/2023-07/ES-5925%20-%20210624-190208-if-sn_ciaf.pdf,,,143,,CIAF,ES,,,INFORME FINAL DE LA CIAF (IFC) 12/2019,2,Incidente,ES-5925 - 210624-190208-if-sn_ciaf.pdf
+2.4,Sin identificar,Completado,0,2019-01-01,2026-07-06T13:14:34.785535,ERA,0,0,,ES-2019-ES-6255-210121-20041,https://www.era.europa.eu/system/files/2023-07/ES-6255-210121-200419-IF-SN_CIAF.pdf,,Mataró,32,,CIAF,ES,,,INFORME FINAL  DE LA CIAF  (IF) 28/2019,2,Incidente,ES-6255-210121-200419-IF-SN_CIAF.pdf
+2.4,Sin identificar,Completado,0,2020-01-01,2026-07-06T13:14:36.268748,ERA,0,0,,ES-2020-ES-10002 - 210916-20,https://www.era.europa.eu/system/files/2023-07/ES-10002%20-%20210916-200304-IF_sn_CIAF.pdf,,Xeraco,55,,CIAF,ES,,,INFORME FINAL DE LA CIAF  (IFC) 19/2020,2,Incidente,ES-10002 - 210916-200304-IF_sn_CIAF.pdf
+2.4,Sin identificar,Completado,0,2020-01-01,2026-07-06T13:14:37.941311,ERA,0,0,,ES-2020-ES-6201 - 210520-200,https://www.era.europa.eu/system/files/2023-07/ES-6201%20-%20210520-200124-IF-CIAF.pdf,,,73,,CIAF,ES,,,INFORME FINAL DE LA CIAF (IF) 04/2020,2,Incidente,ES-6201 - 210520-200124-IF-CIAF.pdf
+2.4,Sin identificar,Completado,0,2020-01-01,2026-07-06T13:14:38.892728,ERA,0,0,,ES-2020-ES-6274 - 211125-200,https://www.era.europa.eu/system/files/2023-07/ES-6274%20-%20211125-200602-IF_CIAF%20%28%2BENG%29.pdf,,,56,,CIAF,ES,,,"Accidente  ferroviario en La Hiniesta  (Zamora ), ocurrido el 02",2,Incidente,ES-6274 - 211125-200602-IF_CIAF (+ENG).pdf
+2.4,Sin identificar,Completado,0,2021-02-05,2026-07-06T13:14:39.762656,ERA,0,0,,ES-2021-ES-10111 - 2021-09-0,https://www.era.europa.eu/system/files/2023-07/ES-10111%20-%202021-09-0205-IF%20Blanes.pdf,,Blanes,58,,CIAF,ES,,,INFORME FINAL DE LA CIAF  (IF) 09/2021,2,Incidente,ES-10111 - 2021-09-0205-IF Blanes.pdf
+2.4,Sin identificar,Completado,0,2021-01-01,2026-07-06T13:14:40.823806,ERA,0,0,,ES-2021-ES-10126 - 220429-21,https://www.era.europa.eu/system/files/2023-07/ES-10126%20-%20220429-210702-if_ciaf.pdf,,,53,,CIAF,ES,,,INFORME FINAL  DE LA CIAF  (IF) 59/2021,1.4,Accidente en paso a nivel,ES-10126 - 220429-210702-if_ciaf.pdf
+2.4,Sin identificar,Completado,0,2021-08-11,2026-07-06T13:14:41.482542,ERA,0,0,,ES-2021-ES-10137 - 2021-64 I,https://www.era.europa.eu/system/files/2023-07/ES-10137%20-%202021-64%20IF%20v1.1%20Medinaceli.pdf,,,44,,CIAF,ES,,,Fallo de cargamento en el  p.k. 161 de la línea 200,2,Incidente,ES-10137 - 2021-64 IF v1.1 Medinaceli.pdf

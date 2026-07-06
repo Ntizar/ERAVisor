@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERA — Visor Global de Accidentes Ferroviarios</title>
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+/* ===================================================================
+   ERA VISOR — ESTILOS
+   =================================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #fafafa; color: #1e293b; }
+a { color: #2563eb; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Layout general */
+.app { display: flex; height: 100vh; overflow: hidden; }
+
+/* ─── SIDEBAR ─── */
+.sidebar { width: 300px; min-width: 300px; background: #ffffff; border-right: 1px solid #e2e8f0; display: flex; flex-direction: column; overflow: hidden; }
+.sidebar-header { background: #2563eb; color: #fff; padding: 18px 20px; }
+.sidebar-header h1 { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; }
+.sidebar-header h1 span { color: #f97316; }
+.sidebar-header p { font-size: 11px; opacity: 0.85; margin-top: 2px; }
+.sidebar-filters { flex: 1; overflow-y: auto; padding: 16px 20px 20px; }
+.filter-group { margin-bottom: 18px; }
+.filter-group label { display: block; font-size: 12px; font-weight: 600; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
+.filter-group select, .filter-group input[type="text"] { width: 100%; padding: 8px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 13px; background: #fff; color: #1e293b; }
+.filter-group select:focus, .filter-group input[type="text"]:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); }
+.range-row { display: flex; align-items: center; gap: 8px; }
+.range-row input[type="range"] { flex: 1; accent-color: #2563eb; }
+.range-row .range-label { font-size: 13px; font-weight: 600; color: #2563eb; min-width: 42px; text-align: center; }
+.checkbox-group { max-height: 140px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 6px; padding: 6px 8px; }
+.checkbox-item { display: flex; align-items: center; gap: 6px; padding: 3px 0; font-size: 13px; cursor: pointer; }
+.checkbox-item input[type="checkbox"] { accent-color: #2563eb; }
+.checkbox-item:hover { color: #2563eb; }
+.filter-actions { display: flex; gap: 6px; margin-top: 4px; }
+.filter-actions button { flex: 1; padding: 5px 0; font-size: 11px; border: 1px solid #cbd5e1; border-radius: 4px; background: #fff; cursor: pointer; color: #475569; }
+.filter-actions button:hover { background: #f1f5f9; border-color: #2563eb; color: #2563eb; }
+.filter-count { font-size: 12px; color: #64748b; margin-top: 10px; padding: 8px 10px; background: #f8fafc; border-radius: 6px; border: 1px solid #e2e8f0; text-align: center; }
+.filter-count strong { color: #2563eb; }
+
+/* ─── MAIN ─── */
+.main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+
+/* Tabs */
+.tabs { display: flex; background: #fff; border-bottom: 2px solid #e2e8f0; padding: 0 8px; }
+.tab-btn { padding: 12px 20px; font-size: 13px; font-weight: 600; color: #64748b; background: none; border: none; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.15s; }
+.tab-btn:hover { color: #2563eb; }
+.tab-btn.active { color: #2563eb; border-bottom-color: #2563eb; }
+.tab-btn .badge { display: inline-block; background: #e2e8f0; color: #475569; font-size: 10px; font-weight: 700; border-radius: 10px; padding: 1px 7px; margin-left: 4px; vertical-align: middle; }
+.tab-btn.active .badge { background: #2563eb; color: #fff; }
+
+/* Tab content */
+.tab-content { flex: 1; display: none; overflow: auto; position: relative; }
+.tab-content.active { display: flex; flex-direction: column; }
+
+/* MAPA */
+#map { flex: 1; min-height: 400px; z-index: 1; }
+.map-legend { position: absolute; bottom: 20px; right: 20px; z-index: 1000; background: rgba(255,255,255,0.95); padding: 10px 14px; border-radius: 8px; border: 1px solid #e2e8f0; font-size: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.map-legend .legend-item { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+.map-legend .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+
+/* ESTADÍSTICAS */
+.charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px; flex: 1; }
+.chart-card { background: #fff; border-radius: 10px; border: 1px solid #e2e8f0; padding: 14px; box-shadow: 0 1px 3px rgba(0,0,0,0.03); }
+.chart-card h3 { font-size: 14px; font-weight: 600; color: #1e293b; margin-bottom: 8px; }
+.chart-card canvas { width: 100% !important; max-height: 240px; }
+
+/* TABLA */
+.table-wrapper { padding: 16px; flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.table-toolbar { display: flex; gap: 10px; margin-bottom: 12px; align-items: center; flex-wrap: wrap; }
+.table-toolbar input[type="text"] { flex: 1; min-width: 200px; padding: 8px 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 13px; }
+.table-toolbar input[type="text"]:focus { outline: none; border-color: #2563eb; box-shadow: 0 0 0 3px rgba(37,99,235,0.15); }
+.table-toolbar span { font-size: 13px; color: #64748b; white-space: nowrap; }
+.table-scroll { overflow: auto; flex: 1; border: 1px solid #e2e8f0; border-radius: 8px; }
+.table-scroll table { width: 100%; border-collapse: collapse; font-size: 12px; white-space: nowrap; }
+.table-scroll th { background: #f8fafc; position: sticky; top: 0; z-index: 2; padding: 8px 10px; text-align: left; font-weight: 600; color: #475569; border-bottom: 2px solid #e2e8f0; cursor: pointer; user-select: none; }
+.table-scroll th:hover { color: #2563eb; }
+.table-scroll th .sort-arrow { margin-left: 3px; font-size: 10px; color: #2563eb; }
+.table-scroll td { padding: 6px 10px; border-bottom: 1px solid #f1f5f9; }
+.table-scroll tr:hover td { background: #f0f7ff; }
+.table-scroll .row-danger { background: #fef2f2 !important; }
+.table-scroll .row-danger td { color: #991b1b; }
+.table-scroll .row-danger:hover td { background: #fee2e2 !important; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 0 0; }
+.pagination button { padding: 5px 12px; border: 1px solid #cbd5e1; border-radius: 5px; background: #fff; font-size: 13px; cursor: pointer; color: #475569; }
+.pagination button:hover:not(:disabled) { background: #2563eb; color: #fff; border-color: #2563eb; }
+.pagination button:disabled { opacity: 0.4; cursor: default; }
+.pagination .page-info { font-size: 13px; color: #64748b; margin: 0 6px; }
+
+/* EXPORTAR */
+.export-section { padding: 24px; max-width: 640px; }
+.export-section h2 { font-size: 20px; font-weight: 700; color: #1e293b; margin-bottom: 6px; }
+.export-section p { color: #64748b; font-size: 14px; margin-bottom: 20px; }
+.export-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; }
+.export-card h3 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.export-card .hint { font-size: 12px; color: #94a3b8; margin-bottom: 12px; }
+.export-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; background: #2563eb; color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s; }
+.export-btn:hover { background: #1d4ed8; }
+.export-btn.orange { background: #f97316; }
+.export-btn.orange:hover { background: #ea580c; }
+.export-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 20px; }
+.stat-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px; text-align: center; }
+.stat-card .stat-num { font-size: 26px; font-weight: 700; color: #2563eb; }
+.stat-card .stat-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 0.3px; margin-top: 2px; }
+.stat-card.orange .stat-num { color: #f97316; }
+
+/* Scrollbar */
+.sidebar-filters::-webkit-scrollbar, .table-scroll::-webkit-scrollbar { width: 5px; height: 5px; }
+.sidebar-filters::-webkit-scrollbar-thumb, .table-scroll::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+
+/* Responsive */
+@media (max-width: 900px) { .app { flex-direction: column; } .sidebar { width: 100%; min-width: unset; max-height: 40vh; } .charts-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="app">
+
+<!-- ===================================================================
+     SIDEBAR
+     =================================================================== -->
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <h1>ERA <span>Visor</span></h1>
+    <p>Accidentes ferroviarios · European Railway Agency</p>
+  </div>
+  <div class="sidebar-filters">
+
+    <div class="filter-group">
+      <label>📅 Año</label>
+      <div class="range-row">
+        <input type="range" id="filterYearMin" min="2006" max="2024" value="2006">
+        <span class="range-label" id="labelYearMin">2006</span>
+        <span style="color:#94a3b8;font-size:13px;">–</span>
+        <input type="range" id="filterYearMax" min="2006" max="2024" value="2024">
+        <span class="range-label" id="labelYearMax">2024</span>
+      </div>
+    </div>
+
+    <div class="filter-group">
+      <label>🌍 País</label>
+      <select id="filterPais"><option value="">Todos</option></select>
+    </div>
+
+    <div class="filter-group">
+      <label>📍 Provincia</label>
+      <select id="filterProvincia"><option value="">Todas</option></select>
+    </div>
+
+    <div class="filter-group">
+      <label>🚦 Tipo de suceso</label>
+      <div class="filter-actions">
+        <button id="sucesoSelectAll">Seleccionar todo</button>
+        <button id="sucesoDeselect">Deseleccionar</button>
+      </div>
+      <div class="checkbox-group" id="sucesoCheckboxes"></div>
+    </div>
+
+    <div class="filter-group">
+      <label>🔍 Causa</label>
+      <div class="filter-actions">
+        <button id="causaSelectAll">Seleccionar todo</button>
+        <button id="causaDeselect">Deseleccionar</button>
+      </div>
+      <div class="checkbox-group" id="causaCheckboxes"></div>
+    </div>
+
+    <div class="filter-count" id="filterCount">Mostrando <strong>0</strong> de <strong id="totalCount">0</strong> accidentes</div>
+  </div>
+</aside>
+
+<!-- ===================================================================
+     MAIN CONTENT
+     =================================================================== -->
+<div class="main">
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="mapa">🗺️ Mapa</button>
+    <button class="tab-btn" data-tab="stats">📊 Estadísticas</button>
+    <button class="tab-btn" data-tab="tabla">📋 Tabla <span class="badge" id="tablaBadge">0</span></button>
+    <button class="tab-btn" data-tab="export">📥 Exportar</button>
+  </nav>
+
+  <!-- TAB: MAPA -->
+  <div class="tab-content active" id="tab-mapa">
+    <div id="map"></div>
+    <div class="map-legend">
+      <div class="legend-item"><span class="legend-dot" style="background:#2563eb;"></span> Sin víctimas</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#f97316;"></span> 1–5 fallecidos</div>
+      <div class="legend-item"><span class="legend-dot" style="background:#dc2626;"></span> &gt;5 fallecidos</div>
+    </div>
+  </div>
+
+  <!-- TAB: ESTADÍSTICAS -->
+  <div class="tab-content" id="tab-stats">
+    <div class="charts-grid">
+      <div class="chart-card"><h3>Accidentes por año</h3><canvas id="chartAnual"></canvas></div>
+      <div class="chart-card"><h3>Tipo de suceso</h3><canvas id="chartTipo"></canvas></div>
+      <div class="chart-card"><h3>Fallecidos + heridos graves por año</h3><canvas id="chartGraves"></canvas></div>
+      <div class="chart-card"><h3>Top 10 causas</h3><canvas id="chartCausas"></canvas></div>
+    </div>
+  </div>
+
+  <!-- TAB: TABLA -->
+  <div class="tab-content" id="tab-tabla">
+    <div class="table-wrapper">
+      <div class="table-toolbar">
+        <input type="text" id="tableSearch" placeholder="🔎 Buscar en toda la tabla...">
+        <span id="tableInfo">0 registros</span>
+      </div>
+      <div class="table-scroll">
+        <table><thead id="tableHead"></thead><tbody id="tableBody"></tbody></table>
+      </div>
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </div>
+
+  <!-- TAB: EXPORTAR -->
+  <div class="tab-content" id="tab-export">
+    <div class="export-section">
+      <h2>📥 Exportar datos</h2>
+      <p>Descargue los datos filtrados en formato CSV para su posterior análisis.</p>
+      <div class="export-card">
+        <h3>Exportar CSV filtrado</h3>
+        <p class="hint">Se exportarán únicamente los accidentes que coincidan con los filtros activos en el panel lateral.</p>
+        <button class="export-btn" id="exportCSV">📄 Descargar CSV</button>
+      </div>
+      <div class="export-stats">
+        <div class="stat-card"><div class="stat-num" id="statTotal">0</div><div class="stat-label">Total accidentes</div></div>
+        <div class="stat-card orange"><div class="stat-num" id="statFatal">0</div><div class="stat-label">Fallecidos</div></div>
+        <div class="stat-card"><div class="stat-num" id="statHeridos">0</div><div class="stat-label">Heridos (graves)</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<!-- ===================================================================
+     JAVASCRIPT
+     =================================================================== -->
+<script src="datos.js"></script>
+<script>
+/* ===================================================================
+   TAXONOMÍA ERA (Anexo III)
+   =================================================================== */
+const TAX = {
+  suceso: {
+    '1': 'Accidente', '1.1': 'Colisión', '1.1.1': 'Colisión frontal',
+    '1.1.2': 'Colisión por alcance', '1.3': 'Descarrilamiento',
+    '1.3.1': 'Descarrilamiento plena vía', '1.3.2': 'Descarrilamiento estación',
+    '1.4': 'Paso a nivel', '1.4.1.1': 'PN - Vehículo', '1.4.1.2': 'PN - Peatón',
+    '1.5': 'Atropello', '1.5.1': 'Arrollamiento', 
+    '1.5.1.1': 'Arrollamiento plena vía', '1.5.1.2': 'Arrollamiento estación',
+    '1.5.2': 'Caída de persona', '1.6': 'Incendio/explosión',
+    '1.7': 'Otros accidentes', '1.7.7': 'Otros',
+    '2': 'Incidente', '2.1.1': 'Rotura de carril',
+    '2.1.4': 'Señal rebasada', '2.1.6/7': 'Rueda/eje roto',
+    '2.2.1.1': 'Exceso velocidad', '3.1': 'Suicidio', '3.2': 'Intento suicidio'
+  },
+  causa: {
+    '1.1': 'Factor humano', '1.1.1': 'FH - Señales', '1.1.5': 'FH - Conducción',
+    '1.1.6': 'FH - Mantenimiento', '1.2': 'Fallo técnico',
+    '1.2.1.1': 'FT - Rodadura', '1.2.1.3': 'FT - Freno',
+    '1.2.2': 'FT - Instalaciones', '1.2.2.2': 'FT - Vía',
+    '1.2.2.3': 'FT - Carril', '1.2.2.5': 'FT - Seguridad',
+    '2.1': 'Usuario FC', '2.2': 'Condiciones entorno',
+    '2.2.1': 'Meteorológicas', '2.3': 'Otros',
+    '2.3.2': 'Intrusión', '2.3.3': 'Usuario PN',
+    '2.4': 'Sin identificar'
+  },
+  pais: { ES: 'España', FR: 'Francia', DE: 'Alemania', IT: 'Italia', UK: 'Reino Unido' }
+};
+
+function taxLabel(cat, code) {
+  const m = TAX[cat];
+  return m && m[code] ? m[code] : code;
+}
+
+/* ===================================================================
+   DATOS DE EJEMPLO (15 accidentes simulados)
+   =================================================================== */
+window.DATOS = [
+  { id_accidente:'ES-2024-001', pais:'ES', provincia:'Madrid', fecha:'2024-03-15', hora:'08:30', operador:'Renfe', linea:'Madrid-Barcelona', pk:'45.2', tipo_trafico:'Viajeros', tipo_linea:'Alta Velocidad', paso_nivel:'No', estacion:'Atocha', suceso_codigo:'1.1.1', suceso_desc:'Colisión frontal entre trenes', causa_codigo:'1.1.5', causa_desc:'Error humano de conducción', fallecidos:2, heridos_graves:15, heridos_leves:30, trenes:2, resumen:'Dos trenes de pasajeros colisionaron frontalmente en vía única debido a un error de señalización.', causas_directas:'Fallo humano al ignorar señal de parada.', factores_contribuyentes:'Falta de sistemas ATP en el tramo.', recomendaciones:'Implementar ERTMS nivel 2 en toda la línea.', titulo_informe:'Informe de investigación colisión Atocha 2024', num_paginas:45 },
+  { id_accidente:'ES-2023-002', pais:'ES', provincia:'Barcelona', fecha:'2023-07-22', hora:'14:15', operador:'Renfe', linea:'Barcelona-Valencia', pk:'12.8', tipo_trafico:'Mercancías', tipo_linea:'Convencional', paso_nivel:'Sí', estacion:'Sant Andreu', suceso_codigo:'1.4', suceso_desc:'Accidente en paso a nivel', causa_codigo:'2.3.3', causa_desc:'Usuario en paso a nivel', fallecidos:1, heridos_graves:2, heridos_leves:5, trenes:1, resumen:'Vehículo atrapado en paso a nivel fue impactado por tren de mercancías.', causas_directas:'Usuario ignoró barreras.', factores_contribuyentes:'Visibilidad reducida por vegetación.', recomendaciones:'Mejorar señalización y despeje de vegetación.', titulo_informe:'Informe paso a nivel Sant Andreu', num_paginas:28 },
+  { id_accidente:'ES-2022-003', pais:'ES', provincia:'Sevilla', fecha:'2022-11-05', hora:'06:45', operador:'Renfe Mercancías', linea:'Sevilla-Huelva', pk:'78.3', tipo_trafico:'Mercancías', tipo_linea:'Convencional', paso_nivel:'No', estacion:'La Negrilla', suceso_codigo:'1.3', suceso_desc:'Descarrilamiento', causa_codigo:'1.2.2.3', causa_desc:'Rotura de carril', fallecidos:0, heridos_graves:1, heridos_leves:2, trenes:1, resumen:'Descarrilamiento por rotura de carril debido a fatiga del material.', causas_directas:'Rotura de carril por defecto de fabricación.', factores_contribuyentes:'Inspección visual insuficiente.', recomendaciones:'Implementar ultrasonidos periódicos.', titulo_informe:'Informe descarrilamiento La Negrilla', num_paginas:32 },
+  { id_accidente:'FR-2024-004', pais:'FR', provincia:'Île-de-France', fecha:'2024-01-18', hora:'09:20', operador:'SNCF', linea:'Paris-Lyon', pk:'23.5', tipo_trafico:'Viajeros', tipo_linea:'Alta Velocidad', paso_nivel:'No', estacion:'Gare de Lyon', suceso_codigo:'1.1.2', suceso_desc:'Colisión por alcance', causa_codigo:'1.1.5', causa_desc:'Error de conducción', fallecidos:0, heridos_graves:8, heridos_leves:22, trenes:2, resumen:'Tren de alta velocidad alcanzó por detrás a otro en estación.', causas_directas:'Frenado tardío por error del maquinista.', factores_contribuyentes:'Sistema de frenado temporalmente desactivado.', recomendaciones:'Revisar protocolos de frenado en estaciones.', titulo_informe:'Rapport collision Gare de Lyon', num_paginas:38 },
+  { id_accidente:'FR-2023-005', pais:'FR', provincia:'Normandía', fecha:'2023-05-30', hora:'17:50', operador:'SNCF', linea:'Paris-Caen', pk:'156.0', tipo_trafico:'Viajeros', tipo_linea:'Convencional', paso_nivel:'Sí', estacion:'Lisieux', suceso_codigo:'1.4', suceso_desc:'Accidente en paso a nivel', causa_codigo:'2.3.3', causa_desc:'Usuario en paso a nivel', fallecidos:2, heridos_graves:4, heridos_leves:10, trenes:1, resumen:'Autobús escolar impactado por tren regional en paso a nivel.', causas_directas:'Conductor del autobús esquivó barreras.', factores_contribuyentes:'Falta de semáforos adicionales.', recomendaciones:'Instalar semáforos y radares en pasos a nivel.', titulo_informe:'Rapport passage à niveau Lisieux', num_paginas:52 },
+  { id_accidente:'FR-2022-006', pais:'FR', provincia:'Auvernia-Ródano-Alpes', fecha:'2022-09-12', hora:'03:10', operador:'SNCF Fret', linea:'Lyon-Marsella', pk:'312.7', tipo_trafico:'Mercancías', tipo_linea:'Convencional', paso_nivel:'No', estacion:'Valence', suceso_codigo:'1.6', suceso_desc:'Incendio', causa_codigo:'1.2.1.3', causa_desc:'Fallo de freno', fallecidos:0, heridos_graves:0, heridos_leves:1, trenes:1, resumen:'Incendio en locomotora diésel por sobrecalentamiento de frenos.', causas_directas:'Fallo en sistema de frenos por mantenimiento inadecuado.', factores_contribuyentes:'Recorrido en pendiente prolongada.', recomendaciones:'Renovación de flota de locomotoras.', titulo_informe:'Rapport incendie Valence', num_paginas:24 },
+  { id_accidente:'DE-2024-007', pais:'DE', provincia:'Baviera', fecha:'2024-02-28', hora:'07:35', operador:'Deutsche Bahn', linea:'Múnich-Núremberg', pk:'64.2', tipo_trafico:'Viajeros', tipo_linea:'Alta Velocidad', paso_nivel:'No', estacion:'München Hbf', suceso_codigo:'1.1.1', suceso_desc:'Colisión frontal', causa_codigo:'1.1.5', causa_desc:'Error de conducción', fallecidos:5, heridos_graves:20, heridos_leves:45, trenes:2, resumen:'Colisión frontal entre ICE y tren regional por error de despacho.', causas_directas:'Error del centro de control al autorizar salida.', factores_contribuyentes:'Fallo en comunicaciones.', recomendaciones:'Implementar sistema de bloqueo automático.', titulo_informe:'Unfallbericht Frontalzusammenstoß München', num_paginas:60 },
+  { id_accidente:'DE-2023-008', pais:'DE', provincia:'Renania del Norte-Westfalia', fecha:'2023-10-14', hora:'22:10', operador:'Deutsche Bahn', linea:'Colonia-Düsseldorf', pk:'18.9', tipo_trafico:'Viajeros', tipo_linea:'Convencional', paso_nivel:'No', estacion:'Köln Hbf', suceso_codigo:'2.1.4', suceso_desc:'Señal rebasada', causa_codigo:'4.1', causa_desc:'Señalización', fallecidos:0, heridos_graves:0, heridos_leves:3, trenes:1, resumen:'Tren rebasó señal de parada por mal funcionamiento del sistema de señales.', causas_directas:'Fallo en el sistema de señalización.', factores_contribuyentes:'Baja visibilidad por niebla.', recomendaciones:'Revisar sistema de señales en el tramo.', titulo_informe:'Signalüberfahrung Köln', num_paginas:18 },
+  { id_accidente:'DE-2022-009', pais:'DE', provincia:'Baja Sajonia', fecha:'2022-06-01', hora:'15:00', operador:'Deutsche Bahn', linea:'Hannover-Bremen', pk:'89.4', tipo_trafico:'Mercancías', tipo_linea:'Convencional', paso_nivel:'Sí', estacion:'Nienburg', suceso_codigo:'1.4', suceso_desc:'Accidente en paso a nivel', causa_codigo:'2.3.3', causa_desc:'Usuario en paso a nivel', fallecidos:1, heridos_graves:1, heridos_leves:2, trenes:1, resumen:'Turismo esquivó barreras y fue arrollado por tren de mercancías.', causas_directas:'Conductora ignoró señales acústicas.', factores_contribuyentes:'Barreras automáticas lentas.', recomendaciones:'Modernizar pasos a nivel con barreras rápidas.', titulo_informe:'Bahnübergang-Unfall Nienburg', num_paginas:30 },
+  { id_accidente:'IT-2024-010', pais:'IT', provincia:'Lombardía', fecha:'2024-04-10', hora:'11:25', operador:'Trenitalia', linea:'Milán-Roma', pk:'45.8', tipo_trafico:'Viajeros', tipo_linea:'Alta Velocidad', paso_nivel:'No', estacion:'Milano Centrale', suceso_codigo:'1.3', suceso_desc:'Descarrilamiento', causa_codigo:'1.2.2.3', causa_desc:'Rotura de carril', fallecidos:0, heridos_graves:3, heridos_leves:12, trenes:1, resumen:'Descarrilamiento de Alta Velocidad por deformación de vía por calor.', causas_directas:'Deformación por dilatación térmica.', factores_contribuyentes:'Ola de calor excepcional.', recomendaciones:'Instalar sensores de temperatura en vía.', titulo_informe:'Rapporto deragliamento Milano', num_paginas:35 },
+  { id_accidente:'IT-2023-011', pais:'IT', provincia:'Lacio', fecha:'2023-08-05', hora:'19:40', operador:'Trenitalia', linea:'Roma-Nápoles', pk:'22.1', tipo_trafico:'Viajeros', tipo_linea:'Convencional', paso_nivel:'No', estacion:'Roma Termini', suceso_codigo:'1.5', suceso_desc:'Atropello', causa_codigo:'6.1', causa_desc:'Otra', fallecidos:1, heridos_graves:0, heridos_leves:0, trenes:1, resumen:'Persona no autorizada en la vía fue atropellada por tren regional.', causas_directas:'Intrusión en la vía.', factores_contribuyentes:'Falta de vallado en zona urbana.', recomendaciones:'Mejorar vallado de la línea en zonas urbanas.', titulo_informe:'Rapporto investimento Roma', num_paginas:20 },
+  { id_accidente:'ES-2015-012', pais:'ES', provincia:'Valencia', fecha:'2015-12-20', hora:'10:00', operador:'Renfe', linea:'Valencia-Alicante', pk:'33.5', tipo_trafico:'Viajeros', tipo_linea:'Convencional', paso_nivel:'No', estacion:'Xàtiva', suceso_codigo:'1.3', suceso_desc:'Descarrilamiento', causa_codigo:'1.2.2.3', causa_desc:'Rotura de carril', fallecidos:0, heridos_graves:5, heridos_leves:18, trenes:1, resumen:'Descarrilamiento por rotura de carril en curva.', causas_directas:'Rotura de carril por fatiga.', factores_contribuyentes:'Alta velocidad en curva.', recomendaciones:'Reducir velocidad en curvas con carril antiguo.', titulo_informe:'Informe descarrilamiento Xàtiva', num_paginas:40 },
+  { id_accidente:'FR-2010-013', pais:'FR', provincia:'Provenza-Alpes-Costa Azul', fecha:'2010-04-18', hora:'08:50', operador:'SNCF', linea:'Marsella-Niza', pk:'201.3', tipo_trafico:'Viajeros', tipo_linea:'Convencional', paso_nivel:'No', estacion:'Nice Ville', suceso_codigo:'1.1.1', suceso_desc:'Colisión frontal', causa_codigo:'1.1.5', causa_desc:'Error de conducción', fallecidos:3, heridos_graves:12, heridos_leves:25, trenes:2, resumen:'Colisión frontal entre tren regional y tren de cercanías.', causas_directas:'Error de maquinista al no respetar semáforo.', factores_contribuyentes:'Falta de sistema de seguridad.', recomendaciones:'Instalar sistema de frenado automático.', titulo_informe:'Rapport collision Nice', num_paginas:55 },
+  { id_accidente:'DE-2008-014', pais:'DE', provincia:'Sajonia', fecha:'2008-11-12', hora:'23:55', operador:'Deutsche Bahn', linea:'Leipzig-Dresde', pk:'112.0', tipo_trafico:'Mercancías', tipo_linea:'Convencional', paso_nivel:'No', estacion:'Leipzig Hbf', suceso_codigo:'1.6', suceso_desc:'Incendio', causa_codigo:'1.2.1.3', causa_desc:'Fallo de freno', fallecidos:0, heridos_graves:0, heridos_leves:2, trenes:1, resumen:'Incendio en locomotora eléctrica por cortocircuito.', causas_directas:'Cortocircuito en sistema eléctrico.', factores_contribuyentes:'Mantenimiento deficiente.', recomendaciones:'Revisar sistemas eléctricos periódicamente.', titulo_informe:'Brand in Lokomotive Leipzig', num_paginas:22 },
+  { id_accidente:'IT-2006-015', pais:'IT', provincia:'Piamonte', fecha:'2006-09-01', hora:'06:15', operador:'Trenitalia', linea:'Turín-Milán', pk:'78.6', tipo_trafico:'Viajeros', tipo_linea:'Convencional', paso_nivel:'Sí', estacion:'Novara', suceso_codigo:'1.4', suceso_desc:'Accidente en paso a nivel', causa_codigo:'2.3.3', causa_desc:'Usuario en paso a nivel', fallecidos:2, heridos_graves:6, heridos_leves:8, trenes:1, resumen:'Furgoneta atrapada en paso a nivel fue arrollada por tren.', causas_directas:'Conductor ignoró señales.', factores_contribuyentes:'Barreras manuales sin automatizar.', recomendaciones:'Automatizar todos los pasos a nivel de la línea.', titulo_informe:'Rapporto passaggio a livello Novara', num_paginas:33 }
+];
+
+/* ===================================================================
+   COORDENADAS POR PROVINCIA (aproximaciones)
+   =================================================================== */
+const COORDS = {
+  Madrid: [40.4168, -3.7038],
+  Barcelona: [41.3874, 2.1686],
+  Sevilla: [37.3891, -5.9845],
+  Valencia: [39.4699, -0.3763],
+  'Île-de-France': [48.8566, 2.3522],
+  Normandía: [49.1829, -0.3707],
+  'Auvernia-Ródano-Alpes': [45.7640, 4.8357],
+  'Provenza-Alpes-Costa Azul': [43.7102, 7.2620],
+  Baviera: [48.1351, 11.5820],
+  'Renania del Norte-Westfalia': [50.9375, 6.9603],
+  'Baja Sajonia': [52.1205, 9.2450],
+  Sajonia: [51.3397, 12.3731],
+  Lombardía: [45.4642, 9.1900],
+  Lacio: [41.9028, 12.4964],
+  Piamonte: [45.0703, 7.6869]
+};
+
+/* ===================================================================
+   ESTADO GLOBAL
+   =================================================================== */
+let datos = window.DATOS;
+let filtered = [];
+let charts = {};
+let map, markersLayer, mapInitialized = false;
+
+/* helpers */
+function getYear(d) { return parseInt(d.fecha.slice(0,4), 10); }
+
+/* ===================================================================
+   FILTROS
+   =================================================================== */
+function buildFilterOptions() {
+  const paises = [...new Set(datos.map(d=>d.pais))].sort();
+  const provs = [...new Set(datos.map(d=>d.provincia))].sort();
+  const sucesos = [...new Set(datos.map(d=>d.suceso_codigo))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+  const causas = [...new Set(datos.map(d=>d.causa_codigo))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+
+  const selPais = document.getElementById('filterPais');
+  const selProv = document.getElementById('filterProvincia');
+  paises.forEach(p => { const o = document.createElement('option'); o.value=p; o.textContent=TAX.pais[p]||p; selPais.appendChild(o); });
+  provs.forEach(p => { const o = document.createElement('option'); o.value=p; o.textContent=p; selProv.appendChild(o); });
+
+  function buildCheckboxes(containerId, items, storageKey) {
+    const c = document.getElementById(containerId);
+    c.innerHTML = '';
+    items.forEach(code => {
+      const label = document.createElement('label');
+      label.className = 'checkbox-item';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.value = code;
+      cb.checked = true;
+      cb.dataset.key = storageKey;
+      cb.addEventListener('change', applyFilters);
+      label.appendChild(cb);
+      label.appendChild(document.createTextNode(taxLabel(storageKey, code) + ' (' + code + ')'));
+      c.appendChild(label);
+    });
+  }
+  buildCheckboxes('sucesoCheckboxes', sucesos, 'suceso');
+  buildCheckboxes('causaCheckboxes', causas, 'causa');
+}
+
+function applyFilters() {
+  const yearMin = parseInt(document.getElementById('filterYearMin').value, 10);
+  const yearMax = parseInt(document.getElementById('filterYearMax').value, 10);
+  const pais = document.getElementById('filterPais').value;
+  const prov = document.getElementById('filterProvincia').value;
+  const sucesosSel = [...document.querySelectorAll('#sucesoCheckboxes input:checked')].map(i => i.value);
+  const causasSel = [...document.querySelectorAll('#causaCheckboxes input:checked')].map(i => i.value);
+
+  filtered = datos.filter(d => {
+    const y = getYear(d);
+    if (y < yearMin || y > yearMax) return false;
+    if (pais && d.pais !== pais) return false;
+    if (prov && d.provincia !== prov) return false;
+    if (sucesosSel.length && !sucesosSel.includes(d.suceso_codigo)) return false;
+    if (causasSel.length && !causasSel.includes(d.causa_codigo)) return false;
+    return true;
+  });
+
+  document.getElementById('filterCount').innerHTML = 'Mostrando <strong>' + filtered.length + '</strong> de <strong>' + datos.length + '</strong> accidentes';
+  document.getElementById('totalCount').textContent = datos.length;
+  document.getElementById('tablaBadge').textContent = filtered.length;
+  document.getElementById('statTotal').textContent = filtered.length;
+  document.getElementById('statFatal').textContent = filtered.reduce((s,d)=>s+d.fallecidos,0);
+  document.getElementById('statHeridos').textContent = filtered.reduce((s,d)=>s+d.heridos_graves,0);
+
+  updateMap();
+  updateCharts();
+  renderTable();
+}
+
+/* ===================================================================
+   MAPA
+   =================================================================== */
+function initMap() {
+  map = L.map('map').setView([46.5, 8.5], 5);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19, attribution: '&copy; <a href="https://openstreetmap.org/copyright">OSM</a>'
+  }).addTo(map);
+  markersLayer = L.markerClusterGroup({ maxClusterRadius: 50 });
+  map.addLayer(markersLayer);
+  mapInitialized = true;
+}
+
+function updateMap() {
+  if (!mapInitialized) initMap();
+  markersLayer.clearLayers();
+
+  filtered.forEach(d => {
+    const coords = COORDS[d.provincia];
+    if (!coords) return;
+    const color = d.fallecidos === 0 ? '#2563eb' : d.fallecidos <= 5 ? '#f97316' : '#dc2626';
+    const radius = 8 + Math.min(d.fallecidos + d.heridos_graves, 30) * 1.5;
+    const marker = L.circleMarker(coords, {
+      radius: Math.max(8, Math.min(radius, 35)),
+      fillColor: color, color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.85
+    });
+    const fecha = new Date(d.fecha).toLocaleDateString('es-ES');
+    marker.bindPopup(`
+      <div style="font-size:13px;line-height:1.5;min-width:200px;">
+        <strong style="color:#2563eb;font-size:15px;">${d.id_accidente}</strong><br>
+        <span style="color:#f97316;">🚦 ${d.suceso_desc}</span><br>
+        📅 ${fecha} · ${d.hora}<br>
+        🌍 ${TAX.pais[d.pais]||d.pais} — ${d.provincia}<br>
+        🚄 ${d.operador}<br>
+        📍 ${d.linea} (pk ${d.pk})<br>
+        <span style="color:#dc2626;">☠ ${d.fallecidos} fallecidos · ${d.heridos_graves} graves</span><br>
+        <button onclick="event.stopPropagation();alert('${d.resumen.replace(/'/g,"\\'")}')" style="margin-top:4px;padding:3px 10px;background:#2563eb;color:#fff;border:none;border-radius:4px;cursor:pointer;">Ver resumen</button>
+      </div>
+    `);
+    markersLayer.addLayer(marker);
+  });
+  if (filtered.length > 0 && mapInitialized) {
+    const bounds = markersLayer.getBounds();
+    if (bounds.isValid()) map.fitBounds(bounds, { padding: [30,30], maxZoom: 10 });
+  }
+}
+
+/* ===================================================================
+   GRÁFICOS (Chart.js)
+   =================================================================== */
+function buildCharts() {
+  const opts = {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { labels: { boxWidth: 10, padding: 8, font: { size: 10 } } } },
+    scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
+  };
+
+  charts.anual = new Chart(document.getElementById('chartAnual'), {
+    type: 'bar',
+    data: { labels: [], datasets: [{
+      label: 'Accidentes', data: [], backgroundColor: '#2563eb', borderColor: '#1d4ed8', borderWidth: 1,
+      borderRadius: 4
+    }]},
+    options: { ...opts, scales: { y: { ...opts.scales.y, ticks: { stepSize: 1, precision: 0 } } } }
+  });
+
+  charts.tipo = new Chart(document.getElementById('chartTipo'), {
+    type: 'doughnut',
+    data: { labels: [], datasets: [{ data: [], backgroundColor: ['#2563eb','#f97316','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#14b8a6','#84cc16'], borderWidth: 1 }] },
+    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { boxWidth: 10, font: { size: 10 } } } } }
+  });
+
+  charts.graves = new Chart(document.getElementById('chartGraves'), {
+    type: 'bar',
+    data: { labels: [], datasets: [
+      { label: 'Fallecidos', data: [], backgroundColor: '#dc2626', borderRadius: 2 },
+      { label: 'Heridos graves', data: [], backgroundColor: '#f97316', borderRadius: 2 }
+    ]},
+    options: { ...opts, scales: { x: { stacked: true }, y: { ...opts.scales.y, stacked: true, ticks: { stepSize: 1, precision: 0 } } } }
+  });
+
+  charts.causas = new Chart(document.getElementById('chartCausas'), {
+    type: 'bar',
+    data: { labels: [], datasets: [{
+      label: 'Accidentes', data: [], backgroundColor: '#f97316', borderColor: '#ea580c', borderWidth: 1,
+      borderRadius: 4
+    }]},
+    options: { ...opts, indexAxis: 'y', scales: { x: { ...opts.scales.y, ticks: { stepSize: 1, precision: 0 } }, y: { ticks: { font: { size: 9 } } } } }
+  });
+}
+
+function updateCharts() {
+  // Anual
+  const years = {};
+  filtered.forEach(d => { const y = getYear(d); years[y] = (years[y]||0) + 1; });
+  const yrSorted = Object.keys(years).sort((a,b)=>a-b);
+  charts.anual.data.labels = yrSorted;
+  charts.anual.data.datasets[0].data = yrSorted.map(y => years[y]);
+  charts.anual.update();
+
+  // Tipo
+  const tipos = {};
+  filtered.forEach(d => { const k = taxLabel('suceso', d.suceso_codigo); tipos[k] = (tipos[k]||0) + 1; });
+  charts.tipo.data.labels = Object.keys(tipos);
+  charts.tipo.data.datasets[0].data = Object.values(tipos);
+  charts.tipo.update();
+
+  // Graves
+  const graves = {};
+  filtered.forEach(d => { const y = getYear(d); if (!graves[y]) graves[y] = {f:0,g:0}; graves[y].f += d.fallecidos; graves[y].g += d.heridos_graves; });
+  const gSorted = Object.keys(graves).sort((a,b)=>a-b);
+  charts.graves.data.labels = gSorted;
+  charts.graves.data.datasets[0].data = gSorted.map(y => graves[y].f);
+  charts.graves.data.datasets[1].data = gSorted.map(y => graves[y].g);
+  charts.graves.update();
+
+  // Causas top 10
+  const causas = {};
+  filtered.forEach(d => { const k = taxLabel('causa', d.causa_codigo); causas[k] = (causas[k]||0) + 1; });
+  const top10 = Object.entries(causas).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  charts.causas.data.labels = top10.map(e => e[0]);
+  charts.causas.data.datasets[0].data = top10.map(e => e[1]);
+  charts.causas.update();
+}
+
+/* ===================================================================
+   TABLA
+   =================================================================== */
+let tableSort = { col: null, dir: 'asc' };
+let tablePage = 1;
+const PAGE_SIZE = 50;
+let tableSearchText = '';
+const TABLE_COLS = [
+  { key:'id_accidente', label:'ID' },
+  { key:'pais', label:'País', fn:d=>TAX.pais[d.pais]||d.pais },
+  { key:'provincia', label:'Provincia' },
+  { key:'fecha', label:'Fecha' },
+  { key:'hora', label:'Hora' },
+  { key:'operador', label:'Operador' },
+  { key:'linea', label:'Línea' },
+  { key:'pk', label:'PK' },
+  { key:'tipo_trafico', label:'Tráfico' },
+  { key:'tipo_linea', label:'Tipo línea' },
+  { key:'paso_nivel', label:'Paso nivel' },
+  { key:'estacion', label:'Estación' },
+  { key:'suceso_codigo', label:'Código' },
+  { key:'suceso_desc', label:'Suceso' },
+  { key:'causa_codigo', label:'Causa código' },
+  { key:'causa_desc', label:'Causa' },
+  { key:'fallecidos', label:'Fallecidos' },
+  { key:'heridos_graves', label:'Her. graves' },
+  { key:'heridos_leves', label:'Her. leves' },
+  { key:'trenes', label:'Trenes' },
+  { key:'resumen', label:'Resumen' }
+];
+
+function renderTable() {
+  const colDef = tableSort.col ? TABLE_COLS.find(c => c.key === tableSort.col) : null;
+
+  // Filter by search text
+  let rows = filtered.slice();
+  if (tableSearchText) {
+    const q = tableSearchText.toLowerCase();
+    rows = rows.filter(d => TABLE_COLS.some(c => {
+      const v = c.fn ? c.fn(d) : d[c.key];
+      return v != null && String(v).toLowerCase().includes(q);
+    }));
+  }
+
+  // Sort
+  if (colDef) {
+    const dir = tableSort.dir === 'asc' ? 1 : -1;
+    rows.sort((a,b) => {
+      const va = colDef.fn ? colDef.fn(a) : a[colDef.key];
+      const vb = colDef.fn ? colDef.fn(b) : b[colDef.key];
+      if (va == null) return 1; if (vb == null) return -1;
+      if (typeof va === 'number') return (va - vb) * dir;
+      return String(va).localeCompare(String(vb)) * dir;
+    });
+  }
+
+  const total = rows.length;
+  const pages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  if (tablePage > pages) tablePage = pages;
+  const start = (tablePage - 1) * PAGE_SIZE;
+  const pageRows = rows.slice(start, start + PAGE_SIZE);
+
+  // Head
+  const thead = document.getElementById('tableHead');
+  thead.innerHTML = '<tr>' + TABLE_COLS.map(c => {
+    const arrow = tableSort.col === c.key ? (tableSort.dir === 'asc' ? ' ▲' : ' ▼') : ' ⇅';
+    return `<th data-key="${c.key}">${c.label}<span class="sort-arrow">${arrow}</span></th>`;
+  }).join('') + '</tr>';
+
+  thead.querySelectorAll('th').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      if (tableSort.col === key) tableSort.dir = tableSort.dir === 'asc' ? 'desc' : 'asc';
+      else { tableSort.col = key; tableSort.dir = 'asc'; }
+      tablePage = 1;
+      renderTable();
+    });
+  });
+
+  // Body
+  const tbody = document.getElementById('tableBody');
+  tbody.innerHTML = pageRows.map(d => {
+    const danger = d.fallecidos > 0 ? ' class="row-danger"' : '';
+    return '<tr' + danger + '>' + TABLE_COLS.map(c => {
+      let v = c.fn ? c.fn(d) : d[c.key];
+      v = v != null ? v : '—';
+      return '<td>' + v + '</td>';
+    }).join('') + '</tr>';
+  }).join('');
+
+  document.getElementById('tableInfo').textContent = total + ' registros';
+
+  // Pagination
+  const pg = document.getElementById('pagination');
+  if (pages <= 1) { pg.innerHTML = ''; return; }
+  let html = '<button onclick="goPage(1)"' + (tablePage<=1?' disabled':'') + '>«</button>';
+  html += '<button onclick="goPage('+(tablePage-1)+')"' + (tablePage<=1?' disabled':'') + '>‹</button>';
+  const startP = Math.max(1, tablePage - 2);
+  const endP = Math.min(pages, tablePage + 2);
+  for (let i = startP; i <= endP; i++) {
+    html += '<button onclick="goPage('+i+')"' + (i===tablePage?' style="background:#2563eb;color:#fff;border-color:#2563eb;"':'') + '>'+i+'</button>';
+  }
+  html += '<button onclick="goPage('+(tablePage+1)+')"' + (tablePage>=pages?' disabled':'') + '>›</button>';
+  html += '<button onclick="goPage('+pages+')"' + (tablePage>=pages?' disabled':'') + '>»</button>';
+  html += '<span class="page-info">' + tablePage + ' / ' + pages + '</span>';
+  pg.innerHTML = html;
+}
+
+function goPage(p) { tablePage = p; renderTable(); }
+
+/* ===================================================================
+   EXPORTAR CSV
+   =================================================================== */
+function exportCSV() {
+  const cols = TABLE_COLS;
+  const header = cols.map(c => c.label).join(',');
+  const rows = filtered.map(d => {
+    return cols.map(c => {
+      let v = c.fn ? c.fn(d) : d[c.key];
+      v = v != null ? v : '';
+      const s = String(v).replace(/"/g, '""');
+      return s.includes(',') || s.includes('"') || s.includes('\n') ? '"' + s + '"' : s;
+    }).join(',');
+  }).join('\n');
+  const bom = '\uFEFF';
+  const blob = new Blob([bom + header + '\n' + rows], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'accidentes_era_filtrados.csv';
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
+/* ===================================================================
+   TABS
+   =================================================================== */
+function initTabs() {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      if (btn.dataset.tab === 'mapa' && mapInitialized) map.invalidateSize();
+    });
+  });
+}
+
+/* ===================================================================
+   EVENT BINDINGS
+   =================================================================== */
+function init() {
+  buildFilterOptions();
+  document.getElementById('filterYearMin').addEventListener('input', function() {
+    const v = parseInt(this.value,10);
+    const max = parseInt(document.getElementById('filterYearMax').value,10);
+    if (v > max) { this.value = max; return; }
+    document.getElementById('labelYearMin').textContent = v;
+    applyFilters();
+  });
+  document.getElementById('filterYearMax').addEventListener('input', function() {
+    const v = parseInt(this.value,10);
+    const min = parseInt(document.getElementById('filterYearMin').value,10);
+    if (v < min) { this.value = min; return; }
+    document.getElementById('labelYearMax').textContent = v;
+    applyFilters();
+  });
+  document.getElementById('filterPais').addEventListener('change', applyFilters);
+  document.getElementById('filterProvincia').addEventListener('change', applyFilters);
+
+  document.getElementById('sucesoSelectAll').addEventListener('click', () => {
+    document.querySelectorAll('#sucesoCheckboxes input').forEach(cb => cb.checked = true);
+    applyFilters();
+  });
+  document.getElementById('sucesoDeselect').addEventListener('click', () => {
+    document.querySelectorAll('#sucesoCheckboxes input').forEach(cb => cb.checked = false);
+    applyFilters();
+  });
+  document.getElementById('causaSelectAll').addEventListener('click', () => {
+    document.querySelectorAll('#causaCheckboxes input').forEach(cb => cb.checked = true);
+    applyFilters();
+  });
+  document.getElementById('causaDeselect').addEventListener('click', () => {
+    document.querySelectorAll('#causaCheckboxes input').forEach(cb => cb.checked = false);
+    applyFilters();
+  });
+
+  document.getElementById('tableSearch').addEventListener('input', function() {
+    tableSearchText = this.value;
+    tablePage = 1;
+    renderTable();
+  });
+
+  document.getElementById('exportCSV').addEventListener('click', exportCSV);
+
+  initTabs();
+  buildCharts();
+  applyFilters();
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

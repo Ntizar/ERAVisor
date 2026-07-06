@@ -1,0 +1,252 @@
+================================================================================
+ANEXO I - DEFINICIONES
+(Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional e interoperabilidad ferroviarias)
+================================================================================
+
+ANEXO I 
+ Definiciones 
+ 1. «Accidente»: un suceso repentino, no deseado ni intencionado, o una cadena de sucesos de ese tipo, de consecuencias perjudiciales. Los accidentes se dividen en las siguientes categorías: colisiones, descarrilamientos, accidentes en pasos a nivel, daños causados a personas por material rodante en movimiento, incendios y otros; 
+ 2. «Accidente grave»: cualquier colisión o descarrilamiento de trenes con el resultado de al menos una víctima mortal o de cinco o más heridos graves o grandes daños al material rodante, a la infraestructura o al medio ambiente, y cualquier otro accidente de iguales consecuencias que tenga un efecto evidente en la normativa de seguridad ferroviaria o la gestión de la seguridad; por «grandes daños» se entenderán aquellos daños cuyo coste pueda evaluar inmediatamente el organismo de investigación en al menos un total de dos millones de euros; 
+ 3. «Acondicionamiento»: a efectos de este real decreto, término equivalente a la definición de «mejora de líneas ferroviarias» presente en este anexo; 
+ 4. «Acreditación»: declaración por un organismo nacional de acreditación de que un organismo de evaluación de la conformidad cumple los requisitos fijados con arreglo a normas armonizadas y, cuando proceda, otros requisitos adicionales, incluidos los establecidos en los esquemas sectoriales pertinentes, para ejercer actividades específicas de evaluación de la conformidad; 
+ 5. «Administrador de infraestructuras»: todo organismo o empresa responsable de la explotación, mantenimiento y renovación de las infraestructuras ferroviarias en una red, e igualmente responsable de participar en su desarrollo conforme a las normas que establezca el Ministerio de Transportes, Movilidad y Agenda Urbana dentro del marco de su política general en materia de desarrollo y financiación de infraestructuras; 
+ 6. «Agencia Ferroviaria de la Unión Europea»: organismo europeo con competencias en seguridad operacional e interoperabilidad ferroviarias, regulado por el Reglamento (UE) 2016/796 del Parlamento Europeo y del Consejo, de 11 de mayo de 2016 , relativo a la Agencia Ferroviaria de la Unión Europea y por el que se deroga el Reglamento (CE) n.º 881/2004 ; 
+ 7. «Alcance de la operación»: Clasificación de la explotación que realiza una empresa ferroviaria, en función de su número de viajeros y/o el volumen de mercancías y el tamaño estimado de dicha empresa en cuanto a número de trabajadores empleados en el sector ferroviario (a saber, micro, pequeña, mediana o gran empresa); 
+ 8. «Ámbito de operación»: tramos o líneas de la Red Ferroviaria de Interés General en las que una empresa ferroviaria pretende operar y que puede abarcar además una o varias redes pertenecientes a otros Estados miembros de la Unión Europea; 
+ 9. «Aplicación específica»: parte de un subsistema utilizada en una instalación particular obtenida mediante la configuración de una aplicación genérica; 
+ 10. «Aplicación genérica»: parte de un subsistema con funciones específicas asociado a un contexto general operacional desarrollado sobre la base de criterios de estandarización y parametrización de sus propios elementos con el fin de ser utilizado en diferentes aplicaciones reales. La combinación de aplicaciones genéricas puede dar lugar a otra aplicación genérica; 
+ 11. «Área de uso de un vehículo»: conjunto de tramos o líneas de la Red Ferroviaria de Interés General o de las redes pertenecientes a otros Estados miembros de la Unión Europea en las que se prevé usar un vehículo; 
+ 12. «Auditoría»: Proceso metódico, independiente y documentado que permite, mediante observaciones factuales y entrevistas, determinar de manera objetiva en qué medida se cumplen los criterios fijados para la misma; 
+ 13. «Autoridad nacional de seguridad»: organismo nacional encargado de las funciones relativas a la seguridad ferroviaria para garantizar un régimen unificado de seguridad; en la Red Ferroviaria de Interés General lo es la Agencia Estatal de Seguridad Ferroviaria; 
+ 14. «Autorización de tipo de vehículo»: la decisión emitida por la entidad responsable de la autorización (la Agencia Estatal de Seguridad Ferroviaria, la Agencia Ferroviaria de la Unión Europea u otro autoridad nacional de seguridad de otro Estado miembro) basada en una garantía razonable de que el solicitante y las entidades que intervienen en el diseño, la fabricación, la verificación y la validación del tipo de vehículo han cumplido sus obligaciones y responsabilidades con vistas a garantizar su conformidad con los requisitos esenciales de la legislación aplicable, lo que permite que un vehículo fabricado con arreglo a dicho diseño pueda ser puesto en el mercado y utilizado de forma segura en el área de uso de conformidad con las condiciones de uso del vehículo y demás limitaciones, cuando proceda, especificadas en la autorización; 
+ 15. «Autorización de puesta en el mercado de vehículos»: la decisión emitida por la entidad responsable de la autorización (la Agencia Estatal de Seguridad Ferroviaria o la Agencia Ferroviaria de la Unión Europea) basada en una garantía razonable de que el solicitante y las entidades que intervienen en el diseño, la fabricación, la verificación y la validación del vehículo han cumplido sus respectivas obligaciones y responsabilidades a fin de garantizar su conformidad con los requisitos esenciales de la legislación aplicable o de garantizar la conformidad con el tipo autorizado, lo que permite que el vehículo pueda ser puesto en el mercado y utilizado de forma segura en el área de uso de conformidad con las condiciones de uso y demás limitaciones, cuando proceda, especificadas en la autorización del vehículo y en la autorización de tipo de vehículo; 
+ 16. «Cadena de custodia»: Procedimiento controlado que se aplica a la prueba biológica realizada, desde su extracción hasta su análisis, que tiene por fin no viciar el manejo de la misma evitando alteraciones, sustituciones, contaminaciones o destrucciones. También es aplicable a los datos registrados en los registradores jurídicos de los vehículos ferroviarios.; 
+ 17. «Cargador»: empresa que carga mercancías embaladas, pequeños contenedores o cisternas portátiles en o sobre un vagón o un contenedor, o carga un contenedor, un contenedor para graneles, un contenedor de gas de elementos múltiples, un contenedor cisterna o una cisterna portátil sobre un vagón; 
+ 18. «Caso específico»: toda parte del sistema ferroviario que requiera disposiciones particulares en las Especificaciones Técnicas de Interoperabilidad, temporales o permanentes, por exigencias geográficas, topográficas, de entorno urbano o de compatibilidad con el sistema existente, en especial los casos de las líneas y redes ferroviarias aisladas del resto de la Red Ferroviaria de Interés General y del resto de la red de la Unión Europea, el gálibo, el ancho de vía o el espacio entre las vías, así como de los vehículos destinados a un uso estrictamente local, regional o histórico y de los vehículos procedentes de terceros países no pertenecientes a la Unión Europea o con destino a los mismos; 
+ 19. «Causas»: acciones, omisiones, sucesos o condiciones, o su combinación, que hayan provocado un accidente o incidente; 
+ 20. «Componente de interoperabilidad»: todo componente elemental, grupo de componentes, subconjunto o conjunto completo de materiales incorporados, o destinados a ser incorporados, en un subsistema, de los que dependa directa o indirectamente la interoperabilidad del sistema ferroviario, lo que incluye no solo objetos materiales, sino también inmateriales. Los componentes de interoperabilidad de cada subsistema son designados en cada Especificación Técnica de Interoperabilidad. Se consideran «críticos desde el punto de vista de la seguridad», aquellos componentes para los que un único fallo tiene un riesgo potencial verosímil de provocar directamente un accidente grave; 
+ 21. «Cruce entre andenes»: intersecciones al mismo nivel entre un ferrocarril y los itinerarios expresamente dispuestos en estaciones y apeaderos para el acceso peatonal a los andenes; 
+ 22. «Empresa ferroviaria»: entidad, según se define en el artículo 48 de la Ley 38/2015, de 29 de septiembre , cuya actividad principal consista en prestar servicios de transporte de mercancías y/o viajeros por ferrocarril, debiendo ser dicha empresa en todo caso quien aporte la tracción, incluidas las empresas que aportan únicamente la tracción; 
+ 23. «Encargado de la investigación»: la persona encargada de la organización, la realización y el control de una investigación sobre un accidente o incidente ferroviario; 
+ 24. «Entrada en servicio»: conjunto de operaciones por las que un subsistema pasa a estar en servicio operativo; 
+ 25. «Entidad contratante»: entidad pública o privada que encargue el proyecto y/o la construcción, la renovación, la rehabilitación o la mejora de un subsistema o línea; 
+ 26. «Entidad encargada del mantenimiento»: una entidad encargada del mantenimiento de un vehículo, registrada como tal en el Registro Especial Ferroviario y que asume la responsabilidad de las siguientes funciones de mantenimiento: gestión, desarrollo del mantenimiento, gestión del mantenimiento de la flota, y ejecución del mantenimiento; 
+ 27. «Entidad ferroviaria»: a los efectos de este real decreto, equivale indistintamente a empresa ferroviaria o administrador de infraestructuras; 
+ 28. «ERTMS»: «European Rail Traffic Management System», sistema europeo de gestión del tráfico ferroviario, formado por todo el equipamiento a bordo y en tierra necesarios para supervisar y controlar en tiempo real la operación de los trenes, de acuerdo con las condiciones del tráfico y en base a un nivel de aplicación apropiado. El sistema estándar ERTMS está constituido por los dos componentes técnicos ETCS y GSM-R; 
+ 29. «Especificación europea»: especificación que pertenece a una de las siguientes categorías: 
+ i. Una especificación técnica común tal y como se define en el anexo VIII de la Directiva 2014/25/UE del Parlamento Europeo y del Consejo, de 26 de febrero de 2014, relativa a la contratación por entidades que operan en los sectores del agua, la energía, los transportes y los servicios postales y por la que se deroga la Directiva 2004/17/CE , 
+ ii. Un documento de idoneidad técnica europeo a que se refiere el artículo 60 de la Directiva 2014/25/UE , de 26 de febrero de 2014, 
+ iii. una norma europea, tal y como se definen en el punto b), apartado 1 del artículo 2 del Reglamento (UE) n.º 1025/2012 del Parlamento Europeo y del Consejo, de 25 de octubre de 2012 , sobre la normalización europea, por el que se modifican las Directivas 89/686/CEE y 93/15/CEE del Consejo y las Directivas 94/9/CE , 94/25/CE , 95/16/CE , 97/23/CE , 98/34/CE , 2004/22/CE , 2007/23/CE , 2009/23/CE y 2009/105/CE del Parlamento Europeo y del Consejo y por el que se deroga la Decisión 87/95/CEE del Consejo y la Decisión n º 1673/2006/CE del Parlamento Europeo y del Consejo ; 
+ 30. «Especificación técnica»: documento que prescribe los requisitos técnicos que debe cumplir un producto, subsistema, proceso o servicio; 
+ 31. «Especificación técnica de interoperabilidad»: especificación adoptada de la que es objeto cada subsistema o parte de subsistema, con vistas a satisfacer los requisitos esenciales y garantizar la interoperabilidad del sistema ferroviario de la Unión Europea; 
+ 32. «Estado de funcionamiento nominal»: modo normal de funcionamiento y las condiciones previsibles de degradación (incluido el desgaste) dentro del intervalo de valores y las condiciones de uso especificados en el expediente técnico y de mantenimiento. Abarca todas las condiciones en las que el subsistema está destinado a funcionar y sus limitaciones técnicas; 
+ 33. «ETCS»: «European Train Control System», sistema europeo de control de trenes, que dentro del sistema ERTMS, se encarga de proporcionar protección al tren frente a la sobre velocidad y el rebase, en función de la capacidad y el equipamiento de la línea; 
+ 34. «Evaluación de la conformidad»: proceso por el que se demuestra que se han cumplido los requisitos especificados para un producto, proceso, servicio, subsistema, persona u organismo; 
+ 35. «Expedidor»: empresa que expide mercancías para sí misma o para un tercero; 
+ 36. «Descargador»: empresa que retira un contenedor, un contenedor para graneles, un contenedor de gas de elementos múltiples, un contenedor cisterna o una cisterna portátil de un vagón, o cualquier empresa que descarga mercancías embaladas, pequeños contenedores o cisternas portátiles de un vagón o de un contenedor, o cualquier empresa que descarga mercancías de una cisterna (vagón cisterna, cisterna desmontable, cisterna portátil o contenedor cisterna), o de un vagón batería o un contenedor de gas de elementos múltiples, o de un vagón, de un gran contenedor o de un pequeño contenedor para el transporte a granel o de un contenedor para graneles; 
+ 37. «Descargador de cisternas»: empresa que descarga mercancías de una cisterna (incluido un vagón cisterna, un vagón con cisternas desmontables, una cisterna portátil o un contenedor cisterna), un vagón, gran contenedor o pequeño contenedor para transporte a granel, o de un vagón batería o contenedor de gas de elementos múltiples; 
+ 38. «Destinatario»: cualquier persona física o jurídica que reciba mercancías en virtud de un contrato de transporte; si el transporte se efectúa sin contrato de transporte, se considerará que el destinatario es cualquier persona física o jurídica que se haga cargo de las mercancías a su llegada; 
+ 39. «Fabricante»: persona física o jurídica que fabrica un producto en forma de componente de interoperabilidad, de subsistema o de vehículo, o que lo manda diseñar o fabricar y lo comercializa con su nombre o marca comercial; 
+ 40. «Ferrocarril ligero»: sistema de transporte ferroviario urbano o suburbano, con una resistencia a las colisiones de C-III o C-IV (de conformidad con la norma UNE-EN 15227:2008+A1:2011) y una solidez máxima del vehículo de 800 kN (fuerza de compresión longitudinal en la zona de acoplamiento); los sistemas de ferrocarril ligero pueden disponer de su propia plataforma segregada o bien compartirla con el tráfico rodado, y normalmente sus vehículos no son intercambiables con los vehículos del tráfico ferroviario de viajeros o de mercancías de larga distancia; 
+ 41. «GSM-R»: «Global System for Mobile Communications–Railway», sistema global para comunicaciones móviles ferroviarias (voz y datos), que dentro del sistema ERTMS asegura las comunicaciones (voz y datos) entre vehículos e instalaciones fijas; 
+ 42. «Incidente»: cualquier suceso, distinto de un accidente o un accidente grave, que afecte o pueda afectar a la seguridad de las operaciones ferroviarias; 
+ 43. «Indicadores Comunes de Seguridad»: variables estadísticas establecidas a nivel europeo para un seguimiento armonizado de la evolución de la seguridad; 
+ 44. «Interoperabilidad»: la capacidad del sistema ferroviario para permitir la circulación segura e ininterrumpida de trenes que cumplan las prestaciones requeridas; 
+ 45. «Inspección»: Examen o reconocimiento de una actividad o situación en un determinado instante o durante una parte del periodo de tiempo en el que aquella es realizada; 
+ 46. «Instrucción Ferroviaria»: Conjunto de especificaciones técnicas que completan a las Especificaciones Técnicas de Interoperabilidad y que incluyen, entre otras, las exigencias a nivel nacional necesarias para cubrir los requisitos esenciales definidos en el anexo XI y que debe cumplir todo subsistema de carácter estructural para poder obtener la autorización de entrada en servicio; 
+ 47. «Investigación»: proceso efectuado sobre las causas de los accidentes e incidentes acaecidos, con vistas a prevenir en el futuro otros accidentes e incidentes. La investigación incluye la recogida y análisis de información, la adopción de conclusiones, incluida la determinación de las causas y, llegado el caso, la elaboración de recomendaciones en materia de seguridad; 
+ 48. «Llenador de cisternas»: empresa que carga mercancías en una cisterna (incluido un vagón cisterna, un vagón con cisternas desmontables, una cisterna portátil o un contenedor cisterna) o en un vagón, en un gran contenedor o en un pequeño contenedor para transporte a granel, o en un vagón batería o contenedor de gas de elementos múltiples; 
+ 49. «Línea»: según se define en el anexo I de la Ley 38/2015, de 29 de septiembre ; 
+ 50. «Medio aceptable de conformidad»: dictámenes no vinculantes emitidos por un organismo, entidad u órgano competente de cualquiera de los Estados miembros de la Unión Europea al objeto de determinar maneras de establecer la conformidad con los requisitos esenciales, en tanto se produce la revisión de una Especificación Técnica de Interoperabilidad a consecuencia de haberse constatado deficiencias en la misma; 
+ 51. «Medio nacional aceptable de conformidad»: dictámenes no vinculantes emitidos por un organismo, entidad u órgano competente de cualquiera de los Estados miembros de la Unión Europea al objeto de determinar maneras de establecer la conformidad con las respectivas normas nacionales; 
+ 52. «Mejora de las líneas ferroviarias»: trabajos de modificación de gran calado en los subsistemas estructurales fijos de las líneas existentes que mejoran su rendimiento general. Este término es equivalente, para dichos subsistemas, a la definición de «rehabilitación» del presente anexo; 
+ 53. «Métodos Comunes de Seguridad»: los métodos que describen la evaluación de los niveles de seguridad, así como la consecución de los objetivos de seguridad y el cumplimiento de otros requisitos de seguridad; 
+ 54. «Método Común de Seguridad para la evaluación y valoración del riesgo»: Método Común de Seguridad establecido mediante el Reglamento de Ejecución (UE) n.º 402/2013 de la Comisión de 30 de abril de 2013 relativo a la adopción de un método común de seguridad para la evaluación y valoración del riesgo y por el que se deroga el Reglamento (CE) n.º 352/2009 ; 
+ 55. «Método Común de Seguridad para la vigilancia»: Método Común de Seguridad establecido mediante el Reglamento (UE) n.º 1078/2012, de 16 de noviembre de 2012 , sobre un método común de seguridad en materia de vigilancia que deberán aplicar las empresas ferroviarias y los administradores de infraestructuras que hayan obtenido un certificado de seguridad o una autorización de seguridad, así como las entidades encargadas del mantenimiento; 
+ 56. «Norma armonizada»: una norma europea, tal y como se definen en el punto c), apartado 1 del artículo 2 del Reglamento (UE) n.º 1025/2012, de 25 de octubre de 2012 ; 
+ 57. «Normas nacionales»: todas las normas vinculantes adoptadas en España, independientemente del organismo que las haya promulgado, que contengan requisitos de seguridad o requisitos técnicos ferroviarios, distintos de los establecidos por la Unión Europea o por normas internacionales y que sean aplicables dentro de España, a las empresas ferroviarias, a los administradores de infraestructuras o a terceros; 
+ 58. «Objetivos Comunes de Seguridad»: los niveles de seguridad mínimos que debe alcanzar el sistema ferroviario en su conjunto, y siempre que sea factible, las diversas partes del sistema (como el sistema ferroviario convencional, el sistema ferroviario de alta velocidad, los túneles ferroviarios de gran longitud o las líneas utilizadas exclusivamente para el transporte de mercancías); 
+ 59. «Organismo de evaluación de la conformidad»: organismo al que se ha notificado o designado, previa su solicitud, para que se encargue de actividades de evaluación de la conformidad, tales como calibrados, pruebas, certificaciones e inspecciones; se clasifican en «organismo notificado» tras una notificación por España a la Unión Europea; como «organismo designado» tras una designación por España a la Unión Europea; 
+ 60. «Organismo evaluador de seguridad»: persona, organización o entidad independiente y competente, interna o externa, que procede a una investigación que le permita emitir un juicio, basado en pruebas, sobre la idoneidad de un sistema para cumplir sus requisitos de seguridad, de conformidad con lo establecido en el Reglamento de Ejecución (UE) n.º 402/2013 de la Comisión, de 30 de abril de 2013 relativo a la adopción de un Método Común de Seguridad para la evaluación y valoración del riesgo y por el que se deroga el Reglamento (CE) n.º 352/2009 ; 
+ 61. «Organismo nacional de acreditación»: organismo de un Estado miembro con potestad pública para llevar a cabo acreditaciones; 
+ 62. «Parámetro básico»: toda condición reglamentaria, técnica u operativa importante desde el punto de vista de la interoperabilidad y especificada en las Especificaciones Técnicas de Interoperabilidad pertinentes; 
+ 63. «Persona con discapacidad y persona con movilidad reducida»: persona con un impedimento físico, mental, intelectual o sensorial de carácter permanente o temporal que, en presencia de determinados obstáculos, no tiene facultades para la utilización plena y efectiva de los medios de transporte en condiciones de igualdad con respecto a otros viajeros, o bien cuya movilidad en relación con dicha utilización se ha reducido por razones de edad; 
+ 64. «Poseedor»: la persona física o jurídica que explote un vehículo, como medio de transporte, bien sea de su propiedad o tenga derecho a utilizarlo por cualquier otro título, y que esté registrada como tal en el Registro Especial Ferroviario; 
+ 65. «Producto»: producto obtenido mediante un proceso de fabricación que incluya componentes de interoperabilidad y subsistemas; 
+ 66. «Proyecto en avanzado estado de desarrollo»: todo proyecto cuya fase de planificación/construcción esté tan adelantada que una modificación del pliego de prescripciones técnicas podría comprometer la viabilidad del proyecto tal como fue planeado; 
+ 67. «Puesta en el mercado»: primera puesta a disposición en el mercado de la Unión Europea en estado de funcionamiento nominal, de un componente de interoperabilidad, de un subsistema o de un vehículo; 
+ 68. «Red ferroviaria»: líneas, estaciones, terminales y todo tipo de equipamiento fijo necesario para garantizar la seguridad y la continuidad en las operaciones del sistema. A los efectos de este real decreto se corresponde con la Red Ferroviaria de Interés General según define el artículo 4 de la Ley 38/2015, de 29 de septiembre ; 
+ 69. «Registro Especial Ferroviario»: Registro en el que deberán inscribirse, de oficio, los datos relativos a las entidades y las personas físicas y jurídicas cuya actividad esté vinculada al sector ferroviario y requieran para su ejercicio de la pertinente licencia, autorización, certificado o habilitación o bien así lo establezca expresamente algún precepto legal o reglamentario, definido en el artículo 61 de la Ley 38/2015, de 29 de septiembre ; 
+ 70. «Registro Europeo de Vehículos»: Registro de vehículos ferroviarios autorizados para circular por la red ferroviaria europea, que integrará los diferentes registros nacionales, y cuyas especificaciones están establecidas por la Decisión de Ejecución (UE) 2018/1614 ; 
+ 71. «Rehabilitación»: los trabajos de modificación sustancial de un subsistema o de una parte del mismo que conlleven un cambio en el expediente técnico que acompaña a la declaración «CE» de verificación, si existe tal expediente, y, en todo caso, aquellos que mejoren el rendimiento global del subsistema (ver también «mejora de las líneas ferroviarias»); 
+ 72. «Requisitos esenciales»: el conjunto de condiciones descritas en el anexo XI que debe satisfacer el sistema ferroviario de la Red Ferroviaria de Interés General, los subsistemas y los componentes de la interoperabilidad, interfaces incluidas; 
+ 73. «Renovación»: los trabajos importantes de sustitución de un subsistema o de una parte del mismo que no afecten al rendimiento global del subsistema; 
+ 74. «Representante autorizado»: toda persona física o jurídica establecida en la Unión Europea que haya recibido un mandato por escrito de un fabricante o una entidad contratante para actuar en nombre de dicho fabricante o entidad contratante en relación con determinadas tareas; 
+ 75. «Sala de recurso»: sala creada en virtud del artículo 55 del Reglamento (UE) 2016/796 del Parlamento Europeo y del Consejo, de 11 de mayo de 2016 ; 
+ 76. «Serie»: cierto número de vehículos idénticos de un tipo de diseño; 
+ 77. «Sistema de gestión de la seguridad»: la organización, las medidas y los procedimientos establecidos por un administrador de infraestructuras o una empresa ferroviaria para garantizar la gestión de sus operaciones en condiciones de seguridad; 
+ 78. «Sistema ferroviario»: elementos recogidos en el anexo II, es decir la Red Ferroviaria de Interés General y los vehículos que por ella circulan, así como los subsistemas de carácter funcional; 
+ 79. «Solicitante»: persona física o jurídica que solicita una autorización, ya sea una empresa ferroviaria, un administrador de infraestructuras o bien otras personas físicas o jurídicas, como el fabricante, el propietario o el poseedor. A los efectos del artículo 87, solicitante hace referencia a una entidad contratante, un fabricante o sus representantes autorizados. A los efectos del artículo 113, solicitante hace referencia a una persona física o jurídica que solicite a la Agencia Ferroviaria de la Unión Europea una decisión de aprobación de las soluciones técnicas previstas para los proyectos de equipos del Sistema de Gestión del Tráfico Ferroviario Europeo (en lo sucesivo «ERTMS») en vía; 
+ 80. «Soluciones innovadoras»: Cualquier parte de un proyecto en la que al menos una fase de su ciclo de vida no está cubierta por una norma, las reglas de la buena práctica profesional o un sistema de referencia; 
+ 81. «Subsistemas»: partes estructurales o funcionales en que se divide el sistema ferroviario, tal como se indica en el anexo X; Los subsistemas de carácter estructural son: infraestructura, energía, control-mando y señalización en tierra, control-mando y señalización a bordo y material rodante. Los subsistemas de carácter funcional son: explotación y gestión del tráfico, mantenimiento y aplicaciones telemáticas para servicios de viajeros y de transporte de mercancías; 
+ 82. «Subsistema fijo»: se refiere a los subsistemas de infraestructura, energía y control-mando y señalización en tierra; 
+ 83. «Subsistema móvil»: subsistema de material rodante y el subsistema de control-mando y señalización a bordo; 
+ 84. «Supervisión»: evaluación realizada, o dirigida por la Agencia Estatal de Seguridad Ferroviaria, bien del desempeño total o parcial de las actividades de una organización o parte de ella, o bien del funcionamiento de una parte del sistema ferroviario, en materia de seguridad operacional y/o interoperabilidad ferroviaria. En particular incluye las actividades de supervisión que deben aplicarse a las empresas ferroviarias, administradores de infraestructuras y entidades encargadas de mantenimiento en cumplimiento del Reglamento Delegado (UE) 2018/761 de la Comisión, de 16 de febrero de 2018 , por el que se establecen Métodos Comunes de Seguridad para la supervisión por las autoridades nacionales de seguridad tras la expedición de un certificado de seguridad único o una autorización de seguridad con arreglo a la Directiva (UE) 2016/798 del Parlamento Europeo y del Consejo y por el que se deroga el Reglamento (UE) n.º 1077/2012 de la Comisión ; 
+ 85. «Sustitución en el marco de una operación de mantenimiento»: sustitución de componentes por piezas de función y prestaciones similares, en el marco de una operación de mantenimiento preventivo o correctivo; 
+ 86. «Transportista»: empresa que efectúa el transporte en virtud de un contrato de transporte; 
+ 87. «Tipo»: aquel en el que se definen las características básicas de diseño de un vehículo comprendido en un certificado de examen de tipo o de diseño descrito en el módulo de verificación pertinente; 
+ 88. «Tipo de operación»: se refiere al transporte de viajeros, incluidos o no los servicios de alta velocidad, el transporte de mercancías, incluidos o no los servicios de mercancías peligrosas, y los servicios únicamente de maniobras; 
+ 89. «Titular de carretera o camino»: todo aquel organismo, ente o, incluso, persona física o jurídica, titular de una carretera o camino que cruza el ferrocarril; 
+ 90. «Tren-tranvía»: vehículo diseñado para su uso combinado en infraestructuras de sistemas ferroviarios ligeros e infraestructuras de sistemas ferroviarios pesados; 
+ 91. «Vehículo»: vehículo ferroviario apto para circular con ruedas por líneas ferroviarias; con o sin tracción; un vehículo está compuesto por uno o más subsistemas estructurales y funcionales; 
+ 92. «Vehículo histórico»: aquel que, contando con una antigüedad igual o superior a 30 años, tenga una relevancia socio cultural suficientemente acreditada mediante documentación oficial, inventario o antecedentes históricos, constructivos u operativos, que haya circulado por una de las redes o instalaciones ferroviarias del territorio nacional, efectuando servicios de transporte ferroviario, funciones auxiliares del mismo o labores de mantenimiento y que figure como tal en el Registro Especial Ferroviario; 
+ 93. «Ventanilla única»: tal y como se define en el artículo 12 del Reglamento (UE) 2016/796, de 11 de mayo de 2016 ; 
+ 94. «Vigilancia»: Evaluación realizada por, o en nombre de, la misma organización que realiza la actividad, bien del desempeño total o parcial de las actividades de una organización o parte de ella, o bien del funcionamiento de una parte de su actividad, en materia de seguridad operacional y/o interoperabilidad ferroviaria. En particular incluye las actividades de vigilancia que deben aplicar las empresas ferroviarias, administradores de infraestructuras y entidades encargadas del mantenimiento en cumplimiento del Reglamento (UE) n º 1078/2012 de la Comisión, de 16 de noviembre . 
+
+ ANEXO II
+
+================================================================================
+ANEXO III - CLASIFICACIÓN DE SUCESOS Y CAUSAS DIRECTAS
+(Real Decreto 929/2020, de 27 de octubre, sobre seguridad operacional e interoperabilidad ferroviarias)
+================================================================================
+
+ANEXO III 
+ Clasificación de sucesos y causas directas 
+ I. Los sucesos ferroviarios se clasificarán en: 
+ 1. Accidente. 
+ 1.1 Colisión de tren con vehículo ferroviario. 
+ 1.1.1 Frontal. 
+ 1.1.2 Alcance. 
+ 1.1.3 Lateral. 
+ 1.2 Colisión de tren con obstáculo dentro del gálibo de libre paso. 
+ 1.2.1 Elementos de tren. 
+ 1.2.2 Elementos de la superestructura. 
+ 1.2.3 Elementos de la infraestructura. 
+ 1.2.4 Elementos de protección de itinerarios. 
+ 1.2.5 Animales. 
+ 1.2.6 Árboles. 
+ 1.2.7 Máquinas o equipamiento de mantenimiento de la infraestructura. 
+ 1.2.8 Otros. 
+ 1.3 Descarrilamiento de tren. 
+ 1.3.1 Plena vía. 
+ 1.3.2 Estaciones. 
+ 1.4 Accidente en paso a nivel, incluidos los accidentes que afecten a peatones en pasos a nivel, y desglose adicional. 
+ 1.4.1 Usuarios. 
+ 1.4.1.1 Vehículos de carretera. 
+ 1.4.1.2 Peatones. 
+ 1.4.2 Objetos. 
+ 1.5 Accidente causado a persona con implicación de material rodante en movimiento, a excepción de suicidios e intentos de suicidio. 
+ 1.5.1 Arrollamiento de personas. 
+ 1.5.1.1 Plena vía. 
+ 1.5.1.2 Estaciones. 
+ 1.5.1.2.1 Cruce entre andenes. 
+ 1.5.1.2.2 Otros. 
+ 1.5.2 Caídas. 
+ 1.5.2.1 En marcha. 
+ 1.5.2.2 Al subir - bajar. 
+ 1.5.3 Otros accidentes de personas. 
+ 1.5.3.1 Por movimiento del vehículo. 
+ 1.5.3.2 Proyección de objetos. 
+ 1.5.3.3 Otros. 
+ 1.6 Incendio o explosión en material rodante, incluida la carga. 
+ 1.7 Otros accidentes. 
+ 1.7.1 Colisión o descarrilamiento causado por aplicación de procedimiento de seguridad ante emergencia. 
+ 1.7.2 Colisión o descarrilamiento de vehículo en maniobras. 
+ 1.7.3 Descarrilamiento durante las operaciones de cambio de ancho del material rodante. 
+ 1.7.4 Colisión o descarrilamiento ocurrido en vía bloqueada o a cualquier vehículo en labores de mantenimiento. 
+ 1.7.5 Accidente relativo al transporte de mercancías peligrosas. 
+ 1.7.6 Fallo de cargamento. 
+ 1.7.7 Otros. 
+ 2. Incidente. 
+ 2.1 Precursor. 
+ 2.1.1 Rotura de carril. 
+ 2.1.2 Deformación u otra desalineación de vía. 
+ 2.1.3 Fallo de la señalización. 
+ 2.1.3.1 Infraestructura. 
+ 2.1.3.2 Material rodante. 
+ 2.1.4 Señal rebasada en situación de peligro (sobrepasando el punto de peligro). 
+ 2.1.4.1 Conato de colisión. 
+ 2.1.4.2 Otros. 
+ 2.1.5 Señal rebasada en situación de peligro (sin sobrepasar el punto de peligro). 
+ 2.1.6 Rueda rota de material rodante en servicio. 
+ 2.1.7 Eje roto de material rodante en servicio. 
+ 2.2 Otros precursores. 
+ 2.2.1 Incidentes operacionales. 
+ 2.2.1.1 Exceso de velocidad. 
+ 2.2.1.2 Marcha no autorizada. 
+ 2.2.1.3 Incumplimiento de las normas de bloqueo. 
+ 2.2.1.4 Otros incumplimientos de las normas de seguridad. 
+ 2.2.2 Escape de material. 
+ 2.2.2.1 Conato de colisión. 
+ 2.2.2.2 Otros. 
+ 2.3 Otros incidentes. 
+ 2.3.1 Componentes de vehículo. 
+ 2.3.2 Fallo de cargamento. 
+ 2.3.3 Incidente en paso a nivel. 
+ 2.3.4 Talonamiento. 
+ 2.3.5 Conato de incendio o explosión. 
+ 2.3.6 Incidente con mercancías peligrosas. 
+ 2.3.7 Incidente por colisión con obstáculo dentro del gálibo de libre paso. 
+ 2.3.7.1 Elementos de tren. 
+ 2.3.7.2 Elementos de la superestructura. 
+ 2.3.7.3 Elementos de la infraestructura. 
+ 2.3.7.4 Elementos de protección de itinerarios. 
+ 2.3.7.5 Animales. 
+ 2.3.7.6 Árboles. 
+ 2.3.7.7 Otros. 
+ 2.3.8 Otras incidencias. 
+ 3. Suicidio. 
+ 3.1 Suicidio. 
+ 3.2 Intento de suicidio. 
+ II. Las causas directas de los sucesos ferroviarios se clasificarán en: 
+ 1. Ferrocarril. 
+ 1.1 Factor humano. 
+ 1.1.1 Señales. 
+ 1.1.2 Bloqueo. 
+ 1.1.3 Itinerario. 
+ 1.1.4 Formación del tren. 
+ 1.1.5 Conducción. 
+ 1.1.6 Mantenimiento del material rodante e instalaciones. 
+ 1.1.7 Trabajos en vía e instalaciones de seguridad. 
+ 1.1.8 Operaciones de circulación en maniobras. 
+ 1.1.9 Prescripciones de circulación. 
+ 1.1.10 Otros. 
+ 1.2 Fallo técnico. 
+ 1.2.1 Fallo de material rodante. 
+ 1.2.1.1 Rodadura. 
+ 1.2.1.2 Suspensión. 
+ 1.2.1.3 Freno. 
+ 1.2.1.4 Aparatos de tracción-choque. 
+ 1.2.1.5 Gálibo. 
+ 1.2.1.6 Pantógrafo. 
+ 1.2.1.7 Puertas. 
+ 1.2.1.8 Instalaciones de seguridad embarcadas. 
+ 1.2.1.9 Fallo de motor eléctrico. 
+ 1.2.1.10 Fallo de motor de combustión. 
+ 1.2.1.11 Elemento caído de un vehículo. 
+ 1.2.1.12 Otros. 
+ 1.2.2 Fallo de instalaciones. 
+ 1.2.2.1 Infraestructura. 
+ 1.2.2.2 Vía. 
+ 1.2.2.3 Carril. 
+ 1.2.2.4 Aparato de vía. 
+ 1.2.2.5 Instalaciones de seguridad. 
+ 1.2.2.6 Electrificación. 
+ 1.2.2.7 Otros. 
+ 2. Usuarios, condiciones de entorno y otros. 
+ 2.1 Usuarios del ferrocarril. 
+ 2.1.1 Viajeros. 
+ 2.1.2 Cliente de mercancías. 
+ 2.1.3 Otros usuarios. 
+ 2.2 Condiciones de entorno. 
+ 2.2.1 Condiciones meteorológicas. 
+ 2.2.2 Medio ambiente. 
+ 2.3 Otros. 
+ 2.3.1 Extraños. 
+ 2.3.2 Intrusos. 
+ 2.3.3 Usuarios de paso a nivel. 
+ 2.3.4 Otras personas en el andén. 
+ 2.3.5 Otras personas fuera del andén. 
+ 2.4 Sin identificar. 
+
+ ANEXO IV
