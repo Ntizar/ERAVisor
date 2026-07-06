@@ -38,7 +38,7 @@ a:hover { text-decoration: underline; }
 .range-row { display: flex; align-items: center; gap: 8px; }
 .range-row input[type="range"] { flex: 1; accent-color: #2563eb; }
 .range-row .range-label { font-size: 13px; font-weight: 600; color: #2563eb; min-width: 42px; text-align: center; }
-.checkbox-group { max-height: 140px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 6px; padding: 6px 8px; }
+.checkbox-group { max-height: 300px; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 6px; padding: 6px 8px; }
 .checkbox-item { display: flex; align-items: center; gap: 6px; padding: 3px 0; font-size: 13px; cursor: pointer; }
 .checkbox-item input[type="checkbox"] { accent-color: #2563eb; }
 .checkbox-item:hover { color: #2563eb; }
@@ -250,34 +250,165 @@ a:hover { text-decoration: underline; }
 <script src="datos.js"></script>
 <script>
 /* ===================================================================
-   TAXONOMÍA ERA (Anexo III)
+   TAXONOMÍA ERA (Anexo III RD 929/2020) — COMPLETA
    =================================================================== */
 const TAX = {
   suceso: {
-    '1': 'Accidente', '1.1': 'Colisión', '1.1.1': 'Colisión frontal',
-    '1.1.2': 'Colisión por alcance', '1.3': 'Descarrilamiento',
-    '1.3.1': 'Descarrilamiento plena vía', '1.3.2': 'Descarrilamiento estación',
-    '1.4': 'Paso a nivel', '1.4.1.1': 'PN - Vehículo', '1.4.1.2': 'PN - Peatón',
-    '1.5': 'Atropello', '1.5.1': 'Arrollamiento', 
-    '1.5.1.1': 'Arrollamiento plena vía', '1.5.1.2': 'Arrollamiento estación',
-    '1.5.2': 'Caída de persona', '1.6': 'Incendio/explosión',
-    '1.7': 'Otros accidentes', '1.7.7': 'Otros',
-    '2': 'Incidente', '2.1.1': 'Rotura de carril',
-    '2.1.4': 'Señal rebasada', '2.1.6/7': 'Rueda/eje roto',
-    '2.2.1.1': 'Exceso velocidad', '3.1': 'Suicidio', '3.2': 'Intento suicidio'
+    // === 1. ACCIDENTE ===
+    '1': 'Accidente',
+    // 1.1 Colisión tren con vehículo ferroviario
+    '1.1': 'Colisión con vehículo ferroviario',
+    '1.1.1': 'Colisión frontal',
+    '1.1.2': 'Colisión por alcance',
+    '1.1.3': 'Colisión lateral',
+    // 1.2 Colisión con obstáculo
+    '1.2': 'Colisión con obstáculo en gálibo',
+    '1.2.1': 'Obstáculo - Elementos de tren',
+    '1.2.2': 'Obstáculo - Superestructura',
+    '1.2.3': 'Obstáculo - Infraestructura',
+    '1.2.4': 'Obstáculo - Protección itinerarios',
+    '1.2.5': 'Obstáculo - Animales',
+    '1.2.6': 'Obstáculo - Árboles',
+    '1.2.7': 'Obstáculo - Maq. mantenimiento',
+    '1.2.8': 'Obstáculo - Otros',
+    // 1.3 Descarrilamiento
+    '1.3': 'Descarrilamiento',
+    '1.3.1': 'Descarrilamiento plena vía',
+    '1.3.2': 'Descarrilamiento estación',
+    // 1.4 Paso a nivel
+    '1.4': 'Accidente en paso a nivel',
+    '1.4.1': 'PN - Usuarios',
+    '1.4.1.1': 'PN - Vehículo carretera',
+    '1.4.1.2': 'PN - Peatón',
+    '1.4.2': 'PN - Objetos',
+    // 1.5 Atropello / accidente persona
+    '1.5': 'Accidente a persona por material rodante',
+    '1.5.1': 'Arrollamiento de personas',
+    '1.5.1.1': 'Arrollamiento plena vía',
+    '1.5.1.2': 'Arrollamiento estación',
+    '1.5.1.2.1': 'Arrollamiento - Cruce andenes',
+    '1.5.1.2.2': 'Arrollamiento estación - Otros',
+    '1.5.2': 'Caídas',
+    '1.5.2.1': 'Caída en marcha',
+    '1.5.2.2': 'Caída al subir/bajar',
+    '1.5.3': 'Otros accidentes de personas',
+    '1.5.3.1': 'Por movimiento del vehículo',
+    '1.5.3.2': 'Proyección de objetos',
+    '1.5.3.3': 'Otros accidentes de personas',
+    // 1.6 Incendio
+    '1.6': 'Incendio/explosión en material rodante',
+    // 1.7 Otros accidentes
+    '1.7': 'Otros accidentes',
+    '1.7.1': 'Colisión/descarrilamiento por proc. emergencia',
+    '1.7.2': 'Colisión/descarrilamiento en maniobras',
+    '1.7.3': 'Descarrilamiento por cambio de ancho',
+    '1.7.4': 'Colisión/descarrilamiento en vía bloqueada',
+    '1.7.5': 'Accidente con mercancías peligrosas',
+    '1.7.6': 'Fallo de cargamento',
+    '1.7.7': 'Otros accidentes',
+    // === 2. INCIDENTE ===
+    '2': 'Incidente',
+    // 2.1 Precursor
+    '2.1': 'Precursor',
+    '2.1.1': 'Rotura de carril',
+    '2.1.2': 'Deformación/desalineación de vía',
+    '2.1.3': 'Fallo de señalización',
+    '2.1.3.1': 'Fallo señalización - Infraestructura',
+    '2.1.3.2': 'Fallo señalización - Material rodante',
+    '2.1.4': 'Señal rebasada (sobrepasando peligro)',
+    '2.1.4.1': 'SPAD - Conato de colisión',
+    '2.1.4.2': 'SPAD - Otros',
+    '2.1.5': 'Señal rebasada (sin sobrepasar peligro)',
+    '2.1.6': 'Rueda rota en servicio',
+    '2.1.7': 'Eje roto en servicio',
+    // 2.2 Otros precursores
+    '2.2': 'Otros precursores',
+    '2.2.1': 'Incidentes operacionales',
+    '2.2.1.1': 'Exceso de velocidad',
+    '2.2.1.2': 'Marcha no autorizada',
+    '2.2.1.3': 'Incumplimiento normas de bloqueo',
+    '2.2.1.4': 'Otros incumplimientos seguridad',
+    '2.2.2': 'Escape de material',
+    '2.2.2.1': 'Escape - Conato de colisión',
+    '2.2.2.2': 'Escape - Otros',
+    // 2.3 Otros incidentes
+    '2.3': 'Otros incidentes',
+    '2.3.1': 'Componentes de vehículo',
+    '2.3.2': 'Fallo de cargamento',
+    '2.3.3': 'Incidente en paso a nivel',
+    '2.3.4': 'Talonamiento',
+    '2.3.5': 'Conato de incendio/explosión',
+    '2.3.6': 'Incidente con mercancías peligrosas',
+    '2.3.7': 'Incidente colisión obstáculo gálibo',
+    '2.3.7.1': 'Incidente obstáculo - Elementos tren',
+    '2.3.7.2': 'Incidente obstáculo - Superestructura',
+    '2.3.7.3': 'Incidente obstáculo - Infraestructura',
+    '2.3.7.4': 'Incidente obstáculo - Protección itinerarios',
+    '2.3.7.5': 'Incidente obstáculo - Animales',
+    '2.3.7.6': 'Incidente obstáculo - Árboles',
+    '2.3.7.7': 'Incidente obstáculo - Otros',
+    '2.3.8': 'Otras incidencias',
+    // === 3. SUICIDIO ===
+    '3': 'Suicidio',
+    '3.1': 'Suicidio',
+    '3.2': 'Intento de suicidio'
   },
   causa: {
-    '1.1': 'Factor humano', '1.1.1': 'FH - Señales', '1.1.5': 'FH - Conducción',
-    '1.1.6': 'FH - Mantenimiento', '1.2': 'Fallo técnico',
-    '1.2.1.1': 'FT - Rodadura', '1.2.1.3': 'FT - Freno',
-    '1.2.2': 'FT - Instalaciones', '1.2.2.2': 'FT - Vía',
-    '1.2.2.3': 'FT - Carril', '1.2.2.5': 'FT - Seguridad',
-    '2.1': 'Usuario FC', '2.2': 'Condiciones entorno',
-    '2.2.1': 'Meteorológicas', '2.3': 'Otros',
-    '2.3.2': 'Intrusión', '2.3.3': 'Usuario PN',
+    // === 1. FERROCARRIL ===
+    '1': 'Ferrocarril',
+    // 1.1 Factor humano
+    '1.1': 'Factor humano',
+    '1.1.1': 'FH - Señales',
+    '1.1.2': 'FH - Bloqueo',
+    '1.1.3': 'FH - Itinerario',
+    '1.1.4': 'FH - Formación del tren',
+    '1.1.5': 'FH - Conducción',
+    '1.1.6': 'FH - Mantenimiento',
+    '1.1.7': 'FH - Trabajos en vía',
+    '1.1.8': 'FH - Maniobras',
+    '1.1.9': 'FH - Prescripciones circulación',
+    '1.1.10': 'FH - Otros',
+    // 1.2 Fallo técnico
+    '1.2': 'Fallo técnico',
+    '1.2.1': 'FT - Material rodante',
+    '1.2.1.1': 'FT - Rodadura',
+    '1.2.1.2': 'FT - Suspensión',
+    '1.2.1.3': 'FT - Freno',
+    '1.2.1.4': 'FT - Tracción-choque',
+    '1.2.1.5': 'FT - Gálibo',
+    '1.2.1.6': 'FT - Pantógrafo',
+    '1.2.1.7': 'FT - Puertas',
+    '1.2.1.8': 'FT - Seguridad embarcada',
+    '1.2.1.9': 'FT - Motor eléctrico',
+    '1.2.1.10': 'FT - Motor combustión',
+    '1.2.1.11': 'FT - Elemento caído vehículo',
+    '1.2.1.12': 'FT - Otros material rodante',
+    '1.2.2': 'FT - Instalaciones',
+    '1.2.2.1': 'FT - Infraestructura',
+    '1.2.2.2': 'FT - Vía',
+    '1.2.2.3': 'FT - Carril',
+    '1.2.2.4': 'FT - Aparato de vía',
+    '1.2.2.5': 'FT - Instalaciones seguridad',
+    '1.2.2.6': 'FT - Electrificación',
+    '1.2.2.7': 'FT - Otras instalaciones',
+    // === 2. USUARIOS, ENTORNO Y OTROS ===
+    '2': 'Usuarios, entorno y otros',
+    '2.1': 'Usuarios del ferrocarril',
+    '2.1.1': 'Viajeros',
+    '2.1.2': 'Cliente de mercancías',
+    '2.1.3': 'Otros usuarios',
+    '2.2': 'Condiciones de entorno',
+    '2.2.1': 'Condiciones meteorológicas',
+    '2.2.2': 'Medio ambiente',
+    '2.3': 'Otros',
+    '2.3.1': 'Extraños',
+    '2.3.2': 'Intrusos',
+    '2.3.3': 'Usuarios de paso a nivel',
+    '2.3.4': 'Otras personas en el andén',
+    '2.3.5': 'Otras personas fuera del andén',
     '2.4': 'Sin identificar'
   },
-  pais: { ES: 'España', FR: 'Francia', DE: 'Alemania', IT: 'Italia', UK: 'Reino Unido' }
+  pais: { ES: 'España', FR: 'Francia', DE: 'Alemania', IT: 'Italia', UK: 'Reino Unido', NL: 'Países Bajos' }
 };
 
 function taxLabel(cat, code) {
@@ -344,33 +475,32 @@ function getYear(d) { return parseInt(d.fecha.slice(0,4), 10); }
 function buildFilterOptions() {
   const paises = [...new Set(datos.map(d=>d.pais))].sort();
   const provs = [...new Set(datos.map(d=>d.provincia))].sort();
-  const sucesos = [...new Set(datos.map(d=>d.suceso_codigo))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
-  const causas = [...new Set(datos.map(d=>d.causa_codigo))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
 
   const selPais = document.getElementById('filterPais');
   const selProv = document.getElementById('filterProvincia');
   paises.forEach(p => { const o = document.createElement('option'); o.value=p; o.textContent=TAX.pais[p]||p; selPais.appendChild(o); });
   provs.forEach(p => { const o = document.createElement('option'); o.value=p; o.textContent=p; selProv.appendChild(o); });
 
-  function buildCheckboxes(containerId, items, storageKey) {
+  function buildCheckboxes(containerId, cat) {
     const c = document.getElementById(containerId);
     c.innerHTML = '';
-    items.forEach(code => {
+    const codes = Object.keys(TAX[cat]).sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+    codes.forEach(code => {
       const label = document.createElement('label');
       label.className = 'checkbox-item';
       const cb = document.createElement('input');
       cb.type = 'checkbox';
       cb.value = code;
       cb.checked = true;
-      cb.dataset.key = storageKey;
+      cb.dataset.key = cat;
       cb.addEventListener('change', applyFilters);
       label.appendChild(cb);
-      label.appendChild(document.createTextNode(taxLabel(storageKey, code) + ' (' + code + ')'));
+      label.appendChild(document.createTextNode(TAX[cat][code] + ' (' + code + ')'));
       c.appendChild(label);
     });
   }
-  buildCheckboxes('sucesoCheckboxes', sucesos, 'suceso');
-  buildCheckboxes('causaCheckboxes', causas, 'causa');
+  buildCheckboxes('sucesoCheckboxes', 'suceso');
+  buildCheckboxes('causaCheckboxes', 'causa');
 }
 
 function applyFilters() {
@@ -378,16 +508,18 @@ function applyFilters() {
   const yearMax = parseInt(document.getElementById('filterYearMax').value, 10);
   const pais = document.getElementById('filterPais').value;
   const prov = document.getElementById('filterProvincia').value;
-  const sucesosSel = [...document.querySelectorAll('#sucesoCheckboxes input:checked')].map(i => i.value);
-  const causasSel = [...document.querySelectorAll('#causaCheckboxes input:checked')].map(i => i.value);
+
+  // Hierarchical filter: a checked code matches any data code that starts with it
+  const sucesoChecked = [...document.querySelectorAll('#sucesoCheckboxes input:checked')].map(i => i.value);
+  const causaChecked = [...document.querySelectorAll('#causaCheckboxes input:checked')].map(i => i.value);
 
   filtered = datos.filter(d => {
     const y = getYear(d);
     if (y < yearMin || y > yearMax) return false;
     if (pais && d.pais !== pais) return false;
     if (prov && d.provincia !== prov) return false;
-    if (sucesosSel.length && !sucesosSel.includes(d.suceso_codigo)) return false;
-    if (causasSel.length && !causasSel.includes(d.causa_codigo)) return false;
+    if (sucesoChecked.length && !sucesoChecked.some(c => d.suceso_codigo === c || d.suceso_codigo.startsWith(c + '.'))) return false;
+    if (causaChecked.length && !causaChecked.some(c => d.causa_codigo === c || d.causa_codigo.startsWith(c + '.'))) return false;
     return true;
   });
 
