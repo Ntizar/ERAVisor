@@ -1,0 +1,55 @@
+============================================================
+🚆 ERAVisor Pipeline Europa — 2026-07-06 14:46
+🤖 Modelo: qwen3.6
+============================================================
+
+📍 ES — España (CIAF)
+  📡 375 informes indexados
+    📥 [336/375] 190628-120817-IF-SN_CIAF.pdf (total: 1)
+    📥 [340/375] ES 06.01.2017 180718-170106-IF-SN_CIAF.pdf (total: 2)
+    📥 [359/375] ES-10164 - 220526-210129-IF-SN-EN_CIAF.pdf (total: 3)
+    📥 [360/375] ES-10227 - 221220-210503-IF_CIAF.pdf (total: 4)
+    📥 [361/375] ES-10228 - 202171 0906 IF sn_en.pdf (total: 5)
+  📥 19 nuevos PDFs descargados
+  🔄 20 pendientes de extraer...
+  [1/20] IF_240713_200514_CIAF.pdf   ❌ Error PDF: PyCryptodome is required for AES algorithm
+  [2/20] 190628-120817-IF-SN_CIAF.pdf   🤖 qwen3.6... ✅
+  [3/20] ES 06.01.2017 180718-170106-IF-SN_CIAF.pdf   🤖 qwen3.6... ✅
+  [4/20] ES-10164 - 220526-210129-IF-SN-EN_CIAF.pdf   🤖 qwen3.6... ✅
+  [5/20] ES-10227 - 221220-210503-IF_CIAF.pdf   🤖 qwen3.6... ✅
+  [6/20] ES-10228 - 202171 0906 IF sn_en.pdf   🤖 qwen3.6... ✅
+  [7/20] ES-10251 - 2022-48-0612-IF.pdf   🤖 qwen3.6... ✅
+  [8/20] ES-10252 - 2022-46-0601-IF.pdf   🤖 qwen3.6... ✅
+  [9/20] ES-10306- 202270 0815 IF Manresa (english version).pdf   🤖 qwen3.6... ✅
+  [10/20] ES-10367 - 20230624 2022107 IF ELS GUIAMETS.pdf   🤖 qwen3.6... ✅
+  [11/20] ES-10382 - 2022-108-1105-IF.pdf   🤖 qwen3.6... ✅
+  [12/20] ES-10383 - 2023-11-0130-IF.pdf   🤖 qwen3.6... ✅
+  [13/20] ES-10479 - Final Report - 2023-43-0518-IF.pdf   🤖 qwen3.6... ✅
+  [14/20] ES-10479 - Interim Staatement -NotaAvanceInvestigaciónW   🤖 qwen3.6... ✅
+  [15/20] ES-10616 - Final report, 2023-114-1126-IF   🤖 qwen3.6... ✅
+  [16/20] ES-10614 - Final Report, 2024-64-0625-if.pdf   🤖 qwen3.6... ✅
+  [17/20] ES-10647 - Final Report, 2024-122-1213-if.pdf   🤖 qwen3.6... ✅
+  [18/20] ES-10699 - Final report, 2024-111-1029-IF   🤖 qwen3.6... ✅
+  [19/20] ES-10687 - Final report, 2025-17-0207-IF   🤖 qwen3.6... ✅
+  [20/20] ES-10728 - Final report, 2025-41-0522-IF   🤖 qwen3.6... ✅
+  📄 CSV/Excel/JSON: 374 registros
+
+📍 DE — Alemania (BAF)
+  📡 392 informes indexados
+    📥 [1/392] Berlin Sudkreuz Abschlussbericht-201106.pdf (total: 1)
+    📥 [2/392] Untersuchungsbericht Gremberg.pdf (total: 2)
+    📥 [3/392] Untersuchungsbericht-01112006.pdf (total: 3)
+    📥 [4/392] Untersuchungsbericht-15032006.pdf (total: 4)
+    📥 [5/392] 20071112 Schlüchtern, Personenunfall.pdf (total: 5)
+============================================================
+🚆 ERAVisor Pipeline Europa v2 — 2026-07-06 15:14
+============================================================
+📡 6 países indexados (1380 informes total)
+
+📥 Fase 1: Descarga de PDFs...
+  📥 [FR] FR 26.06.2013-Rapport_Lyon_VF.pdf ✅
+  📥 [FR] FR 26.11.2013 Rapport_Carbonne_VF-1.pdf   ⏳ 429, retry in 30s... ✅
+  📥 [FR] Rapport_Marseille_VF-160413.pdf ✅
+  📥 [FR] FR 09.012.2014 Rapport_BEATT_2014-014-Saint-Germain-des ✅
+  📥 [FR] FR 09.12.2014 Rapport_BEATT_2014-014.pdf   ⏳ 429, retry in 30s... ✅
+  📥 [FR] FR 09.12.2014 Rapport_Montauban_VF-allégé.pdf   ⏳ 429, retry in 30s... 
