@@ -1,147 +1,138 @@
-# 🚆 ERAVisor — Visor Global de Accidentes Ferroviarios Europeos
+# 🚆 ERAVisor — Base de Datos Global de Accidentes Ferroviarios Europeos
 
 [![ERA](https://img.shields.io/badge/datos-ERA%20European%20Railway%20Agency-2563eb)](https://www.era.europa.eu/era-folder/accident-investigation-reports)
 [![Licencia](https://img.shields.io/badge/licencia-MIT-f97316)](LICENSE)
-[![España](https://img.shields.io/badge/ES-355%20informes-2563eb)]()
-[![GitHub Pages](https://img.shields.io/badge/🌐-Pages%20Live-f97316)](https://ntizar.github.io/ERAVisor/)
+[![SQLite](https://img.shields.io/badge/BD-SQLite-2563eb)]()
+[![IA](https://img.shields.io/badge/procesado-IA%20deepseek--v4--flash-f97316)]()
 
-**Dataset estructurado de todos los informes de investigación de accidentes ferroviarios de Europa**, clasificados según el Anexo III del Real Decreto 929/2020 (79 códigos de suceso + 53 causas), con visor web interactivo.
-
----
-
-## 🎯 ¿Qué es esto?
-
-ERAVisor transforma los informes narrativos en PDF de la [European Railway Agency (ERA)](https://www.era.europa.eu/era-folder/accident-investigation-reports) en datos estructurados (CSV/Excel) con clasificación normalizada, y los visualiza en un dashboard interactivo.
-
-### Datos actuales
-
-| País | Informes indexados | Extraídos | Período |
-|------|-------------------|-----------|---------|
-| 🇪🇸 España | 375 | 355 | 2006–2021 |
-| 🇩🇪 Alemania | 392 | — | — |
-| 🇫🇷 Francia | 119 | — | — |
-| 🇮🇹 Italia | 100 | — | — |
-| 🇬🇧 Reino Unido | 373 | — | — |
-| 🇳🇱 Países Bajos | 21 | — | — |
-| **Total** | **1.380** | **355** | — |
+**Base de datos estructurada de todos los informes de investigación de accidentes ferroviarios europeos de la ERA**, con datos extraídos por IA y clasificación normalizada según el Anexo III del RD 929/2020.
 
 ---
 
-## 📊 Dashboard
+## 📋 Estado actual
 
-[🌐 Visor en vivo →](https://ntizar.github.io/ERAVisor/)
+| Fase | Estado | Datos |
+|------|--------|-------|
+| 🧪 Piloto ES+FR | ✅ Completado | 26 incidentes (19 ES + 7 FR) |
+| 🌍 Europa | ⏳ Pendiente | 28 países, ~4000 informes |
+| 👁️ Visor web | 📅 Futuro | Sobre la base de datos |
+| 🔬 Fase II (externas) | 📅 Futuro | AEMET, Copernicus, etc. |
 
-### Características del visor
-
-| Funcionalidad | Detalle |
-|--------------|---------|
-| 🗺️ **Mapa** | Leaflet + MarkerCluster, colores por gravedad |
-| 📈 **Estadísticas** | 4 gráficos Chart.js reactivos a filtros |
-| 📋 **Tabla** | 24 columnas, ordenable, búsqueda, paginación |
-| 🔍 **Filtros** | Año, país, provincia, tipo suceso, causa |
-| 📥 **Exportar** | CSV filtrado con un clic |
-| 🎨 **Diseño** | Aurora DS — azul #2563eb + naranja #f97316 |
-
----
-
-## 🏗️ Pipeline
+## 🗂️ Estructura del proyecto
 
 ```
-ERA PDFs → download_pdfs.py → extract_v2.py (regex jerárquico) → 
-CSV/Excel → gen_visor_data.py → visor/index.html
+ERAVisor/
+├── db/                      # Base de datos SQLite
+│   ├── eravisor.db          #   BD con 26 incidentes procesados
+│   └── schema.sql           #   DDL de las 9 tablas
+├── pipeline/                # Procesamiento
+│   ├── 01_extract_raw.py    #   Parser de MDs → tabla crudos
+│   ├── 02_ai_process.py     #   IA → tabla procesados + relacionadas
+│   └── explorer.py          #   Consultas y estadísticas
+├── rawdata/                 # Datos fuente (MDs por país/año)
+│   ├── ES/                  #   España (2006-2025)
+│   └── FR/                  #   Francia (2021-2023)
+├── spec/
+│   └── DATABASE_SPEC.md     # Especificación completa de la BD
+├── notes/                   # Notas de aprendizaje
+├── SESIONES.md              # 📓 Diario de sesiones del proyecto
+├── INVESTIGACION.md         # Investigación técnica del pipeline PDF
+├── INFORME_ESTRUCTURA_PDFS.md # Estructura de la web de la ERA
+└── README.md                # Este archivo
 ```
 
-### Scripts
+## 🗄️ Esquema de la base de datos
 
-| Script | Función |
-|--------|---------|
-| `scripts/download_pdfs.py` | Descarga masiva de PDFs desde ERA |
-| `scripts/extract_v2.py` | Extracción con regex jerárquico (24 campos) |
-| `scripts/gen_visor_data.py` | Genera datos JS para el visor |
+**9 tablas** relacionadas por `incident_id` (formato: `ERA-{PAIS}-{AÑO}-{REF}`):
 
-### Esquema de 24 campos
+| Tabla | Tipo | Descripción |
+|-------|------|-------------|
+| `incidentes_crudos` | Principal | Datos sin procesar desde los MDs |
+| `incidentes_procesados` | Principal | Datos estructurados por IA |
+| `causas` | 1:N | Hasta 8 causas por incidente |
+| `recomendaciones` | 1:N | Hasta 7 recomendaciones por incidente |
+| `factores_coadyuvantes` | 1:N | Factores técnicos/humanos/organizativos |
+| `victimas_detalle` | 1:N | Desglose por tipo de afectado |
+| `subsistemas_afectados` | 1:N | Infraestructura, CMS, Explotación... |
+| `personal_implicado` | 1:N | Maquinistas, reguladores, etc. |
+| `incidentes_revision` | 1:N | Capa de aportaciones humanas |
 
-**Datos generales:** id_accidente, país, provincia, municipio, fecha, hora, operador, línea, pk, tipo_tráfico, tipo_vía
+Ver `spec/DATABASE_SPEC.md` para la especificación completa.
 
-**Clasificación:** suceso_código, suceso_desc, causa_código, causa_desc (según Anexo III RD 929/2020)
+## 🔧 Pipeline
 
-**Víctimas:** fallecidos, heridos_graves, heridos_leves
-
-**Análisis:** resumen, causas_directas, factores_contribuyentes, recomendaciones
-
----
-
-## 📋 Taxonomía (Anexo III RD 929/2020)
-
-### Sucesos ferroviarios
-- **1. Accidente** — Colisión (1.1), Descarrilamiento (1.3), Paso a nivel (1.4), Atropello (1.5), Incendio (1.6)
-- **2. Incidente** — Rotura carril (2.1.1), Señal rebasada (2.1.4), Rueda/eje roto
-- **3. Suicidio** — Consumado (3.1), Intento (3.2)
-
-### Causas directas
-- **1. Ferrocarril** — Factor humano (1.1), Fallo técnico (1.2)
-- **2. Usuarios/entorno** — Condiciones meteorológicas (2.2.1), Usuario PN (2.3.3)
-
----
-
-## 🐍 Scripts Python
-
-### Conversión de PDFs a Markdown
-
-**Requisitos:** Python 3.10+, PyMuPDF (`pip install pymupdf`)
+### 1. Extracción (`01_extract_raw.py`)
 
 ```bash
-# Un solo PDF
-python pdf_to_md.py --input informe.pdf --output docs_md/
-
-# Carpeta entera (estructura ERA)
-python pdf_to_md.py --input pdfs/ --output docs_md/ --era --recursive
-
-# Carpeta plana
-python pdf_to_md.py --input pdfs/ --output docs_md/ --recursive
-
-# Solo listar (dry-run)
-python pdf_to_md.py --input pdfs/ --output docs_md/ --dry-run
+python3 pipeline/01_extract_raw.py --pais ES,FR --anos 2021-2025
 ```
 
-**Estructura de salida (modo ERA):**
-```
-docs_md/
-├── ES/
-│   ├── 2009/
-│   │   └── ES_2009_0062.md
-│   └── 2024/
-│       └── ES_2024_0001.md
-├── DE/
-│   └── 2024/
-│       └── DE_2024_10525.md
-└── ...
-```
+Lee los MDs de `rawdata/`, parsea el frontmatter YAML, y los inserta en `incidentes_crudos`.
 
-Cada `.md` incluye frontmatter YAML con: país, organismo investigador, año, expediente, fecha/hora, idiomas, secciones, operador, víctimas, metadatos del PDF.
-
----
-
-## 🚀 Para desarrollo local
+### 2. Procesado con IA (`02_ai_process.py`)
 
 ```bash
-# Clonar
-git clone https://github.com/Ntizar/ERAVisor.git
-cd ERAVisor
-
-# Servir visor localmente
-cd visor && python3 -m http.server 8765
-# → http://localhost:8765
+NAN_API="sk-..." python3 pipeline/02_ai_process.py
 ```
 
+Envía cada texto a la API de NaN (deepseek-v4-flash), extrae datos estructurados siguiendo la plantilla del DOCX de la ERA, y rellena las 7 tablas relacionadas.
+
+Opciones:
+- `--incidentes ERA-ES-2024-ES-10614` — Solo un incidente específico
+- `--dry-run` — Contar pendientes sin procesar
+- `--max 5` — Procesar solo N incidentes
+
+### 3. Consulta (`explorer.py`)
+
+```bash
+python3 pipeline/explorer.py                    # Resumen general
+python3 pipeline/explorer.py --incidente <ID>   # Detalle completo
+python3 pipeline/explorer.py --estadisticas     # Estadísticas
+python3 pipeline/explorer.py --sql "SELECT ..." # SQL directo
+python3 pipeline/explorer.py --export-csv       # Exportar a CSV
+```
+
+## 📊 Datos actuales (piloto ES+FR)
+
+| Métrica | Valor |
+|---------|-------|
+| Incidentes procesados | 26 (19 ES + 7 FR) |
+| Causas extraídas | 54 |
+| Recomendaciones | 99 |
+| Factores coadyuvantes | 111 |
+| Víctimas (detalle) | 5F / 7G / 35L |
+| Confianza IA media | 0.90 |
+| Factor humano presente | 69% |
+
+### Por país y año
+
+| País | 2021 | 2022 | 2023 | 2024 | 2025 |
+|------|------|------|------|------|------|
+| 🇪🇸 España | 6 | 5 | 3 | 3 | 2 |
+| 🇫🇷 Francia | 5 | 1 | 1 | — | — |
+
+### Tipos de suceso más comunes
+
+- **C07** (Otros sucesos): 10 — principalmente rebases de señal
+- **C03** (Descarrilamientos): 4
+- **C04** (Paso a nivel): 3
+- **C01** (Colisión entre trenes): 2
+- **C02** (Colisión con obstáculo): 2
+- **C09** (Cuasiaccidente): 2
+- **C06** (Incendio): 1
+
+## 📓 Diario de sesiones
+
+Cada sesión del proyecto se registra en **[SESIONES.md](./SESIONES.md)**, con decisiones, problemas y próximos pasos.
+
+## 🗺️ Hoja de ruta
+
+1. ✅ **Piloto ES+FR** — Base de datos, pipeline, IA
+2. ⏳ **Europa** — Escalar a los 28 países (pipeline reutilizable)
+3. 📅 **Visor web** — Dashboard interactivo sobre la BD
+4. 📅 **Fase II** — Circunstancias externas (meteo, geología, etc.)
+5. 📅 **Revisiones humanas** — Capa de calidad sobre los datos IA
+
 ---
 
-## 📄 Licencia
-
-MIT © [David Antizar](https://github.com/Ntizar)
-
-**Datos:** Informes de investigación © European Union Agency for Railways (ERA) — [Accident Investigation Reports](https://www.era.europa.eu/era-folder/accident-investigation-reports)
-
----
-
-*Hecho con ❤️ por David Antizar*
+Hecho con ❤️ por David Antizar — Datos: [European Railway Agency (ERA)](https://www.era.europa.eu/era-folder/accident-investigation-reports)
